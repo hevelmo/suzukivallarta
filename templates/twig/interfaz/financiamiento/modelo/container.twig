@@ -1,0 +1,50 @@
+{% set model = mdopa %}
+<div id="content-content">
+    <div class="promos-wrapper-financing">
+        <div class="promos-container-financing">
+            <div id="promocion-financing_by_model" class="promotion-financing {{ model.key }}-bg">
+                <div class="promo-content-financing">
+                    <div class="description">
+                        <p class="description_title">FINANCIAMIENTO</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div id="content-section-form-test-drive-selection">
+                        <div id="content-financing-newform" class="ptb25 mtb25 clearfix">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="financing_main">
+                                        <div class="financing_content">
+                                            <div class="col-md-4 plr0">
+                                                <div class="col-md-12 pl0 pr0 pt25 pb25">
+                                                    <div class="row">
+                                                        <div id="model_select_preview" class="content-thumb-model">
+                                                            <img id="{{ model.key }}" class="thumb-model thumb-model-{{ model.key }}" src="{{ _host }}img/template/models/financing/thumbs/thumb-{{ model.key }}.png" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h3 id="model_select_title" class="secondary-title">
+                                                            {{ model.inicio.main.title }}
+                                                        </h3>
+                                                    </div>
+                                                    <div class="row text-center">
+                                                        <a href="{{ _host }}financiamiento" id="go-financing" class="button blue">Regresar</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 borderleft plr30">
+                                                <div id="content-leads-financing-form">
+                                                    {% embed "financiamiento/modelo/form_financing.twig" %}{% endembed %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

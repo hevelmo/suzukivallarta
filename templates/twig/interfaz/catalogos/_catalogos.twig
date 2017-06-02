@@ -1,0 +1,49 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+    <link id="catalogs" rel="stylesheet" class="link-catalogs" href="{{ _host }}css/sections/catalog.css">
+    <link id="catalogs" rel="stylesheet" class="link-catalogs" href="{{ _host }}css/sections/socialbar.css">
+    <link id="catalogs" rel="stylesheet" class="link-catalogs" href="{{ _host }}css/sections/models.css">
+	{#<link id="catalogs" rel="stylesheet" class="link-catalogs" href="{{ _host }}css/sections/slick-theme.css">#}
+{% endblock %}
+{% block social_bar %} 
+	{% embed "super_socialbar.twig" %}{% endembed %}               
+{% endblock %}
+{% block section %}
+    {% set catalogo = catpa %}
+    <input type="hidden" id="hidden_section" value="catalogs-{{ catalogo.key }}">
+{% endblock %}
+{% block menu_patch %}    
+    <div class="menu-patch" id="patch">&nbsp;</div>
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}
+		{% block phone_call %}
+        {% endblock %}
+        {% block models_header %}
+		{% endblock %}
+        {% block menu_catalogs %}                
+            {% embed "menus/list_catallogs.twig" %}{% endembed %}
+        {% endblock %}
+    {% endembed %}
+{% endblock %}
+{% block content_current %}
+    {% embed "catalogos/container.twig" %}{% endembed %}
+{% endblock %}
+{% block scroll_to_top %}
+    {% embed "menus/scrolltotop.twig" %}{% endembed %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}
+    <script src="{{ _host }}js/sections/catalogs.js"></script>
+    {#<script src="{{ _host }}lib/assets/plugins/slick/slick.js"></script>#}
+    <script src="{{ _host }}js/sections/totop.js"></script>
+{% endblock %}
+{% block load_scripts %}
+    $('body').prepend( patch_bar );
+    detectNavigatorMethods.IE10();
+{% endblock %}

@@ -1,0 +1,107 @@
+{# Begin: Header #}
+<section id="header-wrapper" class="wrap push">
+    <section id="header-content">
+        <div class="header-wrapper" id="header-spacer">
+            <header id="header-zone">
+                <div id="logo-wrapper">
+                    <div id="logo">
+                        <a href="{{ _host }}" title="Suzuki Autos {{ _loc }}">
+                            <span>Suzuki <sup style="position: relative; top: -2px;">&copy;</sup> {{ _loc }}</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="regular-header">
+                    <div class="content-no_wrapper">
+                        <div id="top-bar">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="{{ _host }}grupo" title="Grupo" onclick="ga('send', 'event', 'Grupo', 'Liga_interna', 'Grupo Suzuki');">
+                                            <span>Grupo</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ _host }}concesionarias" title="Concesionarias" onclick="ga('send', 'event', 'Concesionarias', 'Liga_interna', 'Ubica nuestras concesionarias');">
+                                            <span>Concesionarias</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" {#href="{{ _host }}catalogos"#} class="catalogo-dropdown" title="Catalogos" onclick="ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');">
+                                            <span>Catálogos</span>
+                                        </a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="{{ _host }}contactanos" title="Contactános" onclick="ga('send', 'event', 'Contactanos', 'Liga_interna', 'Contactanos');">
+                                            <span>Contáctanos</span>
+                                        </a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="http://suzukigdl.com.mx/seminuevos/" title="Seminuevos López Mateos" onclick="ga('send', 'event', 'Seminuevos', 'Liga_interna', 'Seminuevos Suzuki');">
+                                            <span>Seminuevos</span>
+                                        </a>
+                                    </li>
+                                    <li class="last">
+                                        {% block phone_call %}
+                                        {% endblock %}
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="main-nav">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="{{ _host }}modelos" title="Modelos"onclick="ga('send', 'event', 'Modelos', 'Liga_interna', 'Descubre nuestra gamma de modelos Suzuki');">
+                                            <span>Modelos</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ _host }}financiamiento" title="Financiamiento" onclick="ga('send', 'event', 'Financiamento', 'Liga_interna', 'Financiamiento');">
+                                            <span>Financiamiento</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="header-owners-button" title="Propietarios" class="owners expand-header cur-hover">
+                                            <span>Mi Suzuki</span>
+                                        </a>
+                                    </li>
+                                    <li class="last">
+                                        <a id="header-before-buy-button" title="Antes de comprar" class="before-buy expand-header cur-hover">
+                                            <span>Comprar un Suzuki</span>
+                                        </a>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="models-header">
+                    {% block models_header %}
+                    {% endblock %}
+                </div>
+            </header>
+            <div id="header-mobile">
+                <a href="{{ _host }}">
+                    <img src="{{ _host }}img/template/common/header/horizontal_logo.png" alt="Logo Suzuki">
+                </a>
+                <a href="#mobile-menu" class="menu-link">☰</a>
+                {#<a href="#menu" class="icon-hamburger-animate menu-link">
+                    <i class="icon-hamburger"></i>
+                </a>
+                #}
+            </div>
+            <div id="header-panel" class="header-panel">
+                <div id="header-sections-wrapper" class="current-sections-wrapper">
+                    {% block menu_panel %}
+                        {% embed "menus/panel_menu_before_buy.twig" %}{% endembed %}
+                        {% embed "menus/panel_menu_owners.twig" %}{% endembed %}
+                    {% endblock %}
+                </div>
+            </div>
+            {% block menu_catalogs %}                
+            {% endblock %}
+        </div>
+    </section>
+</section>
+{# End: Header #}

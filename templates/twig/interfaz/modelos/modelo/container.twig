@@ -1,0 +1,413 @@
+{% set model = mdopa %}
+<div id="content-content">
+    {# block home #}
+        {% set begin = model.inicio %}
+        {% if begin %}
+            <a class="section-separator" name="inicio"></a>
+            <div class="full-size-section gray-degree window-adaptable model-section" data-min-height="650">
+                <div class="car-main big-main" style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.image }}') center 175px no-repeat">
+                    <div class="car-main-title">
+                        <div class="title">{{ begin.main.title }}</div>
+                        <div class="slogan">{{ begin.main.slogan }}</div>
+                        <div class="price">{{ begin.main.price }}</div>
+                        <div class="car-main-image" id="car-image-{{ model.key }}">&nbsp;</div>
+                    </div>
+                    <div class="car-next-step"><a href="{{ _host }}modelos/{{ model.key }}#caracteristicas"><span>Características</span></a></div>
+                </div>
+            </div>
+        {% endif %}
+    {# block home end #}
+    {# block characteristics #}
+        {% set features = model.caracteristicas %}
+        {% if features %}
+            <a class="section-separator" name="caracteristicas"></a>
+            <div id="model-section-features" class="window-adaptable model-section special-padding-top" data-min-height="750">
+                <div class="section-title">
+                    <div class="title">{{ features.main.section_features.title }}</div>
+                    <div class="description">{{ features.main.section_features.description }}</div>
+                </div>
+                <div class="specifications-wrapper">
+                    <div class="specifications" id="features-wrapper">
+                        {% for banner in features.main.specifications.banner %}
+                            <div class="specification" style="background-image: url('{{ _host }}img/sections/models/features/{{ banner.image }}');">
+                                <div class="title-wrapper" style="color: #fff">
+                                    <div class="title">
+                                        {{ banner.title }}
+                                    </div>
+                                </div>
+                                <div class="description compact">
+                                    <p>{{ banner.description }}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="specifications-controls">
+                    <div class="arrows">
+                        <div class="arrow left"><a class="specifications-controls" href="#left"><span>Left</span></a></div>
+                        <div class="arrow right"><a class="specifications-controls" href="#right"><span>Right</span></a></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="next-link-text gallery">
+                    <a  class="scroll-in-site" id="galeria" href="{{ _host }}modelos/{{ model.key }}#galeria"><span>Visita Galería</span></a>
+                </div>
+            </div>
+        {% endif %}
+    {# block characteristics end #}
+    {# block gallery #}
+        {% set gallery = model.galeria %}
+        {% if gallery %}
+            <a class="section-separator"  name="galeria"></a>
+            <div class="window-adaptable model-section special-padding-top" data-min-height="750">
+                <div class="section-title">
+                    <div class="title">{{ gallery.main.section_gallery.title }}</div>
+                    <div class="description">{{ gallery.main.section_gallery.description }}</div>
+                </div>
+                <div class="galery-grid galery-of-{{ model.key }}">
+                    <div class="content">
+                        {% for boxes_gallery in gallery.main.grid.boxes %}
+                            <div class="view view-first {{ boxes_gallery.class }}">
+                                <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/boxes/{{ boxes_gallery.image }}" />
+                                <div class="mask">
+                                    <a href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ boxes_gallery.mask.class }}/{{ boxes_gallery.mask.href }}" class="info gallery-box-link {{ boxes_gallery.mask.class }}" data-link="">
+                                        <span>&nbsp;</span>
+                                    </a>
+                                </div>
+                            </div>                        
+                        {% endfor %}
+                    </div>
+                    {% set exterior = gallery.main.grid.fancybox.ext %}
+                    {% set interior = gallery.main.grid.fancybox.int %}
+                    {% set special = gallery.main.grid.fancybox.special %}
+                    {% if exterior %}
+                        <div class="hidden-list">
+                            {% for ext in exterior %}
+                                <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ ext.group }}/{{ ext.href }}" data-fancybox-group="{{ ext.group }}" title=". . ." alt=". . .">
+                                    <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ ext.group }}/{{ ext.img }}" alt=". . ."/>
+                                </a>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    {% if interior %}
+                        <div class="hidden-list">
+                            {% for int in interior %}
+                                <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ int.group }}/{{ int.href }}" data-fancybox-group="{{ int.group }}" title=". . ." alt=". . .">
+                                    <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ int.group }}/{{ int.img }}" alt=". . ."/>
+                                </a>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    {% if special %}
+                        <div class="hidden-list">
+                            {% for spe in special %}
+                                <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ spe.group }}/{{ spe.href }}" data-fancybox-group="{{ spe.group }}" title=". . ." alt=". . .">
+                                    <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ spe.group }}/{{ spe.img }}" alt=". . ."/>
+                                </a>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="next-link-text prices" style="margin-top: 40px;">
+                    <a class="scroll-in-site" id="precios" href="{{ _host }}modelos/{{ model.key }}#precios"><span>Visita Versiones</span></a>
+                </div>
+            </div>
+        {% endif %}
+    {# block gallery end #}
+    {# block prices #}
+        {% set prices = model.precios %}
+        {% if prices %}
+            <a class="section-separator"  name="precios"></a>
+            <div class="model-section special-padding-top">
+                <div class="section-title">
+                    <div class="title">{{ prices.main.section_prices.title }}</div>
+                    <div class="description">{{ prices.main.section_prices.description }}</div>
+                </div>
+                <div class="model-prices">
+                    <span class="arrow-prices arrow-prices-left">&nbsp;</span>
+                    <span class="arrow-prices arrow-prices-right">&nbsp;</span>
+                    <div id="features-space-wrapper" class="display-tables" data-display-table="prices">
+                        <div id="features-space-mask">
+                            {% set columns = prices.main.model_prices.columns %}
+                            {% set head = prices.main.model_prices.head %}
+                            {% set body = prices.main.model_prices.body %}
+                            <div id="features-space">
+                                <div class="suzuki-table cols-{{ columns }}" id="versions-price-table">
+                                    <div class="data-wrapper">
+                                        {% if head %}
+                                            <div class="head">
+                                                {% if head.row and head.col %}
+                                                    <div class="row  row-{{ head.row.class }} cols-{{ head.col.class }}">
+                                                        {% if head.cell %}
+                                                            {% if head.cell.first %}
+                                                                <div class="cell  col-{{ head.cell.class }} {{ head.cell.first.class }}">
+                                                                    <div class="image" {% if head.cell.first.style %} style="{{ head.cell.first.style }}" {% endif %}>
+                                                                        <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.first.image }}" />
+                                                                    </div>
+                                                                    <div class="title">
+                                                                        <p>{{ head.cell.first.title }}</p>
+                                                                    </div>
+                                                                </div>
+                                                            {% endif %}
+                                                            {% if head.cell.second %}
+                                                                <div class="cell  col-{{ head.cell.class }}">
+                                                                    <div class="image" {% if head.cell.second.style %} style="{{ head.cell.second.style }}" {% endif %}>
+                                                                        <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.second.image }}" />
+                                                                    </div>
+                                                                    <div class="title">
+                                                                        <p>{{ head.cell.second.title }}</p>
+                                                                    </div>
+                                                                </div>
+                                                            {% endif %}
+                                                            {% if head.cell.third %}
+                                                                <div class="cell  col-{{ head.cell.class }}">
+                                                                    <div class="image" {% if head.cell.third.style %} style="{{ head.cell.third.style }}" {% endif %}>
+                                                                        <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.third.image }}" />
+                                                                    </div>
+                                                                    <div class="title">
+                                                                        <p>{{ head.cell.third.title }}</p>
+                                                                    </div>
+                                                                </div>
+                                                            {% endif %}
+                                                            {% if head.cell.fourth %}
+                                                                <div class="cell  col-{{ head.cell.class }} {{ head.cell.fourth.class }}">
+                                                                    <div class="image" {% if head.cell.fourth.style %} style="{{ head.cell.fourth.style }}" {% endif %}>
+                                                                        <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.fourth.image }}" />
+                                                                    </div>
+                                                                    <div class="title">
+                                                                        <p>{{ head.cell.fourth.title }}</p>
+                                                                    </div>
+                                                                </div>
+                                                            {% endif %}
+                                                        {% endif %}
+                                                    </div>
+                                                {% endif %}
+                                            </div>
+                                        {% endif %}
+                                        {% if body %}
+                                            <div class="body">
+                                                {% for rows in body.row %}
+                                                    <div class="row  row-{{ rows.class }} cols-{{ body.col.class }}">
+                                                        {% if rows.cell.first %}
+                                                            {% if rows.cell.first or rows.cell.first.price %}
+                                                                <div class="cell {#{{ body.height }}#} {{ rows.cell.first.price.class }} col-{{ rows.cell.class }} {{ rows.cell.first.class }}">
+                                                                    <div class="title to-html">
+                                                                        {% if rows.cell.first.title %}
+                                                                            {{ rows.cell.first.title }}
+                                                                        {% endif %}
+                                                                        {% for titles in rows.cell.first.titles %}
+                                                                            {% if titles.span %}
+                                                                                {{ titles.span }}
+                                                                            {% endif %}
+                                                                        {% endfor %}
+                                                                    </div>
+                                                                </div>
+                                                            {% endif %}
+                                                            {% if rows.cell.second or rows.cell.second.price %}
+                                                                <div class="cell {#{{ body.height }}#} {{ rows.cell.second.price.class }} col-{{ rows.cell.class }} {{ rows.cell.second.class }}">
+                                                                    <div class="title to-html">
+                                                                        {% if rows.cell.second.title %}
+                                                                            {{ rows.cell.second.title }}
+                                                                        {% endif %}
+                                                                        {% for titles in rows.cell.second.titles %}
+                                                                            {% if titles.span %}
+                                                                                {{ titles.span }}
+                                                                            {% endif %}
+                                                                        {% endfor %}
+                                                                    </div>
+                                                                </div>
+                                                            {% endif %}
+                                                            {% if rows.cell.third or rows.cell.third.price %}
+                                                                <div class="cell {#{{ body.height }}#} {{ rows.cell.third.price.class }} col-{{ rows.cell.class }} {{ rows.cell.third.class }}">
+                                                                    <div class="title to-html">
+                                                                        {% if rows.cell.third.title %}
+                                                                            {{ rows.cell.third.title }}
+                                                                        {% endif %}
+                                                                        {% for titles in rows.cell.third.titles %}
+                                                                            {% if titles.span %}
+                                                                                {{ titles.span }}
+                                                                            {% endif %}
+                                                                        {% endfor %}
+                                                                    </div>
+                                                                </div>
+                                                            {% endif %}
+                                                            {% if rows.cell.fourth or rows.cell.fourth.price %}
+                                                                <div class="cell {#{{ body.height }}#} {{ rows.cell.fourth.price.class }} col-{{ rows.cell.class }} {{ rows.cell.fourth.class }}">
+                                                                    <div class="title to-html">
+                                                                        {% if rows.cell.fourth.title %}
+                                                                            {{ rows.cell.fourth.title }}
+                                                                        {% endif %}
+                                                                        {% for titles in rows.cell.fourth.titles %}
+                                                                            {% if titles.span %}
+                                                                                {{ titles.span }}
+                                                                            {% endif %}
+                                                                        {% endfor %}
+                                                                    </div>
+                                                                </div>
+                                                            {% endif %}
+                                                        {% endif %}
+                                                    </div>                                                
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            <a style='text-align: center; margin: 30px auto 0 auto; display: block' onclick=ga('send', 'event', 'Material de apoyo', 'Descarga', '{{ model.precios.main.model_prices.event.ga }}' ); href="{{ _host }}files/fichas/{{ model.precios.main.model_prices.event.href }}" target="_blank">
+                                <span class="entypo">&#128196;</span><span>Descargar ficha completa en PDF</span>
+                            </a>
+                            {#<div class="comparative-button-wrapper">#}
+                                {#<a class="swap-display-tables button blue" data-display-table="comparative">Comparar con otros modelos</a>#}
+                            {#</div>#}
+                        </div>
+        {% endif %}
+        {% set maintenance = model.mantenimieto %}
+        {% if maintenance %}
+                        <a name="mantenimiento" id="maintenance-prices" class="maintenance-anchors"></a>
+                        <div class="maintenance-prices">
+                            <div id="maintenance-title" class="section-title">
+                                <div class="title">{{ maintenance.main.maintenance_prices.section_maintenance_prices.title }}</div>
+                            </div>
+                            <div class="suzuki-table cols-{{ maintenance.main.maintenance_prices.table.columns }}" id="versions-maintenance-table">
+                                <div class="data-wrapper">
+                                    <div class="body">
+                                        {% for rows in maintenance.main.maintenance_prices.table.body.row %}
+                                            <div class="row row-{{ rows.class }} cols-{{ maintenance.main.maintenance_prices.table.columns }}" data-id="{{ rows.id }}">
+                                                {% if rows.cell or rows.cell.first.head_class or rows.cell.first %}
+                                                    <div class="cell {{ rows.cell.first.head_class }} col-{{ rows.cell.first.col }} {{ rows.cell.first.class }}">
+                                                        <div class="title">
+                                                            <p>{{ rows.cell.first.title }}</p>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                                {% if rows.cell or rows.cell.second.head_class or rows.cell.second %}
+                                                    <div class="cell {{ rows.cell.second.head_class }} col-{{ rows.cell.second.col }} {{ rows.cell.second.class }}">
+                                                        <div class="title">
+                                                            <p>{{ rows.cell.second.title }}</p>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                                {% if rows.cell or rows.cell.third.head_class or rows.cell.third %}
+                                                    <div class="cell {{ rows.cell.third.head_class }} col-{{ rows.cell.third.col }} {{ rows.cell.third.class }}">
+                                                        <div class="title">
+                                                            <p>{{ rows.cell.third.title }}</p>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                                {% if not rows.cell or rows.cell.fourth.head_class or rows.cell.fourth %}
+                                                    <div class="cell {{ rows.cell.fourth.head_class }} col-{{ rows.cell.fourth.col }} {{ rows.cell.fourth.class }}">
+                                                        <div class="title">
+                                                            <p>{{ rows.cell.fourth.title }}</p>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                                {% if not rows.cell or rows.cell.fifth.head_class or rows.cell.fifth %}
+                                                    <div class="cell {{ rows.cell.fifth.head_class }} col-{{ rows.cell.fifth.col }} {{ rows.cell.fifth.class }}">
+                                                        <div class="title">
+                                                            <p>{{ rows.cell.fifth.title }}</p>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                            </div>                                        
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        {#<div class="maintenance-image" style="background: url('{{ _host }}img/sections/models/prices/big-models/{{ maintenance.main.image }}') right 80px no-repeat;">&nbsp;</div>#}
+                        <div class="clearfix"></div>
+                        <br><br>
+                        <p style="margin: 5px 0 30px; text-align: center;">
+                            <a href="{{ _host }}financiamiento/{{ maintenance.main.key }}" id="go-financing-{{ maintenance.main.key }}" data-gama-model-key="{{ maintenance.main.key }}" data-gama-model-id="{{ model.id }}" class="button red">Pide tu cotización y estrena un {{ maintenance.main.name }}.</a>
+                        </p>
+                        <p id="p-empty">&nbsp;</p>
+                        <div class="next-link-text accesories" style="margin-top: 20px;">
+                            <a class="scroll-in-site" id="accesorios" href="{{ _host }}modelos/{{ model.key }}#accesorios"><span>Visita Accesorios</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {# block prices end #}
+    {# block accessories #}
+        {% set accessories = model.accesorios %}
+        {% if accessories %}
+            <a class="section-separator"  name="accesorios"></a>
+            <div class="model-section special-padding-top">
+                <div class="section-title">
+                    <div class="title">{{ accessories.main.section_gallery.title }}</div>
+                    <div class="description">{{ accessories.main.section_gallery.description }}</div>
+                </div>
+                <div class="galery-grid galery-of-{{ model.key }}" id="accesorios-padding">
+                    <div class="content">
+                        {% for boxes_gallery in accessories.main.grid.boxes %}
+                            <div class="view view-first {{ boxes_gallery.class }}">
+                                <img src="{{ _host }}img/sections/models/accessories/{{ model.key }}/boxes/{{ boxes_gallery.image }}" />
+                                <div class="mask">
+                                    <a href="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ boxes_gallery.mask.href }}" class="info gallery-box-link {{ accessories.main.class }}" data-link="">
+                                        <span>&nbsp;</span>
+                                    </a>
+                                </div>
+                            </div>                        
+                        {% endfor %}
+                    </div>
+                    {% set interior = accessories.main.grid.fancybox.thumbs %}
+                    <div class="hidden-list">
+                        {% if interior %}
+                            {% for thumb in interior %}
+                                <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ thumb.href }}" data-fancybox-group="accesorios" title="{{ thumb.title }}" alt="{{ thumb.title }}">
+                                    <img src="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ thumb.img }}" alt=". . ."/>
+                                </a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    {% if accessories.main.event %}
+                        <p style="margin: 5px 0 30px; text-align: center;">
+                            Pregunta en tu concesionaria por los accesorios para que personalices tu Suzuki.<br /><br />
+                            <a onclick="ga('send', 'event', 'Material de apoyo', 'Descarga', '{{ accessories.main.event.ga }}');" href="{{ _host }}files/accesorios/{{ accessories.main.event.href }}" class="button red" target="_blank">Descargar catálogo de accesorios</a>
+                        </p>
+                    {% endif %}
+                    <div id="next-test" class="next-link-text" style="margin-top: 40px;">
+                        <a  class="scroll-in-site" id="prueba-de-manejo" href="{{ _host }}modelos/{{ model.key }}#prueba-de-manejo"><span>Haz una prueba</span></a>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {# block accessories end #}
+    {# block test drive #}
+        <a class="section-separator"  name="prueba-de-manejo"></a>
+        <div id="instant-drive-section"></div>
+        <div id="text-drive-section" class="model-section special-padding-top  window-adaptable"  data-min-height="700">
+            <div id="test-drive-models">
+                <div class="section-title">
+                    <div class="title">Agendar prueba de manejo</div>
+                    <div class="description">Contactanos para agendar tu prueba de manejo y vivir la experiencia Suzuki.</div>
+                </div>
+                <div id="test-drive-steps">
+                    <div id="header-prueba-manejo-modelos">
+                        <div class="test-panel-tabs">
+                            <ul>
+                                <li class="test-tabs model-test-tab active">
+                                    <a class="model-change-tab" data-number="{{ model.id }}">
+                                        ¿Cuándo quieres hacer tu prueba de manejo?
+                                    </a>
+                                </li>
+                                <li class="test-tabs model-test-tab bg-button-fuinancing active">
+                                    <a class="model-change-tab" href="{{ _host }}financiamiento/{{ model.key }}" id="go-financing-{{ model.key }}" data-gama-model-key="{{ model.key }}" data-gama-model-id="{{ model.id }}">
+                                        Pide tu cotización y estrena un Suzuki {{ model.name }}.
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="content-test-drive-section">
+                            {% embed "modelos/modelo/testdrive_form.twig" %}{% endembed %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="model-section"></div>
+    {# block test drive end #}
+</div>

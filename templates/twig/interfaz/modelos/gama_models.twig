@@ -1,0 +1,45 @@
+{# Begin: Modelos #}
+{% set modelo = mdopa %}
+<div class="header-section" style="display: block;">
+	<div class="header-section-content-wrapper">
+		<div class="close-menu-box">
+			<a id="close-models-panel">Cerrar<span>&nbsp;</span></a>
+		</div>
+		<div class="header-section-content models">
+    		<div class="header-title"></div>
+		    <div class="models-wrapper">
+		    	{% for gama in modelo %}
+			    	<div class="model {{ gama.key }}">
+			            <a href="{{ _host }}modelos/{{ gama.key }}" onclick="ga('send', 'event', 'Gamma Suzuki {{ gama.title }}', 'Liga_interna', '{{ gama.title }} - {{ gama.slogan }}');" class="gama-model cur-hover" id="go-model-{{ gama.key }}" data-gama-model="{{ gama.key }}" data-gama-id="{{ gama.id }}">
+			                <div class="car-preview">
+			                    <span>&nbsp;</span>
+			                </div>
+			                <div class="car-info">
+			                    <div class="title">
+			                        {{ gama.title }}
+			                    </div>
+			                    <div class="slogan">
+			                        {{ gama.slogan }}
+			                    </div>
+			                    <div class="info">
+			                        {{ gama.info }}
+			                    </div>
+			                </div>
+			                <i></i>
+			                <div class="clearfix"></div>
+			            </a>
+			        </div>		    	    
+		    	{% endfor %}
+		        <div class="clearfix"></div>
+		        <div class="note">
+		            <p>* El valor de rendimiento de combustible combinado para este modelo, convenido con las autoridades
+		                correspondientes, es el obtenido mediante pruebas de ciclo en ciudad y en carretera, en condiciones
+		                controladas de laboratorio que no pueden ser reproducibles ni obtenerse en condiciones y hábitos de
+		                manejo convencionales, debido a los factores climatológicos, de combustible, condiciones topográficas, entre otros.
+		            </p>
+		        </div>
+		   	</div>
+		</div>
+	</div>
+</div>
+{# End: Modelos #}

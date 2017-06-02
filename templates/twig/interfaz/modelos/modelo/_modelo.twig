@@ -1,0 +1,59 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+	<link id="model-{{ model.key }}" rel="stylesheet" class="link-model-{{ model.key }}" href="{{ _host }}css/sections/models.css">
+	<link id="financing-test-drive" rel="stylesheet" class="link-financing-test-drive" href="{{ _host }}css/sections/test-drive-selection.css">
+{% endblock %}
+{% block section %}
+	{% set model = mdopa %}
+    <input type="hidden" id="hidden_section" value="{{ model.key }}">
+    <input type="hidden" id="hidden_lugar" value="modelos">
+{% endblock %}
+{% block section_arrow %}
+	<div id="model-section-arrow" style="display: none; top: 0px; margin-left: -403px; opacity: 1;">
+		<span>&nbsp;</span>
+	</div>
+{% endblock %}
+{% block testdrive_flag %}            
+	<div id="model-test-drive-flag">
+		<a href="#prueba-de-manejo" id="model-test-drive-flag-link">
+			<span>Prueba de Manejo</span>
+		</a>
+	</div>
+{% endblock %}
+{% block menu_patch %}    
+	<div class="menu-patch" id="patch">&nbsp;</div>
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}
+		{% block phone_call %}
+		{% endblock %}
+		{% block models_header %}
+			{% embed "menus/models_menu.twig" %}{% endembed %}
+	    {% endblock %}
+	    {% block menu_catalogs %}                
+		    {% embed "menus/list_catallogs.twig" %}{% endembed %}
+		{% endblock %}
+    {% endembed %}
+{% endblock %}
+{% block content_current %}
+    {% embed "modelos/modelo/container.twig" %}{% endembed %}
+{% endblock %}
+{% block scroll_to_top %}
+    {% embed "menus/scrolltotop.twig" %}{% endembed %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}
+	<script src="{{ _host }}js/sections/models.js"></script>
+	<script src="{{ _host }}js/sections/totop.js"></script>
+{% endblock %}
+{% block load_scripts %}
+	toHtmlMethod.toHtml();
+	//_datepicker.init();
+	// Initialization
+    $('.test_drive_model_date').datepicker();
+{% endblock %}

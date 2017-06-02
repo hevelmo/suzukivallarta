@@ -1,0 +1,40 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+	<link id="models" rel="stylesheet" class="link-models" href="{{ _host }}css/sections/models_gama.css">
+{% endblock %}
+{% block section %}
+    <input type="hidden" id="hidden_section" value="modelos">
+{% endblock %}
+{% block menu_patch %}
+	<div class="menu-patch" id="patch">&nbsp;</div>
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}
+		{% block phone_call %}
+		{% endblock %}
+		{% block models_header %}
+	    {% endblock %}
+	    {% block menu_catalogs %}                
+		    {% embed "menus/list_catallogs.twig" %}{% endembed %}
+		{% endblock %}
+    {% endembed %}
+{% endblock %}
+{% block content_current %}
+    {% embed "modelos/container.twig" %}{% endembed %}
+{% endblock %}
+{% block scroll_to_top %}
+    {% embed "menus/scrolltotop.twig" %}{% endembed %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}
+	<script src="{{ _host }}js/sections/totop.js"></script>
+{% endblock %}
+{% block load_scripts %}
+	{#$('.seleccionar').chosen();#}
+	toHtmlMethod.toHtml();
+{% endblock %}

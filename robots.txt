@@ -1,0 +1,24 @@
+# robots.txt
+User-agent: *
+Allow:/
+Disallow: /_backup/
+Disallow: /_backup
+Disallow: /backup/
+Disallow: /backup
+Disallow: /css/
+Disallow: /css
+Disallow: /api
+Disallow: /api/
+Disallow: /templates
+Disallow: /templates/
+Disallow: /js
+Disallow: /js/
+Disallow: /files
+Disallow: /files/
+Disallow: /img
+Disallow: /img/
+Disallow: /incorporate
+Disallow: /incorporate/
+Disallow: /lib
+Disallow: /lib/
+Sitemap: http://suzukivallarta.com.mx/sitemap.xml

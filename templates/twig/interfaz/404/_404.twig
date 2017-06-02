@@ -1,0 +1,34 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+	<link id="404" rel="stylesheet" class="link-404" href="{{ _host }}css/sections/404.css">
+{% endblock %}
+{% block section %}
+    <input type="hidden" id="hidden_section" value="404">
+{% endblock %}
+{% block menu_patch %}    
+	<div class="menu-patch" id="patch">&nbsp;</div>
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}
+	    {% block menu_catalogs %}                
+		    {% embed "menus/list_catallogs.twig" %}{% endembed %}
+		{% endblock %}
+    {% endembed %}
+{% endblock %}
+{% block content_current %}
+    {% embed "404/container.twig" %}{% endembed %}	
+{% endblock %}
+{% block scroll_to_top %}
+    {% embed "menus/scrolltotop.twig" %}{% endembed %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}
+    <script src="{{ _host }}js/sections/totop.js"></script>
+{% endblock %}
+{% block load_scripts %}
+{% endblock %}

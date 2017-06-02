@@ -1,0 +1,53 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+	<link id="contact" rel="stylesheet" class="link-contact" href="{{ _host }}css/sections/contact.css">
+	{#<link id="contact" rel="stylesheet" class="link-contact" href="{{ _host }}css/plugins/jquery.chosen/chosen.css">#}
+	<link id="financing-test-drive" rel="stylesheet" class="link-financing-test-drive" href="{{ _host }}css/sections/test-drive-selection.css">
+{% endblock %}
+
+{% block section %}
+    <input type="hidden" id="hidden_section" value="contact">
+{% endblock %}
+{% block menu_patch %}    
+	<div class="menu-patch" id="patch">&nbsp;</div>
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}
+		{% block phone_call %}
+			{#<div id="phone-call">
+				<a href="tel: +013337771989">
+					<span style="color: #ffffff;">
+				    	Tel. 01(33)3777-1989
+					</span>
+				</a>
+			</div>#}
+		{% endblock %}
+		{% block models_header %}
+			{#{% embed "menus/models_menu.twig" %}{% endembed %}#}
+	    {% endblock %}
+	    {% block menu_catalogs %}                
+		    {% embed "menus/list_catallogs.twig" %}{% endembed %}
+		{% endblock %}
+    {% endembed %}
+{% endblock %}
+{% block content_current %}
+	{% set model = mdopa %}
+    {% embed "contacto/container.twig" %}{% endembed %}
+{% endblock %}
+{% block scroll_to_top %}
+    {% embed "menus/scrolltotop.twig" %}{% endembed %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}
+	{#<script src="{{ _host }}js/sections/contact.js"></script>#}
+    <script src="{{ _host }}js/sections/totop.js"></script>
+{% endblock %}
+{% block load_scripts %}
+	{#$('.seleccionar').chosen();#}
+	$('#suk_model').on('change', getModel.model);
+{% endblock %}

@@ -1,0 +1,38 @@
+{# Begin: Modelos #}
+{% set modelo = mdopa %}
+<div class="header-section financing-general" style="display: block;">
+	<div class="header-section-content-financing-general-wrapper">
+		{#<div class="close-menu-box">
+			<a id="close-models-panel">Cerrar<span>&nbsp;</span></a>
+		</div>#}
+		<div class="header-section-content-financing-general no-padding models">
+    		<div class="header-title"></div>
+		    <div class="models-wrapper">
+		    	{% for gama in modelo %}
+			    	<div class="model {{ gama.key }}">
+			            <a href="{{ _host }}financiamiento/{{ gama.key }}" class="gama-model financing cur-hover" id="go-financing-{{ gama.key }}" data-gama-model="{{ gama.key }}" data-gama-id="{{ gama.id }}">
+			                <div class="car-preview">
+			                    <span>&nbsp;</span>
+			                </div>
+			                <div class="car-info">
+			                    <div class="title">
+			                        {{ gama.title }}
+			                    </div>
+			                    {#<div class="slogan">
+			                        {{ gama.slogan }}
+			                    </div>
+			                    <div class="info">
+			                        {{ gama.info }}
+			                    </div>#}
+			                </div>
+			                <i></i>
+			                <div class="clearfix"></div>
+			            </a>
+			        </div>
+		    	{% endfor %}
+		        <div class="clearfix"></div>
+		   	</div>
+		</div>
+	</div>
+</div>
+{# End: Modelos #}

@@ -1,0 +1,43 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+	<link id="financing" rel="stylesheet" class="link-financing" href="{{ _host }}css/sections/financing-selection.css">
+	<link id="financing-test-drive" rel="stylesheet" class="link-financing-test-drive" href="{{ _host }}css/sections/test-drive-selection.css">
+{% endblock %}
+{% block section %}
+	{% set model = mdopa %}
+    <input type="hidden" id="hidden_section" value="{{ model.key }}">
+    <input type="hidden" id="hidden_lugar" value="modelos">
+{% endblock %}
+{% block menu_patch %}
+	<div class="menu-patch" id="patch">&nbsp;</div>
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}
+		{% block phone_call %}
+		{% endblock %}
+		{% block models_header %}
+	    {% endblock %}
+	    {% block menu_catalogs %}                
+		    {% embed "menus/list_catallogs.twig" %}{% endembed %}
+		{% endblock %}
+    {% endembed %}
+{% endblock %}
+{% block content_current %}
+    {% embed "financiamiento/modelo/container.twig" %}{% endembed %}
+{% endblock %}
+{% block scroll_to_top %}
+    {% embed "menus/scrolltotop.twig" %}{% endembed %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}
+	{#<script src="{{ _host }}js/sections/models.js"></script>#}
+    <script src="{{ _host }}js/sections/totop.js"></script>
+{% endblock %}
+{% block load_scripts %}
+	toHtmlMethod.toHtml();
+{% endblock %}

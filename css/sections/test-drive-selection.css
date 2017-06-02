@@ -1,0 +1,693 @@
+.promotion-financing.ignis-bg {
+    background: url("../../img/template/models/financing/ignis-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing.swift-sport-bg {
+    background: url("../../img/template/models/financing/swift-sport-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing.swift-bg {
+    background: url("../../img/template/models/financing/swift-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing.kizashi-bg {
+    background: url("../../img/template/models/financing/kizashi-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing.grand-vitara-bg {
+    background: url("../../img/template/models/financing/grand-vitara-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing.s-cross-bg {
+    background: url("../../img/template/models/financing/s-cross-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing.ciaz-bg {
+    background: url("../../img/template/models/financing/ciaz-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing.nueva-vitara-bg {
+    background: url("../../img/template/models/financing/nueva-vitara-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+/*.promotion-financing{
+	background:url("../../img/sections/contact/financingo-bg.jpg") center top no-repeat;
+	padding:95px 0 0;
+}*/
+.promos-wrapper-financing{
+	height:auto;
+}
+.promos-container-financing{
+	height:auto;
+}
+.promo-content-financing{
+	margin:55px auto 0;
+	width:960px;
+}
+.promo-content-financing .description{
+	margin:0;
+	height:50px;
+	font-weight:300;
+	color:#ffffff;
+	font-size:18px;
+	line-height:16px;
+}
+.promo-content-financing .description p{
+	color:#fff;
+	margin:0;
+    font-weight: bolder;
+}
+.promo-content-financing .description p.description_title{
+	font-size:24px;
+	line-height:24px;
+	font-weight: 500;
+	text-shadow: 2px 0px 1px rgba(0, 0, 0, 0.8);
+}
+#form-wrapper{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.financing_main{
+	margin:0 auto 30px;
+	width:960px;
+}
+.financing_main .financing_content{
+	float:left;
+	width:100%;
+}
+.financing_main .financing_content .financing_elements{
+	width:540px;
+	height:auto;
+	float:left;
+}
+.financing_main .financing_content .financing_elements .financing_element{
+	height:auto;
+	width:49%;
+}
+.financing_main .financing_content .financing_elements .financing_element .chzn-container{
+	width:265px !important;
+}
+.financing_main .financing_content .financing_elements .financing_element input{
+	width:233px;
+}
+.financing_main .financing_content .financing_elements .financing_element.a{
+	float:left;
+	margin-right:1%;
+}
+.financing_main .financing_content .financing_elements .financing_element.b{
+	float:right;
+	margin-left:1%;
+}
+.financing_main .financing_content .financing_elements .financing_element.ab{
+	float:none;
+	height:auto;
+	width:100%;
+}
+.financing_main .financing_content .financing_elements .financing_element.ab textarea{
+	width:94%;
+	height:60px;
+}
+.financing_main .financing_content .financing_elements .financing_element.ab .invalid-message{
+	width:519px;
+}
+.financing_main .financing_sidebar{
+	float:right;
+	width:370px;
+}
+.financing_main .financing_sidebar .financing_social{
+	width:330px;
+	padding:20px;
+	background-color:#f7f7f7;
+	font-size:13px;
+}
+.financing_main .financing_sidebar .financing_social p{
+	font-size:13px;
+}
+.financing_main .financing_sidebar .financing_social p.financing_social_title{
+	font-weight:700;
+	font-size:15px;
+	line-height:15px;
+}
+.financing_main .financing_sidebar .financing_social .social{
+	width:200px;
+	height:20px;
+	line-height:27px;
+	padding:0 0 0 35px;
+	margin:10px 0;
+}
+.financing_main .financing_sidebar .financing_social .social a,.financing_main .financing_sidebar .financing_social .social a:hover{
+	line-height:27px;
+	color:#000;
+	text-decoration:none;
+}
+.financing_main .financing_sidebar .financing_social .social.fb{
+	margin-top:30px;
+	background:url("../../img/sections/contact/fb.png") no-repeat;
+}
+.financing_main .financing_sidebar .financing_social .social.in{
+	background:url("../../img/sections/contact/in.png") no-repeat;
+}
+.financing_main .financing_sidebar .financing_social .social.tw{
+	background:url("../../img/sections/contact/tw.png") no-repeat;
+}
+.financing_alert{
+	background:url("../../img/sections/contact/alert-icon.png") no-repeat #e0261b;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	color:#ffffff;
+	display:none;
+	font-size:15px;
+	height:35px;
+	margin:10px 0;
+	padding:10px 0 0 45px;
+	width:495px;
+}
+.enviar{
+	width:auto !important;
+	font-family:'Lato';
+	font-weight:300;
+}
+#recibir_noticias{
+	margin:20px 0;
+}
+#revisa_aviso{
+	margin-top:20px;
+	font-size:14px;
+	line-height:19px;
+}
+#revisa_aviso a{
+	color:#0051ad;
+	text-decoration:underline;
+}
+.enviar:hover{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0c6dc4), color-stop(1, #0c6dc4));
+	background:-moz-linear-gradient(center top, #0c6dc4 5%, #0c6dc4 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c6dc4', endColorstr='#0c6dc4');
+	background-color:#0c6dc4;
+	color:#ffffff;
+	text-decoration:none;
+}
+.enviar:active{
+	top:1px;
+}
+.financing_element_mistake{
+	color:#e64f54;
+	font-weight:700;
+}
+.form-thanks, .form-error{
+	text-align:center;
+	width:540px;
+	margin-top:30px;
+	position:relative;
+}
+.form-thanks .agradecimiento_titulo,
+.form-error .agradecimiento_titulo {
+	color:#003751;
+	font-size:25px;
+	font-weight:400;
+}
+.form-thanks .agradecimiento_titulo2,
+.form-error .agradecimiento_titulo2 {
+	font-size:16px;
+	font-weight:400;
+}
+.form-thanks .agradecimiento_titulo3{
+	color:#000000;
+	font-size:14px;
+	font-weight:300;
+	font-style:italic;
+}
+.form-thanks hr,
+.form-error hr {
+	border:0;
+	width:100%;
+	color:#f00;
+	background-color:#dfdfdf;
+	height:1px;
+}
+.form-thanks .arrow{
+	position:absolute;
+	bottom:-65px;
+	right:-61px;
+	z-index:9;
+}
+
+.form-loader {
+    position: relative;
+    top: 0;
+    background: rgba(255,255,255,0);
+    left: 0%;
+}
+.loader {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+  margin-bottom: 20px;
+}
+.loader-wrap {
+    top: -11%;
+    left: -40%;
+}
+.loader-wrap {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  -webkit-transform: translate(310%,2%);
+  -ms-transform: translate(310%,2%);
+  -o-transform: translate(310%,2%);
+  transform: translate(310%,2%);
+}
+.loader-item {
+    border: 6px solid rgba(96, 125, 139, 0.31);
+    border-bottom-color: rgb(144, 164, 174);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    -webkit-animation: spin 1.7s linear infinite;
+    -o-animation: spin 1.7s linear infinite;
+    animation: spin 1.7s linear infinite;
+    -webkit-font-smoothing: antialiased !important;
+}
+.loader-wrap:before {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    content: '';
+    width: 60px;
+    height: 60px;
+    /*
+    background-image: url(../../img/logo/loader-logo-suzuki-02.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    */
+    color: transparent;
+}
+.loader-wrap:after {
+    position: fixed;
+    content: 'PROCESANDO';
+    color: #000;
+    left: -275%;
+    top: 10px;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.loader-item {
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+.loader-item {
+  -webkit-animation: spin 1s infinite steps(8);
+  animation: spin 1s infinite steps(8);
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.form-thanks {
+  text-align: center;
+  width: 100%;
+  height: 697px;
+  margin-top: 30px;
+  position: relative;
+}
+.form-thanks.thanks-short {
+  width: 100%;
+}
+.form-thanks .agradecimiento_titulo {
+  color:#003751;
+  font-size:25px;
+  font-weight:400;
+}
+.form-thanks .agradecimiento_titulo2 {
+  font-size:16px;
+  font-weight:400;
+}
+.form-thanks .agradecimiento_titulo3 {
+  color:#000000;
+  font-size:14px;
+  font-weight:300;
+  font-style:italic;
+}
+.form-thanks hr {
+  border:0;
+  width:100%;
+  color:#f00;
+  background-color:#dfdfdf;
+  height:1px;
+}
+.form-thanks .arrow {
+  position:absolute;
+  bottom:-65px;
+  right:-61px;
+  z-index:9;
+}
+
+@media only screen and (max-device-width: 767px){
+	.promos-wrapper-financing {
+		height:auto;
+		padding:15px;
+	}
+	.promos-container-financing {
+		height:auto;
+	}
+	.promotion-financing.swift-sport-bg,
+	.promotion-financing.swift-bg,
+	.promotion-financing.kizashi-bg,
+	.promotion-financing.grand-vitara-bg,
+	.promotion-financing.s-cross-bg,
+	.promotion-financing.ciaz-bg,
+	.promotion-financing.nueva-vitara-bg,
+	.promotion-financing {
+		background:none !important;
+		padding:0 !important;
+	}
+	.promo-content-financing {
+		width:100%;
+		margin:0 auto;
+	}
+	.promo-content-financing .description {
+		height:auto;
+		color:#333;
+	}
+	.promo-content-financing .description .description_title {
+		text-align:center;
+		margin:18px 0 20px;
+		font-size:20px;
+		width:100%;
+		text-shadow: 0 0 0 transparent !important;
+	}
+	.promo-content-financing .description p {
+		color:inherit;
+		line-height:19px;
+		font-size:14px;
+		width:85%;
+	}
+	.financing_main {
+		width:100%;
+		margin:0 auto;
+	}
+	.financing_main .financing_content {
+		width:100%;
+		float:none;
+		overflow:hidden;
+	}
+	.financing_main .financing_content .financing_elements {
+		width:100%;
+		height:auto;
+	}
+	.financing_main .financing_content .financing_elements .financing_element,
+	.financing_main .financing_content .financing_elements .financing_element.a,
+	.financing_main .financing_content .financing_elements .financing_element.b,
+	.financing_main .financing_content .financing_elements .financing-element.ab {
+		width:100%;
+		height:auto !important;
+		float:none;
+		min-height:0px;
+		margin:0;
+	}
+	.financing_main .financing_content .financing_elements .financing_element p,
+	.financing_main .financing_content .financing_elements .financing_element.a p,
+	.financing_main .financing_content .financing_elements .financing_element.b p,
+	.financing_main .financing_content .financing_elements .financing-element.ab p {
+		margin:0 0 5px 0;
+	}
+	.financing_main .financing_content .financing_elements .financing_element p label,
+	.financing_main .financing_content .financing_elements .financing_element.a p label,
+	.financing_main .financing_content .financing_elements .financing_element.b p label,
+	.financing_main .financing_content .financing_elements .financing-element.ab p label {
+		font-weight:bold;
+		font-size:14px;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .invalid-message,
+	.financing_main .financing_content .financing_elements .financing_element.a .invalid-message,
+	.financing_main .financing_content .financing_elements .financing_element.b .invalid-message,
+	.financing_main .financing_content .financing_elements .financing-element.ab .invalid-message {
+		margin:10px 0 0;
+		width:96% !important;
+		padding:7px 2%;
+	}
+	.financing_main .financing_content .financing_elements .financing_element input,
+	.financing_main .financing_content .financing_elements .financing_element .icon,
+	.financing_main .financing_content .financing_elements .financing_element textarea,
+	.financing_main .financing_content .financing_elements .financing_element.a input,
+	.financing_main .financing_content .financing_elements .financing_element.a .icon,
+	.financing_main .financing_content .financing_elements .financing_element.a textarea,
+	.financing_main .financing_content .financing_elements .financing_element.b input,
+	.financing_main .financing_content .financing_elements .financing_element.b .icon,
+	.financing_main .financing_content .financing_elements .financing_element.b textarea,
+	.financing_main .financing_content .financing_elements .financing-element.ab input,
+	.financing_main .financing_content .financing_elements .financing-element.ab .icon,
+	.financing_main .financing_content .financing_elements .financing-element.ab textarea {
+		width:95%;
+		min-width:95% !important;
+		padding:13px 2% !important;
+	}
+	.financing_main .financing_content .financing_elements .financing_element textarea,
+	.financing_main .financing_content .financing_elements .financing_element.a textarea,
+	.financing_main .financing_content .financing_elements .financing_element.b textarea,
+	.financing_main .financing_content .financing_elements .financing-element.ab textarea {
+		margin:0;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .enviar,
+	.financing_main .financing_content .financing_elements .financing_element.a .enviar,
+	.financing_main .financing_content .financing_elements .financing_element.b .enviar,
+	.financing_main .financing_content .financing_elements .financing-element.ab .enviar {
+		background-color:#003f87 !important;
+		width:100% !important;
+		padding:12px 0 !important;
+		-moz-border-radius:2px;
+		-webkit-border-radius:2px;
+		border-radius:2px;
+		text-align:center;
+		font-weight:normal;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .chzn-container,
+	.financing_main .financing_content .financing_elements .financing_element.a .chzn-container,
+	.financing_main .financing_content .financing_elements .financing_element.b .chzn-container,
+	.financing_main .financing_content .financing_elements .financing-element.ab .chzn-container {
+		width:100% !important;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .chzn-container .chzn-single,
+	.financing_main .financing_content .financing_elements .financing_element.a .chzn-container .chzn-single,
+	.financing_main .financing_content .financing_elements .financing_element.b .chzn-container .chzn-single,
+	.financing_main .financing_content .financing_elements .financing-element.ab .chzn-container .chzn-single {
+		padding:10px 5px;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .chzn-container .chzn-single div,
+	.financing_main .financing_content .financing_elements .financing_element.a .chzn-container .chzn-single div,
+	.financing_main .financing_content .financing_elements .financing_element.b .chzn-container .chzn-single div,
+	.financing_main .financing_content .financing_elements .financing-element.ab .chzn-container .chzn-single div {
+		top:9px;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .chzn-container .chzn-drop,
+	.financing_main .financing_content .financing_elements .financing_element.a .chzn-container .chzn-drop,
+	.financing_main .financing_content .financing_elements .financing_element.b .chzn-container .chzn-drop,
+	.financing_main .financing_content .financing_elements .financing-element.ab .chzn-container .chzn-drop {
+		width:99.5% !important;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .chzn-container .chzn-drop .chzn-search input,
+	.financing_main .financing_content .financing_elements .financing_element.a .chzn-container .chzn-drop .chzn-search input,
+	.financing_main .financing_content .financing_elements .financing_element.b .chzn-container .chzn-drop .chzn-search input,
+	.financing_main .financing_content .financing_elements .financing-element.ab .chzn-container .chzn-drop .chzn-search input {
+		min-width:93.5% !important;
+	}
+	.financing_main .financing_sidebar {
+		float:none;
+		width:100%;
+		margin:25px 0 10px;
+	}
+	.financing_main .financing_sidebar .financing_social {
+		width:auto;
+		display:block;
+	}
+	.financing_main .financing_sidebar .financing_social .financing_social_title {
+		font-size:18px !important;
+		font-weight:normal !important;
+	}
+	.financing_main .financing_sidebar .financing_social p,
+	.financing_main .financing_sidebar .financing_social .social a {
+		font-size:14px;
+		color:#333;
+	}
+	.financing_alert {
+		width:100%;
+		min-height:25px;
+		height:auto;
+		padding:10px 0;
+		background-position:0 50%;
+	}
+	.financing_alert span {
+		padding:0 10px 0 45px;
+		display:block;
+	}
+	.form-thanks {
+		width:100%;
+		text-align:left;
+	}
+	.form-thanks .agradecimiento_titulo {
+		font-size:16px;
+		text-align:center;
+		font-weight:bold;
+		padding-bottom:15px;
+		border-bottom:1px solid #e5e5e5;
+	}
+	.form-thanks .agradecimiento_titulo2 {
+		font-size:14px;
+		color:#333;
+	}
+	.form-thanks .agradecimiento_titulo2 span {
+		display:block;
+		margin:20px 0;
+		color:inherit;
+	}
+	.form-thanks .agradecimiento_titulo3 {
+		font-weight:normal;
+	}
+	.form-thanks hr {
+		display:none;
+	}
+	.form-thanks .arrow {
+		display:none;
+	}
+	#recibir_noticias {
+		margin:20px 0;
+	}
+	#form-wrapper {
+		margin-top:20px;
+		overflow:hidden;
+	}
+}
+._main{
+	margin:0 auto 30px;
+	width:960px;
+}
+._main ._content{
+	float:left;
+	width:100%;
+}
+._main ._content ._elements{
+	width:540px;
+	height:auto;
+	float:left;
+}
+._main ._content ._elements ._element{
+	height:auto;
+	width:49%;
+}
+._main ._content ._elements ._element .chzn-container{
+	width:265px !important;
+}
+._main ._content ._elements ._element input{
+	width:233px;
+}
+._main ._content ._elements ._element.a{
+	float:left;
+	margin-right:1%;
+}
+._main ._content ._elements ._element.b{
+	float:right;
+	margin-left:1%;
+}
+._main ._content ._elements ._element.ab{
+	float:none;
+	height:auto;
+	width:100%;
+}
+._main ._content ._elements ._element.ab textarea{
+	width:94%;
+	height:60px;
+}
+._main ._content ._elements ._element.ab .invalid-message{
+	width:519px;
+}
+/* NEW FORM FINANCING */
+#model_select_preview .thumb-model {
+  	display: block;
+  	margin: 0px auto 0px;
+  	padding: 0px 15px 0px;
+}
+.content-thumb-model img.thumb-model {
+	width: 85%;	
+}
+#model_select_title.secondary-title {
+  color: #003145;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 100%;
+  text-align: center;
+  padding: 15px 0 15px;
+  margin: 15px auto;
+}
+
+#content-financing-newform .fieldset-radio-checkbox {
+	margin: 0;
+    padding: 10px 0 0px;
+    float: left;
+    width: auto;
+    margin-right: 50px;
+}
+/* */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.car-main .car-next-step {
+		margin: 0px auto 0 !important;
+	}
+}
+@media screen and (min-width: 414px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1280px) {
+}
+@media (min-width: 1440px) {
+}
+@media screen and (min-width: 1680px) {
+}
+@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 768px) {
+}
+.text-center {
+	text-align: center;
+}
+
+.borderleft {
+	border-left: 1px solid #e5e5e5;
+}
+.border-bottom {	
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+.btn-select-input {
+	opacity: 0;
+}
+.alert-error {
+	/*display: none;*/
+}

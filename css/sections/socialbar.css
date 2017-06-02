@@ -1,0 +1,30 @@
+.social-bar {
+    position:fixed;
+    top:180px;
+    width:35px;
+    z-index:10
+}
+.social-bar .social-links {
+    background-color:#013A55;
+    padding:2px
+}
+.social-bar .social-links .social-link a {
+    background:url("../../img/template/common/social-left-bar/facebook.png") center center no-repeat;
+    display:block;
+    height:27px
+}
+.social-bar .social-links .social-link a span {
+    display:none
+}
+.social-bar .social-links .social-link a.facebook {
+    background-image:url("../../img/template/common/social-left-bar/facebook.png")
+}
+.social-bar .social-links .social-link a.twitter {
+    background-image:url("../../img/template/common/social-left-bar/twitter.png")
+}
+.social-bar .social-links .social-link a.instagram {
+    background-image:url("../../img/template/common/social-left-bar/instagram.png")
+}
+.social-bar .social-links .social-link a.pinterest {
+    background-image:url("../../img/template/common/social-left-bar/pinterest.png")
+}

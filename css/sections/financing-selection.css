@@ -1,0 +1,949 @@
+.promotion-financing-general.swift-sport-bg {
+    background: url("../../img/template/models/financing/swift-sport-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing-general.swift-bg {
+    background: url("../../img/template/models/financing/swift-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing-general.kizashi-bg {
+    background: url("../../img/template/models/financing/kizashi-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing-general.grand-vitara-bg {
+    background: url("../../img/template/models/financing/grand-vitara-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing-general.s-cross-bg {
+    background: url("../../img/template/models/financing/s-cross-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing-general.ciaz-bg {
+    background: url("../../img/template/models/financing/ciaz-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing-general.nueva-vitara-bg {
+    background: url("../../img/template/models/financing/nueva-vitara-1500x200.jpg") center top no-repeat;
+    padding: 95px 0 0;
+}
+.promotion-financing-general{
+	background:url("../../img/sections/contact/todos-suzuki-1500x200.jpg") center top no-repeat;
+	padding:95px 0 0;
+}
+.promos-wrapper-financing-general{
+	height:auto;
+}
+.promos-container-financing-general{
+	height:auto;
+}
+.promo-content-financing-general{
+	margin:55px auto 0;
+	width:960px;
+}
+.promo-content-financing-general .description{
+	margin:0;
+	height:50px;
+	font-weight:300;
+	color:#ffffff;
+	font-size:18px;
+	line-height:16px;
+}
+.promo-content-financing-general .description p{
+	color:#fff;
+	margin:0;
+    font-weight: bolder;
+}
+.promo-content-financing-general .description p.description_title{
+	font-size:24px;
+	line-height:24px;
+	font-weight: 500;
+	text-shadow: 2px 0px 1px rgba(0, 0, 0, 0.8);
+}
+#form-wrapper{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.financing_main{
+	margin:0 auto 30px;
+	width:960px;
+}
+.financing_main .financing_content{
+	float:left;
+	width:100%;
+}
+.financing_main .financing_content .financing_elements{
+	width:540px;
+	height:auto;
+	float:left;
+}
+.financing_main .financing_content .financing_elements .financing_element{
+	height:auto;
+	width:49%;
+}
+.financing_main .financing_content .financing_elements .financing_element .chzn-container{
+	width:265px !important;
+}
+.financing_main .financing_content .financing_elements .financing_element input{
+	width:233px;
+}
+.financing_main .financing_content .financing_elements .financing_element.a{
+	float:left;
+	margin-right:1%;
+}
+.financing_main .financing_content .financing_elements .financing_element.b{
+	float:right;
+	margin-left:1%;
+}
+.financing_main .financing_content .financing_elements .financing_element.ab{
+	float:none;
+	height:auto;
+	width:100%;
+}
+.financing_main .financing_content .financing_elements .financing_element.ab textarea{
+	width:94%;
+	height:60px;
+}
+.financing_main .financing_content .financing_elements .financing_element.ab .invalid-message{
+	width:519px;
+}
+.financing_main .financing_sidebar{
+	float:right;
+	width:370px;
+}
+.financing_main .financing_sidebar .financing_social{
+	width:330px;
+	padding:20px;
+	background-color:#f7f7f7;
+	font-size:13px;
+}
+.financing_main .financing_sidebar .financing_social p{
+	font-size:13px;
+}
+.financing_main .financing_sidebar .financing_social p.financing_social_title{
+	font-weight:700;
+	font-size:15px;
+	line-height:15px;
+}
+.financing_main .financing_sidebar .financing_social .social{
+	width:200px;
+	height:20px;
+	line-height:27px;
+	padding:0 0 0 35px;
+	margin:10px 0;
+}
+.financing_main .financing_sidebar .financing_social .social a,.financing_main .financing_sidebar .financing_social .social a:hover{
+	line-height:27px;
+	color:#000;
+	text-decoration:none;
+}
+.financing_main .financing_sidebar .financing_social .social.fb{
+	margin-top:30px;
+	background:url("../../img/sections/contact/fb.png") no-repeat;
+}
+.financing_main .financing_sidebar .financing_social .social.in{
+	background:url("../../img/sections/contact/in.png") no-repeat;
+}
+.financing_main .financing_sidebar .financing_social .social.tw{
+	background:url("../../img/sections/contact/tw.png") no-repeat;
+}
+.financing_alert{
+	background:url("../../img/sections/contact/alert-icon.png") no-repeat #e0261b;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	color:#ffffff;
+	display:none;
+	font-size:15px;
+	height:35px;
+	margin:10px 0;
+	padding:10px 0 0 45px;
+	width:495px;
+}
+.enviar{
+	width:auto !important;
+	font-family:'Lato';
+	font-weight:300;
+}
+#recibir_noticias{
+	margin:20px 0;
+}
+#revisa_aviso{
+	margin-top:20px;
+	font-size:14px;
+	line-height:19px;
+}
+#revisa_aviso a{
+	color:#0051ad;
+	text-decoration:underline;
+}
+.enviar:hover{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0c6dc4), color-stop(1, #0c6dc4));
+	background:-moz-linear-gradient(center top, #0c6dc4 5%, #0c6dc4 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c6dc4', endColorstr='#0c6dc4');
+	background-color:#0c6dc4;
+	color:#ffffff;
+	text-decoration:none;
+}
+.enviar:active{
+	top:1px;
+}
+.financing_element_mistake{
+	color:#e64f54;
+	font-weight:700;
+}
+.form-thanks, .form-error{
+	text-align:center;
+	width:540px;
+	margin-top:30px;
+	position:relative;
+}
+.form-thanks .agradecimiento_titulo,
+.form-error .agradecimiento_titulo {
+	color:#003751;
+	font-size:25px;
+	font-weight:400;
+}
+.form-thanks .agradecimiento_titulo2,
+.form-error .agradecimiento_titulo2 {
+	font-size:16px;
+	font-weight:400;
+}
+.form-thanks .agradecimiento_titulo3{
+	color:#000000;
+	font-size:14px;
+	font-weight:300;
+	font-style:italic;
+}
+.form-thanks hr,
+.form-error hr {
+	border:0;
+	width:100%;
+	color:#f00;
+	background-color:#dfdfdf;
+	height:1px;
+}
+.form-thanks .arrow{
+	position:absolute;
+	bottom:-65px;
+	right:-61px;
+	z-index:9;
+}
+
+.loader-wrap {
+    top: -11%;
+    left: -40%;
+}
+.loader {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 550px;
+	z-index: 1000;
+	background-color: rgba(255, 255, 255, 0.78);
+}
+.loader-wrap {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    -webkit-transform: translate(414%,261%);
+    -ms-transform: translate(414%,261%);
+    -o-transform: translate(414%,261%);
+    transform: translate(414%,261%);
+}
+.loader-item {
+  border: 2px solid rgba(23, 22, 23, 0.25);
+  border-bottom-color: #e1251b;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-transition: all .9s ease-in-out;
+  -o-transition: all .9s ease-in-out;
+  transition: all .9s ease-in-out;
+  /*-webkit-font-smoothing: antialiased!important;
+  -webkit-animation: spin 1.7s linear infinite;
+  -o-animation: spin 1.7s linear infinite;
+  animation: spin 1.7s linear infinite;*/
+}
+.loader-wrap:before {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-image: url(../../img/loader-logo-suzuki-02.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.loader-wrap:after {
+    position: fixed;
+    content: 'PROCESANDO';
+    color: #000;
+    left: -14px;
+    right: 0;
+    top: -25px;
+}
+.loader-item {
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+.loader-item {
+  -webkit-animation: spin 1s infinite steps(8);
+  animation: spin 1s infinite steps(8);
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+
+@media only screen and (max-device-width: 767px){
+	.promos-wrapper-financing-general {
+		height:auto;
+		padding:15px;
+	}
+	.promos-container-financing-general {
+		height:auto;
+	}
+	.promotion-financing-general.swift-sport-bg,
+	.promotion-financing-general.swift-bg,
+	.promotion-financing-general.kizashi-bg,
+	.promotion-financing-general.grand-vitara-bg,
+	.promotion-financing-general.s-cross-bg,
+	.promotion-financing-general.ciaz-bg,
+	.promotion-financing-general.nueva-vitara-bg,
+	.promotion-financing-general {
+		background:none;
+		padding:0;
+	}
+	.promo-content-financing-general {
+		width:100%;
+		margin:0 auto;
+	}
+	.promo-content-financing-general .description {
+		height:auto;
+		color:#333;
+	}
+	.promo-content-financing-general .description .description_title {
+		text-align:center;
+		margin:18px 0 20px;
+		font-size:20px;
+		width:100%;
+		text-shadow: 0 0 0 transparent !important;
+	}
+	.promo-content-financing-general .description p {
+		color:inherit;
+		line-height:19px;
+		font-size:14px;
+		width:85%;
+		width: 100%;
+		text-align: center;
+	}
+	.financing_main {
+		width:100%;
+		margin:0 auto;
+	}
+	.financing_main .financing_content {
+		width:100%;
+		float:none;
+		overflow:hidden;
+	}
+	.financing_main .financing_content .financing_elements {
+		width:100%;
+		height:auto;
+	}
+	.financing_main .financing_content .financing_elements .financing_element,
+	.financing_main .financing_content .financing_elements .financing_element.a,
+	.financing_main .financing_content .financing_elements .financing_element.b,
+	.financing_main .financing_content .financing_elements .financing-element.ab {
+		width:100%;
+		height:auto !important;
+		float:none;
+		min-height:90px;
+		margin:0;
+	}
+	.financing_main .financing_content .financing_elements .financing_element p,
+	.financing_main .financing_content .financing_elements .financing_element.a p,
+	.financing_main .financing_content .financing_elements .financing_element.b p,
+	.financing_main .financing_content .financing_elements .financing-element.ab p {
+		margin:0 0 5px 0;
+	}
+	.financing_main .financing_content .financing_elements .financing_element p label,
+	.financing_main .financing_content .financing_elements .financing_element.a p label,
+	.financing_main .financing_content .financing_elements .financing_element.b p label,
+	.financing_main .financing_content .financing_elements .financing-element.ab p label {
+		font-weight:bold;
+		font-size:14px;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .invalid-message,
+	.financing_main .financing_content .financing_elements .financing_element.a .invalid-message,
+	.financing_main .financing_content .financing_elements .financing_element.b .invalid-message,
+	.financing_main .financing_content .financing_elements .financing-element.ab .invalid-message {
+		margin:10px 0 0;
+		width:96% !important;
+		padding:7px 2%;
+	}
+	.financing_main .financing_content .financing_elements .financing_element input,
+	.financing_main .financing_content .financing_elements .financing_element .icon,
+	.financing_main .financing_content .financing_elements .financing_element textarea,
+	.financing_main .financing_content .financing_elements .financing_element.a input,
+	.financing_main .financing_content .financing_elements .financing_element.a .icon,
+	.financing_main .financing_content .financing_elements .financing_element.a textarea,
+	.financing_main .financing_content .financing_elements .financing_element.b input,
+	.financing_main .financing_content .financing_elements .financing_element.b .icon,
+	.financing_main .financing_content .financing_elements .financing_element.b textarea,
+	.financing_main .financing_content .financing_elements .financing-element.ab input,
+	.financing_main .financing_content .financing_elements .financing-element.ab .icon,
+	.financing_main .financing_content .financing_elements .financing-element.ab textarea {
+		width:95%;
+		min-width:95% !important;
+		padding:13px 2% !important;
+	}
+	.financing_main .financing_content .financing_elements .financing_element textarea,
+	.financing_main .financing_content .financing_elements .financing_element.a textarea,
+	.financing_main .financing_content .financing_elements .financing_element.b textarea,
+	.financing_main .financing_content .financing_elements .financing-element.ab textarea {
+		margin:0;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .enviar,
+	.financing_main .financing_content .financing_elements .financing_element.a .enviar,
+	.financing_main .financing_content .financing_elements .financing_element.b .enviar,
+	.financing_main .financing_content .financing_elements .financing-element.ab .enviar {
+		background-color:#003f87 !important;
+		width:100% !important;
+		padding:12px 0 !important;
+		-moz-border-radius:2px;
+		-webkit-border-radius:2px;
+		border-radius:2px;
+		text-align:center;
+		font-weight:normal;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .chzn-container,
+	.financing_main .financing_content .financing_elements .financing_element.a .chzn-container,
+	.financing_main .financing_content .financing_elements .financing_element.b .chzn-container,
+	.financing_main .financing_content .financing_elements .financing-element.ab .chzn-container {
+		width:100% !important;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .chzn-container .chzn-single,
+	.financing_main .financing_content .financing_elements .financing_element.a .chzn-container .chzn-single,
+	.financing_main .financing_content .financing_elements .financing_element.b .chzn-container .chzn-single,
+	.financing_main .financing_content .financing_elements .financing-element.ab .chzn-container .chzn-single {
+		padding:10px 5px;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .chzn-container .chzn-single div,
+	.financing_main .financing_content .financing_elements .financing_element.a .chzn-container .chzn-single div,
+	.financing_main .financing_content .financing_elements .financing_element.b .chzn-container .chzn-single div,
+	.financing_main .financing_content .financing_elements .financing-element.ab .chzn-container .chzn-single div {
+		top:9px;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .chzn-container .chzn-drop,
+	.financing_main .financing_content .financing_elements .financing_element.a .chzn-container .chzn-drop,
+	.financing_main .financing_content .financing_elements .financing_element.b .chzn-container .chzn-drop,
+	.financing_main .financing_content .financing_elements .financing-element.ab .chzn-container .chzn-drop {
+		width:99.5% !important;
+	}
+	.financing_main .financing_content .financing_elements .financing_element .chzn-container .chzn-drop .chzn-search input,
+	.financing_main .financing_content .financing_elements .financing_element.a .chzn-container .chzn-drop .chzn-search input,
+	.financing_main .financing_content .financing_elements .financing_element.b .chzn-container .chzn-drop .chzn-search input,
+	.financing_main .financing_content .financing_elements .financing-element.ab .chzn-container .chzn-drop .chzn-search input {
+		min-width:93.5% !important;
+	}
+	.financing_main .financing_sidebar {
+		float:none;
+		width:100%;
+		margin:25px 0 10px;
+	}
+	.financing_main .financing_sidebar .financing_social {
+		width:auto;
+		display:block;
+	}
+	.financing_main .financing_sidebar .financing_social .financing_social_title {
+		font-size:18px !important;
+		font-weight:normal !important;
+	}
+	.financing_main .financing_sidebar .financing_social p,
+	.financing_main .financing_sidebar .financing_social .social a {
+		font-size:14px;
+		color:#333;
+	}
+	.financing_alert {
+		width:100%;
+		min-height:25px;
+		height:auto;
+		padding:10px 0;
+		background-position:0 50%;
+	}
+	.financing_alert span {
+		padding:0 10px 0 45px;
+		display:block;
+	}
+	.form-thanks {
+		width:100%;
+		text-align:left;
+	}
+	.form-thanks .agradecimiento_titulo {
+		font-size:16px;
+		text-align:center;
+		font-weight:bold;
+		padding-bottom:15px;
+		border-bottom:1px solid #e5e5e5;
+	}
+	.form-thanks .agradecimiento_titulo2 {
+		font-size:14px;
+		color:#333;
+	}
+	.form-thanks .agradecimiento_titulo2 span {
+		display:block;
+		margin:20px 0;
+		color:inherit;
+	}
+	.form-thanks .agradecimiento_titulo3 {
+		font-weight:normal;
+	}
+	.form-thanks hr {
+		display:none;
+	}
+	.form-thanks .arrow {
+		display:none;
+	}
+	#recibir_noticias {
+		margin:20px 0;
+	}
+	#form-wrapper {
+		margin-top:20px;
+		overflow:hidden;
+	}
+}
+
+#header-panel #header-sections-wrapper {
+    width:1000%;
+}
+#header-panel #header-sections-wrapper .header-section .financing-general {
+    float:left;
+    width:10%;
+    padding-bottom:30px;
+}
+#header-panel #header-sections-wrapper .header-section .financing-general .header-section-content-financing-general-wrapper {
+    margin:0 auto;
+    width:960px;
+    position:relative;
+}
+.header-section-content-financing-general {
+    padding:30px 0 0 120px;
+}
+.header-section-content-financing-general.models .header-title {
+    margin:0 0 30px;
+}
+.header-section-content-financing-general.models .models-wrapper {
+    font-size: 13px;
+    width: 95%;
+    overflow: hidden;
+    padding-left: 5%;
+}
+.header-section-content-financing-general.models .models-wrapper .model {
+    line-height:16px;
+    float:left;
+    padding:15px 0 15px 0;
+    width:270px;
+    position:relative;
+}
+.header-section-content-financing-general.models .models-wrapper .model a {
+    color:#003a55;
+    display:block;
+}
+.header-section-content-financing-general.models .models-wrapper .model a .car-preview {
+    background: url("../../img/template/common/header/cars-sprite-60.png") 0 0 no-repeat;
+    float: left;
+    height: 60px;
+    width: 120px;
+    padding: 0;
+    margin: 0 27%;
+}
+.header-section-content-financing-general.models .models-wrapper .model a .car-preview span {
+    display:none;
+}
+.header-section-content-financing-general.models .models-wrapper .model a .car-info {
+    float:right;
+    width: 100%;
+    display: block;
+}
+.header-section-content-financing-general.models .models-wrapper .model a .car-info .title {
+    color:#003145;
+    font-weight:900;
+    font-size:14px;
+    line-height:100%;
+	text-align: center;
+	width: 100%;
+}
+.header-section-content-financing-general.models .models-wrapper .model a .car-info .slogan {
+    color:#000;
+    font-size:13px;
+    font-weight:700;
+    margin:2px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model a .car-info .info {
+    font-size:12px;
+    line-height:140%;
+    color:#999;
+    margin-bottom:0;
+}
+.header-section-content-financing-general.models .models-wrapper .model a .car-info .more {
+    font-size:12px;
+}
+.header-section-content-financing-general.models .models-wrapper .model a:hover .more, .header-section-content-financing-general.models .models-wrapper .model a:hover .title {
+    color:#003a55;
+    text-decoration:underline;
+}
+.header-section-content-financing-general.models .models-wrapper .model a i {
+    display:none;
+}
+/* img individual */
+    /*
+    .header-section-content-financing-general.models .models-wrapper .model.swift-sport .car-preview {
+        background:url("../../img/template/common/header/suzuki_swift-sport.png") 0 0 no-repeat;
+        float:left;
+        height:60px;
+        width:120px;
+        padding:0;
+    }
+    .header-section-content-financing-general.models .models-wrapper .model.swift .car-preview {
+        background:url("../../img/template/common/header/suzuki_swift.png") 0 0 no-repeat;
+        float:left;
+        height:60px;
+        width:120px;
+        padding:0;
+    }
+    .header-section-content-financing-general.models .models-wrapper .model.sx4-crossover {
+        padding-right:0;
+    }
+    .header-section-content-financing-general.models .models-wrapper .model.sx4-crossover .car-preview {
+        background:url("../../img/template/common/header/suzuki_sx4-crossover.png") 0 0 no-repeat;
+        float:left;
+        height:60px;
+        width:120px;
+        padding:0;
+    }
+    .header-section-content-financing-general.models .models-wrapper .model.sx4-sedan .car-preview {
+        background:url("../../img/template/common/header/suzuki_sx4-sedan.png") 0 0 no-repeat;
+        float:left;
+        height:60px;
+        width:120px;
+        padding:0;
+    }
+    .header-section-content-financing-general.models .models-wrapper .model.kizashi .car-preview {
+        background:url("../../img/template/common/header/suzuki_kizashi.png") 0 0 no-repeat;
+        float:left;
+        height:60px;
+        width:120px;
+        padding:0;
+    }
+    .header-section-content-financing-general.models .models-wrapper .model.grand-vitara {
+        padding-right:0;
+    }
+    .header-section-content-financing-general.models .models-wrapper .model.grand-vitara .car-preview {
+        background:url("../../img/template/common/header/suzuki_grand-vitara.png") 0 0 no-repeat;
+        float:left;
+        height:60px;
+        width:120px;
+        padding:0;
+    }
+    .header-section-content-financing-general.models .models-wrapper .model.s-cross .car-preview {
+        background:url("../../img/template/common/header/suzuki_s-cross.png") 0 0 no-repeat;
+        float:left;
+        height:60px;
+        width:120px;
+        padding:0;
+    }
+    .header-section-content-financing-general.models .models-wrapper .model.ciaz .car-preview {
+        background:url("../../img/template/common/header/suzuki_ciaz.png") 0 0 no-repeat;
+        float:left;
+        height:60px;
+        width:120px;
+        padding:0;
+    }
+    */
+/**/
+.header-section-content-financing-general.models .models-wrapper .model.ignis .car-preview {
+    background-position: 0px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.swift-sport .car-preview {
+    background-position: -115px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.swift .car-preview {
+    background-position: -235px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.sx4-crossover {
+    padding-right: 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.sx4-crossover .car-preview {
+    background-position: -240px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.sx4-sedan .car-preview {
+    background-position: -360px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.kizashi .car-preview {
+    background-position: -595px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.new-vitara {
+    padding-right: 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.new-vitara .car-preview {
+    background-position: -1068px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.grand-vitara {
+    padding-right: 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.grand-vitara .car-preview {
+    background-position: -715px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.s-cross .car-preview {
+    background-position: -835px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.ciaz .car-preview {
+    background-position: -945px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.nueva-vitara {
+    padding-right: 0;
+}
+.header-section-content-financing-general.models .models-wrapper .model.nueva-vitara .car-preview {
+    background-position: -1067px 0;
+}
+.header-section-content-financing-general.models .models-wrapper .note {
+    margin:0;
+}
+.header-section-content-financing-general.models .models-wrapper .note p {
+    margin:0;
+    font-size:9px;
+    line-height:12px;
+    color:#999;
+}
+.header-section-content-financing-general.financing {
+    height:310px;
+}
+.header-section-content-financing-general.owners {
+    height:280px;
+}
+.header-section-content-financing-general.owners .back-list-arrow {
+    display:none;
+}
+.header-section-content-financing-general.owners .header-title,
+.header-section-content-financing-general.before-buy .header-title {
+    /*display:none;*/
+    border-bottom: 1px solid #cdcdcd;
+    color: #003a55;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+}
+.header-section-content-financing-general.before-buy {
+    height:250px;
+}
+.header-section-content-financing-general.before-buy .back-list-arrow {
+    display:none;
+}
+
+.header-all-titles, .header-section-content.models .header-title, .header-section-content-financing-general.models .header-title, .test-drive>div>h3 {
+    border-bottom:1px solid #cdcdcd;
+    color:#003a55;
+    font-size:16px;
+    font-weight:500;
+    line-height:100%;
+    margin:0 0 15px;
+    padding:0 0 15px;
+}
+
+@media only screen and (max-device-width: 767px){
+    .header-wrapper #header-zone #models-header{
+        position:fixed;
+        width:100%;
+        top:-50px;
+        -webkit-transition:top linear 0.2s;
+        -moz-transition:top linear 0.2s;
+        -o-transition:top linear 0.2s;
+        -ms-transition:top linear 0.2s;transition:top linear 0.2s;
+        z-index:1010;
+    }
+    #model-section-arrow {
+        display: none !important;
+    }
+    .menu-patch{
+        /*position: absolute;*/
+    }
+    .header-wrapper #header-zone{
+        position: absolute !important;
+    }
+    body{
+        width:100% !important;
+        position:relative;
+        -moz-transition:right 0.2s ease-in;
+        -o-transition:right 0.2s ease-in;
+        -webkit-transition:right 0.2s ease-in;
+        transition:right 0.2s ease-in;
+    }
+    html{
+        width:100% !important
+    }
+    .header-wrapper{
+        overflow:visible !important;min-height:50px;z-index:3;
+    }
+    .open-body{
+        right:240px !important;
+    }
+    #header-mobile{
+        display:block;
+    }
+    .open-mobile-menu{
+        right:-240px !important;display:block !important;
+    }
+    #header-zone,.menu-patch{
+        display:none !important;
+    }
+    #header-panel{
+        z-index:1;position:absolute !important;padding-top:50px !important;
+    }
+    #content-wrapper{
+        padding-top:0px;
+    }
+    #header-sections-wrapper{
+        overflow:hidden;width:100% !important;
+    }
+    #header-panel #header-sections-wrapper .header-section{
+        width:100%;padding:20px 0;
+    }
+    .header-section-content-financing-general-wrapper{
+        padding:0px 15px;width:auto !important;
+    }
+    .header-section-content-financing-general-wrapper .close-menu-box{
+        top:5px;right:25px;width:15px;height:15px;z-index:0;
+    }
+    .header-section-content-financing-general-wrapper .close-menu-box a{
+        color:#fff;padding-top:5px;
+    }
+    #content-section-form-test-drive-selection .header-section-content-financing-general{
+        padding:0;
+        margin-top: 20px;
+    }
+    .header-section-content-financing-general-wrapper .header-section-content-financing-general{
+        padding:0;
+    }
+    .header-section-content-financing-general-wrapper .header-section-content-financing-general .header-title{
+        display:block;border-bottom:0;margin:0 0 20px;padding:0 30px 0 0;color:#3f3f3f;font-weight:200;font-size:20px;line-height:22px;text-transform:uppercase;
+    }
+    .header-section-content-financing-general-wrapper .models .models-wrapper{
+        width:100% !important;
+    }
+    .header-section-content-financing-general-wrapper .models .models-wrapper .model{
+        padding:0 !important;width:100% !important;margin:15px 0;
+    }
+    .header-section-content-financing-general-wrapper .models .models-wrapper .model a .car-info{
+        float:none;padding:20px 30px 20px 10px;width:auto;
+    }
+    .header-section-content-financing-general-wrapper .models .models-wrapper .model a .car-info .title{
+        text-transform:capitalize;font-weight:bold;font-size:17px;letter-spacing:0;padding-left:135px;text-align:left;width: auto;
+    }
+    .header-section-content-financing-general.models .models-wrapper .model a .car-preview {
+    	margin: 0 auto;
+    }
+    .header-section-content-financing-general-wrapper .models .models-wrapper .model a .car-info .slogan{
+        color:#404040;font-weight:normal;font-size:14px;line-height:17px;padding-left:120px;
+    }
+    .header-section-content-financing-general-wrapper .models .models-wrapper .model a .car-info .info{
+        display:block;font-size:13px;line-height:16px;padding-left:120px;
+    }
+    .header-section-content-financing-general-wrapper .models .models-wrapper .model a:hover{
+        text-decoration:none;
+    }
+    .header-section-content-financing-general-wrapper .models .models-wrapper .model a:hover .title{
+        text-decoration:none;
+    }
+    .header-section-content-financing-general-wrapper .models .models-wrapper .model a i{
+        display:block;position:absolute;top:30%;right:0px;font-family: entypo;font-style:normal;color:#cbcbcb;font-size:28px;line-height:100%;cursor:pointer;
+    }
+    .header-section-content-financing-general-wrapper .models .models-wrapper .clearfix,.header-section-content-financing-general-wrapper .models .models-wrapper .note{
+        display:none;
+    }
+    .header-section-content-financing-general.owners,.header-section-content-financing-general.before-buy{
+        height:auto;
+    }
+    .header-section-content-financing-general.owners .header-links-list,.header-section-content-financing-general.before-buy .header-links-list{
+        overflow:hidden;border-top:1px solid #e5e5e5;position:relative;top:35px;margin-bottom:35px;
+    }
+    .header-section-content-financing-general.owners .header-links-list .back-list-arrow,.header-section-content-financing-general.before-buy .header-links-list .back-list-arrow{
+        display:none;z-index:2;position:absolute;width:100%;left:0;top:5px;padding:10px 0;font-size:18px;font-family: entypo;font-style:normal;line-height:100%;cursor:pointer;color:inherit;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column,.header-section-content-financing-general.before-buy .header-links-list .header-column{
+        float:none;width:auto;margin:0;position:relative;padding:15px 85px 15px 0;border-bottom:1px solid #e5e5e5;cursor:pointer;z-index:1;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column .header-column-arrow,.header-section-content-financing-general.before-buy .header-links-list .header-column .header-column-arrow{
+        display:block;position:absolute;top:30%;right:0px;font-family: entypo;font-style:normal;color:#cbcbcb;font-size:28px;line-height:100%;cursor:pointer;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column .title,.header-section-content-financing-general.before-buy .header-links-list .header-column .title{
+        text-transform:none;font-size:16px;font-weight:bold;color:#003145;position:relative;height:auto;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column .description,.header-section-content-financing-general.before-buy .header-links-list .header-column .description{
+        height:auto;margin:0;font-size:12px;line-height:16px;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column .links-list,.header-section-content-financing-general.before-buy .header-links-list .header-column .links-list{
+        display:none;margin:15px 0 0 0;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column .links-list li a,.header-section-content-financing-general.before-buy .header-links-list .header-column .links-list li a{
+        border-top:1px solid #e5e5e5;border-bottom:0;padding:10px 0;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column .links-list li a span,.header-section-content-financing-general.before-buy .header-links-list .header-column .links-list li a span{
+        font-size:14px;font-weight:bold;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column .links-list li a i,.header-section-content-financing-general.before-buy .header-links-list .header-column .links-list li a i{
+        top:30%;font-size:24px;font-weight:normal;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column .links-list li:hover a,.header-section-content-financing-general.owners .header-links-list .header-column .links-list li:hover span,.header-section-content-financing-general.owners .header-links-list .header-column .links-list li:hover i,.header-section-content-financing-general.before-buy .header-links-list .header-column .links-list li:hover a,.header-section-content-financing-general.before-buy .header-links-list .header-column .links-list li:hover span,.header-section-content-financing-general.before-buy .header-links-list .header-column .links-list li:hover i{
+        color:#333 !important;border-bottom:0 !important;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column .links-list .icon i,.header-section-content-financing-general.before-buy .header-links-list .header-column .links-list .icon i{
+        top:13px;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column-open,.header-section-content-financing-general.before-buy .header-links-list .header-column-open{
+        padding:15px 0 0;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column-open .title,.header-section-content-financing-general.before-buy .header-links-list .header-column-open .title{
+        padding-left:20px;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column-open .description,.header-section-content-financing-general.before-buy .header-links-list .header-column-open .description{
+        display:none;
+    }
+    .header-section-content-financing-general.owners .header-links-list .header-column-open .header-column-arrow,.header-section-content-financing-general.before-buy .header-links-list .header-column-open .header-column-arrow{
+        display:none;
+    }
+    .header-section-content-financing-general.owners .header-links-open,.header-section-content-financing-general.before-buy .header-links-open{
+        border-top:1px solid #fff;
+    }
+    .header-section-content-financing-general.owners .header-links-open .back-list-arrow,.header-section-content-financing-general.before-buy .header-links-open .back-list-arrow{
+        display:block !important;
+    }
+    .header-section-content-financing-general.owners .clearfix,.header-section-content-financing-general.before-buy .clearfix{
+        display:none;
+    }
+}

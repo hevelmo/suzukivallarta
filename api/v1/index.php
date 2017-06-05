@@ -53,12 +53,15 @@ $app = new \Slim\App($container);
 
     // CONTACT
     $app->post("/send/contacto", "SendContact:__invoke");
+    $app->post("/send/newsletter/contacto", "SendContactNews:__invoke");
 
     // FINANCING
     $app->post("/send/financiamiento", "SendFinancing:__invoke");
+    $app->post("/send/newsletter/financiamiento", "SendFinancingNews:__invoke");
 
     // TESTDRIVE
     $app->post("/send/testdrive", "SendTestDrive:__invoke");
+    $app->post("/send/newsletter/testdrive", "SendTestDriveNews:__invoke");
 
     $app->run();
 /**
@@ -313,7 +316,7 @@ $app = new \Slim\App($container);
             //ROUTER
             $this->router   = new Router();
             //SENDER
-            $this->sender   = new Sender(new Mandrill("vipel7XhxNiqPkblHbw0qg"));
+            $this->sender   = new Sender(new Mandrill("-M2qid9ztNaYfJvoZWPOHQ"));
             //TEMPLATE
             $this->template = new Template(
                 "../../templates/twig/mensajes",
@@ -354,10 +357,8 @@ $app = new \Slim\App($container);
             parent::__construct(array(), array(), "contact.twig");
         }
         public function __invoke($request, $response, $args) {
-            $domain = "gdl";
-            //$url  = "http://suzuki". $domain .".com.mx/";
-            $url  = "http://suzuki.medigraf.com.mx/";
-
+            $domain = "valarta";
+            $url  = "http://suzuki". $domain .".com.mx/";
             $mail_to = "hevelmo060683@gmail.com";
             /*
             $mail_to = "mercadotecnia@suzuki-lm.com.mx";
@@ -385,7 +386,57 @@ $app = new \Slim\App($container);
                 ),
                 "tags" => array(
                     "orden-new-notificacion",
+                    "suzuki-vallarta",
                     "suzuki-contact"
+                ),
+                "google_analytics_domains" => array(
+                    $website
+                ),
+                "google_analytics_campaign" => $mail_to,
+                "metadata" => array(
+                    "website" => $website
+                )
+            ));
+            echo changeArrayIntoJSON("sukpa", array("process" => "ok"));
+        }
+    }
+    // SEND CONTACT NEWSLETTER
+    class SendContactNews extends SendMaster {
+        function __construct() {
+            parent::__construct(array(), array(), "contact_news.twig");
+        }
+        public function __invoke($request, $response, $args) {
+            $domain = "vallarta";
+            $url  = "http://suzuki". $domain .".com.mx/";
+            $mail_to = "hevelmo060683@gmail.com";
+            /*
+            $mail_to = "webmaster@medigraf.com.mx";
+            */
+            $from_email = "noreply@clicktolead.com.mx";
+            $website = $url;
+
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            $property = parent::getRouter()->getProperty();
+            parent::getTemplate()->setMasterConfigArray((array) $property);
+            parent::getSender()->__send(array(
+                "html" => parent::getTemplate()->render(),
+                "subject" => "Contacto - Noticias y promociones - " . $property->agencia,
+                "from_email" => $from_email,
+                "from_name" => $property->nombre . " " . $property->apellido,
+                "to" => array(
+                    array(
+                        "email" => $mail_to,
+                        "name" => $property->agencia,
+                        "type" => "to"
+                    )
+                ),
+                "headers" => array(
+                    "Reply-To" => $mail_to
+                ),
+                "tags" => array(
+                    "orden-new-notificacion",
+                    "suzuki-vallarta",
+                    "suzuki-contact-news"
                 ),
                 "google_analytics_domains" => array(
                     $website
@@ -404,12 +455,8 @@ $app = new \Slim\App($container);
             parent::__construct(array(), array(), "financing.twig");
         }
         public function __invoke($request, $response, $args) {
-            /*
-            $domain = "gdl";
+            $domain = "vallarta";
             $url  = "http://suzuki". $domain .".com.mx/";
-            */
-            $url  = "http://suzuki.medigraf.com.mx/";
-
             $mail_to = "hevelmo060683@gmail.com";
             /*
             $mail_to = "mercadotecnia@suzuki-lm.com.mx";
@@ -444,7 +491,64 @@ $app = new \Slim\App($container);
                 ),
                 "tags" => array(
                     "orden-new-notificacion",
+                    "suzuki-vallarta",
                     "suzuki-financing"
+                ),
+                "google_analytics_domains" => array(
+                    $website
+                ),
+                "google_analytics_campaign" => $mail_to,
+                "metadata" => array(
+                    "website" => $website
+                )
+            ));
+            echo changeArrayIntoJSON("sukpa", array("process" => "ok"));
+        }
+    }
+    // SEND FINANCING NEWSLETTER
+    class SendFinancingNews extends SendMaster {
+        function __construct() {
+            parent::__construct(array(), array(), "financing_news.twig");
+        }
+        public function __invoke($request, $response, $args) {
+            $domain = "vallarta";
+            $url  = "http://suzuki". $domain .".com.mx/";
+            $mail_to = "hevelmo060683@gmail.com";
+            /*
+            $mail_to = "webmaster@medigraf.com.mx";
+            */
+            $from_email = "noreply@clicktolead.com.mx";
+            $website = $url;
+
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            $property = parent::getRouter()->getProperty();
+            parent::getTemplate()->setMasterConfigArray((array) $property);
+            parent::getSender()->__send(array(
+                "html" => parent::getTemplate()->render(),
+                "subject" => "Financiamiento Newsletter " . $property->agencia,
+                "from_email" => $from_email,
+                "from_name" => $property->nombre . " " . $property->apellido,
+                "to" => array(
+                    array(
+                        "email" => $mail_to,
+                        "name" => $property->agencia,
+                        "type" => "to"
+                    )
+                    /*
+                    array(
+                        "email" => $mail_to,
+                        "name" => $property->agencia,
+                        "type" => "to"
+                    )
+                    */
+                ),
+                "headers" => array(
+                    "Reply-To" => $mail_to
+                ),
+                "tags" => array(
+                    "orden-new-notificacion",
+                    "suzuki-vallarta",
+                    "suzuki-financing-newsletter"
                 ),
                 "google_analytics_domains" => array(
                     $website
@@ -463,11 +567,8 @@ $app = new \Slim\App($container);
             parent::__construct(array(), array(), "testdrive.twig");
         }
         public function __invoke($request, $response, $args) {
-            /*
-            $domain = "gdl";
+            $domain = "vallarta";
             $url  = "http://suzuki". $domain .".com.mx/";
-            */
-            $url  = "http://suzuki.medigraf.com.mx/";
 
             $mail_to = "hevelmo060683@gmail.com";
             /*
@@ -508,7 +609,69 @@ $app = new \Slim\App($container);
                 ),
                 "tags" => array(
                     "orden-new-notificacion",
+                    "suzuki-vallarta",
                     "suzuki-testdrive"
+                ),
+                "google_analytics_domains" => array(
+                    $website
+                ),
+                "google_analytics_campaign" => $mail_to,
+                "metadata" => array(
+                    "website" => $website
+                )
+            ));
+            echo changeArrayIntoJSON("sukpa", array("process" => "ok"));
+        }
+    }
+    // SEND TESTDRIVE NEWSLETTER
+    class SendTestDriveNews extends SendMaster {
+        function __construct() {
+            parent::__construct(array(), array(), "testdrive_news.twig");
+        }
+        public function __invoke($request, $response, $args) {
+            $domain = "vallarta";
+            $url  = "http://suzuki". $domain .".com.mx/";
+            $mail_to = "hevelmo060683@gmail.com";
+            /*
+            $mail_to = "webmaster@medigraf.com.mx";
+            */
+            $from_email = "noreply@clicktolead.com.mx";
+            $website = $url;
+
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            $property = parent::getRouter()->getProperty();
+            parent::getTemplate()->setMasterConfigArray((array) $property);
+            parent::getSender()->__send(array(
+                "html" => parent::getTemplate()->render(),
+                "subject" => "Prueba de manejo - Noticias y promociones " . $property->agencia,
+                "from_email" => $from_email,
+                "from_name" => $property->nombre . " " . $property->apellido,
+                "to" => array(
+                    array(
+                        "email" => $mail_to,
+                        "name" => $property->agencia,
+                        "type" => "to"
+                    )
+                    /*
+                    array(
+                        "email" => $mail_to,
+                        "name" => $property->agencia,
+                        "type" => "to"
+                    ),
+                    array(
+                        "email" => $mail_cc,
+                        "name" => $property->agencia,
+                        "type" => "cc"
+                    )
+                    */
+                ),
+                "headers" => array(
+                    "Reply-To" => $mail_to
+                ),
+                "tags" => array(
+                    "orden-new-notificacion",
+                    "suzuki-vallarta",
+                    "suzuki-testdrive-newsletter"
                 ),
                 "google_analytics_domains" => array(
                     $website

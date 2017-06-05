@@ -2557,7 +2557,19 @@
             console.log(suk_product);
 
             data = $(testDriveForm.contactForm).serializeFormJSON();
-            testDriveSendPromise = testDriveForm.sendContacto();
+            $news = $('#suk_model_newsletter').val($(this).is(':checked'));
+            if ($news.is(':checked')) {
+                newsletter = $news.val('1');
+                //SUK.setValue("#suk_news", $news.val());
+                console.log(newsletter);
+                testDriveSendPromise = testDriveForm.sendContacto();
+                testDriveSendPromise = testDriveForm.sendContactoNews();
+            } else {
+                newsletter = $news.val('0');
+                //SUK.setValue("#suk_news", $news.val());
+                console.log(newsletter);
+                testDriveSendPromise = testDriveForm.sendContacto();
+            }
             testDriveSendPromise.success( function (data2) {
                 ga('send', 'event', 'button-send-form-testdrive', 'Prueba de manejo '+ suk_product, 'form-testdrive');
                 setTimeout(function () {
@@ -2589,6 +2601,12 @@
             data = $(testDriveForm.contactForm).serializeFormJSON();
             rootApi = SUK.getValue('#master-host');
             return SUK.postalService(rootApi + urlsApi.snd_drv, data);
+        },
+        sendContactoNews: function () {
+            var rootApi, data;
+            data = $(testDriveForm.contactForm).serializeFormJSON();
+            rootApi = SUK.getValue('#master-host');
+            return SUK.postalService(rootApi + urlsApi.snd_drvn_news, data);
         },
         resetContact: function () {
             var $btnSend;
@@ -2660,7 +2678,15 @@
             console.log(suk_product);
 
             data = $(financingForm.contactForm).serializeFormJSON();
-            testDriveSendPromise = financingForm.sendContacto();
+            $news = $('#suk_model_newsletter').val($(this).is(':checked'));
+            if ($news.is(':checked')) {
+                newsletter = $news.val('1');
+                testDriveSendPromise = financingForm.sendContacto();
+                testDriveSendPromise = financingForm.sendContactoNews();
+            } else {
+                newsletter = $news.val('0');
+                testDriveSendPromise = financingForm.sendContacto();
+            }
             testDriveSendPromise.success( function (data2) {
                 ga('send', 'event', 'button-send-form-financing', 'Financiamiento '+ suk_product, 'form-financing');
                 setTimeout(function () {
@@ -2692,6 +2718,12 @@
             data = $(financingForm.contactForm).serializeFormJSON();
             rootApi = SUK.getValue('#master-host');
             return SUK.postalService(rootApi + urlsApi.snd_fin, data);
+        },
+        sendContactoNews: function () {
+            var rootApi, data;
+            data = $(financingForm.contactForm).serializeFormJSON();
+            rootApi = SUK.getValue('#master-host');
+            return SUK.postalService(rootApi + urlsApi.snd_fin_news, data);
         },
         resetContact: function () {
             var $btnSend;
@@ -2762,7 +2794,15 @@
             suk_email = SUK.getValue('#suk_email');
 
             data = $(contactForm.contactForm).serializeFormJSON();
-            testDriveSendPromise = contactForm.sendContacto();
+            $news = $('#suk_model_newsletter').val($(this).is(':checked'));
+            if ($news.is(':checked')) {
+                newsletter = $news.val('1');
+                testDriveSendPromise = contactForm.sendContacto();
+                testDriveSendPromise = contactForm.sendContactoNews();
+            } else {
+                newsletter = $news.val('0');
+                testDriveSendPromise = contactForm.sendContacto();
+            }
             testDriveSendPromise.success( function (data2) {
                 ga('send', 'event', 'button-send-form-contact', 'Información General', 'form-contact');
                 setTimeout(function () {
@@ -2792,6 +2832,12 @@
             data = $(contactForm.contactForm).serializeFormJSON();
             rootApi = SUK.getValue('#master-host');
             return SUK.postalService(rootApi + urlsApi.snd_con, data);
+        },
+        sendContactoNews: function () {
+            var rootApi, data;
+            data = $(contactForm.contactForm).serializeFormJSON();
+            rootApi = SUK.getValue('#master-host');
+            return SUK.postalService(rootApi + urlsApi.snd_con_news, data);
         },
         resetContact: function () {
             var $btnSend;

@@ -4,21 +4,6 @@
     <div class="financing_elements">
         <div class="financing_element a">
             <fieldset>
-                <label for="suk_agn" style="display: none;">
-                    <span style="color: red;" class="fa fa-asterisk"></span> Selecciona concesionaria
-                </label>
-                <div class="select">
-                    <select id="suk_agn" name="agencia" class="validate-required" data-validation-data="required|free" style="width: 100%;">
-                        <option label="Selecccionar Concesionaria..." value="">Selecciona Concesionaria</option>
-                        <option data-max-id="12" label="Suzuki López Mateos" value="Suzuki López Mateos">Suzuki López Mateos</option>
-                        <option data-max-id="54" label="Suzuki Vallarta" value="Suzuki Vallarta">Suzuki Vallarta</option>
-                    </select>
-                </div>
-                <p class="invalid-message" id="error_agencia">Este campo es obligatorio<span>&nbsp;</span></p>
-            </fieldset>
-        </div>
-        <div class="financing_element b">
-            <fieldset>
                 <label for="suk_name" style="display: none;">
                     <span style="color: red;" class="fa fa-asterisk"></span> Nombre
                 </label>
@@ -26,10 +11,7 @@
                 <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>
             </fieldset>
         </div>
-        <div class="clearfix"></div>
-    </div>
-    <div class="financing_elements">
-        <div class="financing_element a">
+        <div class="financing_element b">
             <fieldset>
                 <label for="suk_lastname" style="display: none;">
                     <span style="color: red;" class="fa fa-asterisk"></span> Apellido
@@ -38,7 +20,10 @@
                 <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>
             </fieldset>
         </div>
-        <div class="financing_element b">
+        <div class="clearfix"></div>
+    </div>
+    <div class="financing_elements">
+        <div class="financing_element a">
             <fieldset>
                 <label for="suk_email" style="display: none;">
                     <span style="color: red;" class="fa fa-asterisk"></span> Correo electrónico
@@ -47,10 +32,7 @@
                 <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>
             </fieldset>
         </div>
-        <div class="clearfix"></div>
-    </div>
-    <div class="financing_elements">
-        <div class="financing_element a">
+        <div class="financing_element b">
             <fieldset>
                 <label for="suk_phone" style="display: none;">
                     <span style="color: red;" class="fa fa-asterisk"></span> Número de celular
@@ -111,6 +93,7 @@
                 <input type="hidden" name="imagen" id="suk_imagen" value="{{ model.key }}">
                 <input type="hidden" name="news" id="suk_news" value="0">
                 <input type="hidden" name="campaign" id="suk_campaign" value="Suzuki Autos {{ _loc }} - Financiamiento">
+                <input type="hidden" id="suk_agn" name="agencia" value="Suzuki Autos {{ _loc }}">
             </fieldset>
         </div>
     </div>

@@ -18,31 +18,14 @@
                             <div class="financing_elements">
                                 <div class="financing_element a">
                                     <fieldset>
-                                        <label for="suk_agn" style="display: none;">
-                                            <span style="color: red;" class="fa fa-asterisk"></span> Selecciona concesionaria
-                                        </label>
-                                        <div class="select">
-                                            <select id="suk_agn" name="agencia" class="validate-required" data-validation-data="required" style="width: 100%;">
-                                                <option label="Selecccionar Concesionaria..." value="">Selecciona Concesionaria</option>
-                                                <option data-max-id="12" label="Suzuki López Mateos" value="Suzuki López Mateos">Suzuki López Mateos</option>
-                                                <option data-max-id="54" label="Suzuki Vallarta" value="Suzuki Vallarta">Suzuki Vallarta</option>
-                                            </select>
-                                        </div>
-                                        <p class="invalid-message" id="error_agencia">Este campo es obligatorio<span>&nbsp;</span></p>
-                                    </fieldset>
-                                </div>
-                                <div class="financing_element b">
-                                    <fieldset>
                                         <label for="suk_date" style="display: none;">
                                             <span style="color: red;" class="fa fa-asterisk"></span> Fecha
                                         </label>
                                         <input type="text" value="" name="fecha" class="test_drive_model_date datepicker-here model_date" id="suk_date" data-position="top left" data-language='es' placeholder="Fecha prueba de manejo" data-validation-data="required|date">
                                         <p class="invalid-message">Este campo es obligatorio<span>&nbsp;</span></p>
-                                    </fieldset>
+                                    </fieldset>                                    
                                 </div>
-                            </div>
-                            <div class="financing_elements">
-                                <div class="financing_element a">
+                                <div class="financing_element b">
                                     <fieldset>
                                         <label for="suk_name" style="display: none;">
                                             <span style="color: red;" class="fa fa-asterisk"></span> Nombre
@@ -51,7 +34,9 @@
                                         <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
                                 </div>
-                                <div class="financing_element b">
+                            </div>
+                            <div class="financing_elements">
+                                <div class="financing_element a">
                                     <fieldset>
                                         <label for="suk_lastname" style="display: none;">
                                             <span style="color: red;" class="fa fa-asterisk"></span> Apellido
@@ -60,9 +45,7 @@
                                         <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
                                 </div>
-                            </div>
-                            <div class="financing_elements">
-                                <div class="financing_element a">
+                                <div class="financing_element b">
                                     <fieldset>
                                         <label for="suk_email" style="display: none;">
                                             <span style="color: red;" class="fa fa-asterisk"></span> Correo electrónico
@@ -71,7 +54,9 @@
                                         <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
                                 </div>
-                                <div class="financing_element b">
+                            </div>
+                            <div class="financing_elements">
+                                <div class="financing_element a">
                                     <fieldset>
                                         <label for="suk_phone" style="display: none;">
                                             <span style="color: red;" class="fa fa-asterisk"></span> Número de celular
@@ -79,6 +64,8 @@
                                         <input type="text" id="suk_phone" name="telefono" class="validate-required" placeholder="Número de celular" data-validation-data="required|phone">
                                         <p class="invalid-message" id="error_phone">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
+                                </div>
+                                <div class="financing_element b">
                                 </div>
                             </div>
                             <div class="financing_elements">
@@ -101,6 +88,7 @@
                                         <input type="hidden" name="imagen" id="suk_imagen" value="{{ model.key }}">
                                         <input type="hidden" name="news" id="suk_news" value="0">
                                         <input type="hidden" name="campaign" id="suk_campaign" value="Suzuki Autos {{ _loc }} - Prueba de Manejo">
+                                        <input type="hidden" id="suk_agn" name="agencia" value="Suzuki Autos {{ _loc }}">
                                     </fieldset>
                                 </div>
                             </div>

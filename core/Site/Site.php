@@ -74,9 +74,78 @@
 					'id' => '1',
 					'inicio' => array(
 						'main' => array(
-							'image' => 'ignis.png',
-							'title' => 'Ignis 2017',
-							'slogan' => 'Redefine tu experiencia.'
+							'new' => array(
+								'image' => 'ignis.png',
+								'title' => 'Ignis 2017',
+								'subtitle' => 'Redefine tu experiencia',
+								'slogan' => 'Redefine tu experiencia.',
+								'medals' => array(
+								),
+								'price' => '$199,990.00',
+								'asterisk' => 'Versión GL TM',
+								'car_box' => array(
+									'img' => 'cd81179ed27a250e9f68b0f7305adc19344c6db1.png',
+									'description' => 'Blanco Pop disponible en GL',
+									'picker' => array(
+										array(
+											'class' => 'active',
+											'color_left' => '#E1E7E9',
+											'color_right' => '#',
+											'available' => 'GL',
+											'colorname' => 'Blanco Pop',
+											'image' => 'cd81179ed27a250e9f68b0f7305adc19344c6db1.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#434C4F',
+											'color_right' => '#',
+											'available' => 'GL',
+											'colorname' => 'Gris Acero',
+											'image' => 'a700dd24e7c611161d9b5c5aaccc0851293bd6bb.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#E8003B',
+											'color_right' => '#',
+											'available' => 'GL',
+											'colorname' => 'Rojo',
+											'image' => '6e59f18a1ea30267480962d8f1cdc4c70ec910f4.png'
+										),
+										array(
+											'class' => 'bicolor',
+											'color_left' => '#E1E7E9',
+											'color_right' => '#000001',
+											'available' => 'GLX',
+											'colorname' => 'Constelación',
+											'image' => '470246cf13287db5b490f068a0101e500064c647.png'
+										),
+										array(
+											'class' => 'bicolor',
+											'color_left' => '#E8003B',
+											'color_right' => '#000001',
+											'available' => 'GLX',
+											'colorname' => 'Fenix',
+											'image' => 'c44067acf80ca4e8d9c7e1c4ef8a74aec0340018.png'
+										),
+										array(
+											'class' => 'bicolor',
+											'color_left' => '#F48440',
+											'color_right' => '#000001',
+											'available' => 'GLX',
+											'colorname' => 'Lava',
+											'image' => '6839d65b500b3f78aa9596c57095d18f718575d7.png'
+										),
+										array(
+											'class' => 'bicolor',
+											'color_left' => '#4699A9',
+											'color_right' => '#000001',
+											'available' => 'GLX',
+											'colorname' => 'Mentolato',
+											'image' => 'a729788dd13f2f07009fcaac973896e6d6a0535e.png'
+										)
+									)
+								)
+							)
 						)
 					),
 					'caracteristicas' => array(
@@ -873,8 +942,8 @@
 									),
 									'col' => array(
 										'class' => '2'
-									)/*,
-									'height' => 'equal-height'*/
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-ignis',
@@ -1237,10 +1306,46 @@
 					'id' => '2',
 					'inicio' => array(
 						'main' => array(
-							'image' => 'swift-sport.png',
-							'title' => 'Swift Sport 2017',
-							'slogan' => 'Experimenta agilidad.',
-							'price' => 'Diseño deportivo, movilidad veloz. La combinación perfecta de un auto deportivo y uno urbano.'
+							'new' => array(
+								'image' => 'swift-sport.png',
+								'title' => 'Swift Sport 2017',
+								'subtitle' => 'Diseño deportivo, movilidad veloz. La combinación perfecta de un auto deportivo y uno urbano.',
+								'slogan' => 'Renovado. Imponente.',
+								'medals' => array(
+								),
+								'price' => '$274,990.00',
+								'asterisk' => 'Versión -- TM',
+								'car_box' => array(
+									'img' => 'e57c1a6b5acdbf7c28df961137fc7d03ee02756a.png',
+									'description' => 'Amarillo Rally  disponible en SPORT',
+									'picker' => array(
+										array(
+											'class' => 'active',
+											'color_left' => '#eed71c',
+											'color_right' => '#',
+											'available' => 'SPORT',
+											'colorname' => 'Amarillo Rally',
+											'image' => 'e57c1a6b5acdbf7c28df961137fc7d03ee02756a.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#c01b22',
+											'color_right' => '#',
+											'available' => 'SPORT',
+											'colorname' => 'Rojo Rock',
+											'image' => '0754fb74a054ee377c8b8835883dfa69f2725a36.png'
+										),
+										array(
+											'class' => 'm-model-colors__picker__item__link__clear',
+											'color_left' => '#edeeed',
+											'color_right' => '#',
+											'available' => 'SPORT',
+											'colorname' => 'Blanco Remix',
+											'image' => '11bd2fa2e6641dc336b94984b7608bf2f1fc0356.png'
+										)
+									)
+								)
+							)
 						)
 					),
 					'caracteristicas' => array(
@@ -1684,8 +1789,8 @@
 									),
 									'col' => array(
 										'class' => '1'
-									)/*,
-									'height' => ''*/
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-swift-sport',
@@ -2136,10 +2241,62 @@
 					'id' => '3',
 					'inicio' => array(
 						'main' => array(
-							'image' => 'swift.png',
-							'title' => 'Swift 2017',
-							'slogan' => 'Experimenta desafío. Acepta el reto.',
-							'price' => 'Aerodinámico y divertido para ti que buscas diseño y agilidad en un solo auto.'
+							'new' => array(
+								'image' => 'swift.png',
+								'title' => 'Swift 2018',
+								'subtitle' => 'Renovado. Imponente. Simplemente superior. Bienvenido a un nuevo nivel de poder y estilo.',
+								'slogan' => 'Renovado. Imponente.',
+								'medals' => array(
+								),
+								'price' => '$224,990.00',
+								'asterisk' => 'Versión GLS TM',
+								'car_box' => array(
+									'img' => '5b4d7adcaa52e90e398de03d4e00b645f516f9a7.png',
+									'description' => 'Rojo Vanadio disponible en GLS, GLX, BOOSTERJET',
+									'picker' => array(
+										array(
+											'class' => 'active',
+											'color_left' => '#cb253d',
+											'color_right' => '#',
+											'available' => 'GLS, GLX, BOOSTERJET',
+											'colorname' => 'Rojo Vanadio',
+											'image' => '5b4d7adcaa52e90e398de03d4e00b645f516f9a7.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#386cb0',
+											'color_right' => '#',
+											'available' => 'GLS, GLX, BOOSTERJET',
+											'colorname' => 'Azul Sodalita',
+											'image' => '418260fbe3b6337f26e2d4ec0ab7ed0deeb77a65.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#aeb1b4',
+											'color_right' => '#',
+											'available' => 'GLS, GLX, BOOSTERJET',
+											'colorname' => 'Plata Sílice',
+											'image' => 'aa3d64443afa2068987c5e9d2a572de54f3728bd.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#515151',
+											'color_right' => '#',
+											'available' => 'GLS, GLX, BOOSTERJET',
+											'colorname' => 'Gris Acero',
+											'image' => '785fc970b0f7d28d8260371d036cd0876ff45034.png'
+										),
+										array(
+											'class' => 'm-model-colors__picker__item__link__clear',
+											'color_left' => '#f5f5f5',
+											'color_right' => '#',
+											'available' => 'GLS, GLX, BOOSTERJET',
+											'colorname' => 'Blanco Pop',
+											'image' => '9976c1de7aed5ff5bd349fbfd0e7cb271f21c9a7.png'
+										)
+									)
+								)								
+							)
 						)
 					),
 					'caracteristicas' => array(
@@ -2151,39 +2308,34 @@
 							'specifications' => array(
 								'banner' => array(
 									array(
-										'image' => 'swift-2013-aire-acondicionado.jpg',
-										'title' => 'Aire acondicionado automático',
-										'description' => 'Prográmalo para tener siempre la temperatura deseada sin importar los cambios de clima exterior. *Sólo para GLX.'
+										'image' => '9d8a3b95b1aa1a87b8509f3edb05c47000fbcf2c.jpg',
+										'title' => 'Nuevo Motor BOOSTERJET',
+										'description' => 'Tecnología exclusiva de Suzuki con el Nuevo motor turbo con inyección directa, diseño ligero, compacto y un desempeño impecable de gran rendimiento de combustible y bajas emisiones contaminantes.'
 									),
 									array(
-										'image' => 'swift-2013-quemacocos.jpg',
-										'title' => 'Quemacocos',
-										'description' => 'Eléctrico de 3 posiciones con cubierta deslizable interior. Vive la libertad en todo momento desde el interior de tu Swift. *Sólo para GLX.'
+										'image' => '8c73a7b98a7e2bb67bcd04e2938099bf6d6e4215.jpg',
+										'title' => 'Luces traseras LED',
+										'description' => 'Estilo y vanguardia que enciende tu camino.'
 									),
 									array(
-										'image' => 'swift-2013-bolsas-aire.jpg',
-										'title' => '6 Bolsas de aire',
-										'description' => '2 frontales, 2 laterales y 2 tipo cortina que se activan de acuerdo a la necesidad del imprevisto. *Sólo para GLX.'
+										'image' => '24b7b89b2d5727041cee274106514cfb674ac495.jpg',
+										'title' => 'Manija de la puerta trasera',
+										'description' => 'La nueva posición vertical de la manija en puertas traseras, situada a nivel de la ventana, contribuye a una mayor aerodinámica y brinda al nuevo Swift un renovado estilo único.'
 									),
 									array(
-										'image' => 'swift-2013-keyless.jpg',
-										'title' => 'Keyless Start &amp; Entry',
-										'description' => 'No tendrás que insertar la llave para abrir ni encender tu auto. Basta con tenerla contigo y presionar el botón correspondiente para disfrutar tu auto. *Sólo para GLX.'
+										'image' => 'b78a87b9bed645b7401689f3bdc4a61a10212ac6.jpg',
+										'title' => 'Personalización',
+										'description' => 'Con el Nuevo Swift vive la experiencia de darle tu toque único.'
 									),
 									array(
-										'image' => 'swift-2013-rines-16.jpg',
-										'title' => 'Rines de 16”',
-										'description' => 'Fabricados en aluminio. Ligeros y con gran estilo. *Sólo para GLS y GLX.'
+										'image' => '0d375e8e06b63af5a89fc87b4d3423c4e41ee35e.jpg',
+										'title' => 'Pantalla touch de 7” y conectividad multimedia.',
+										'description' => 'La diversion y seguridad, viajan contigo a todas partes. Cuenta con navegador GPS e integración con smartphones mediante Apple Carplay™, Android Auto™ y Mirrorlink™.'
 									),
 									array(
-										'image' => 'swift-frenos-disco.jpg',
-										'title' => 'Frenos de disco',
-										'description' => 'Efectivo sistema de frenado en las 4 ruedas que combina frenos ventilados y sólidos. *Sólo para GLX.'
-									),
-									array(
-										'image' => 'swift-stereo-pantalla-touch.jpg',
-										'title' => 'Estéreo con pantalla touch a color de 7”',
-										'description' => 'AM/FM/CD/MP3/Bluetooth/ APPLE CAR PLAY ​/ Compatible con Android​ Auto. Disponible para E. Especial y GLX año modelo 2017.'
+										'image' => 'e66e12c7e3379347b0ef05c99abbb47ff0b349d6.jpg',
+										'title' => 'Frenos de disco en las 4 ruedas',
+										'description' => 'Asegura tus trayectos gracias a sus frenos de disco con Sistema Antibloqueo (ABS), Distribución Electrónica de Frenado (EBD) y Asistente de Frenado (BA).'
 									)
 								)
 							)
@@ -2323,35 +2475,30 @@
 								'description' => 'Detalles que hacen de un auto una experiencia.'
 							),
 							'model_prices' => array(
-								'columns' => '4',
+								'columns' => '3',
 								'head' => array(
 									'row' => array(
 										'class' => 'dark'
 									),
 									'col' => array(
-										'class' => '4'
+										'class' => '3'
 									),
 									'cell' => array(
 										'class' => 'light',
 										'first' => array(
 											'class' => 'first',
-											'image' => 'swift-gls.png',
-											'title' => 'Swift GLS'
+											'image' => '2b6fcd525ff96ae9af7a7b0804128b4031daac38.png',
+											'title' => 'SWIFT GLS'
 										),
 										'second' => array(
 											'class' => '',
-											'image' => 'swift-glx.png',
-											'title' => 'Swift GLX'
+											'image' => '2b2448af51755fe411271e51482d3f4f6d96a04f.png',
+											'title' => 'SWIFT GLX'
 										),
 										'third' => array(
-											'class' => '',
-											'image' => 'swift-vs.png',
-											'title' => 'Swift Edición Especial'
-										),
-										'fourth' => array(
 											'class' => 'last',
-											'image' => 'swift-ga.png',
-											'title' => 'Swift GA'
+											'image' => 'f782455d2c8e1b2860f8a236894b5cba4b853468.png',
+											'title' => 'SWIFT BOOSTERJET'
 										)
 									)
 								),
@@ -2366,28 +2513,21 @@
 														'class' => 'price'
 													),
 													'class' => 'first',
-													'title' => '<p><span>TM 2017 $214,990.00</span><span>TA 2017 $229,990.00</span></p>'
+													'title' => '<p><span>TM 2018 $224,990.00</span><span>CVT 2018 $239,990.00</span></p>'
 												),
 												'second' => array(
 													'price' => array(
 														'class' => 'price'
 													),
 													'class' => 'second',
-													'title' => '<p><span>TM 2017 $239,990.00</span><span>TA 2017 $254,990.00</span></p>'
+													'title' => '<p><span>TM 2018 $244,990.00</span><span>CVT 2018 $259,990.00</span></p>'
 												),
 												'third' => array(
 													'price' => array(
 														'class' => 'price'
 													),
-													'class' => 'third',
-													'title' => '<p><span>TM 2017 $252,990.00</span><span>TA 2017 $265,990.00</span></p>'
-												),
-												'fourth' => array(
-													'price' => array(
-														'class' => 'price'
-													),
-													'class' => 'fourth last',
-													'title' => '<p><span>TM 2017 $189,990.00</span></p>'
+													'class' => 'thrid',
+													'title' => '<p><span>TM 2018 $264,990.00</span><span>TA 2018 $279,990.00</span></p>'
 												)
 											)
 										),
@@ -2397,19 +2537,15 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T, 16 válvulas.</p>'
+													'title' => '<p>TM: Transmisión manual de 5 velocidades  o transmisión CVT</p>'
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T, 16 válvulas.</p>'
+													'title' => '<p>TM: Transmisión manual de 5 velocidades  o transmisión CVT</p>'
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T .16 válvulas.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T, 16 válvulas.</p>'
+													'title' => '<p>Motor: 3 cilindros, 1.0 litros V V T .12 válvulas.</p>'
 												)
 											)
 										),
@@ -2419,90 +2555,20 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>TM: Transmisión manual de 5 velocidades<br />TA: Transmisión automática de 4 velocidades</p>'
+													'title' => '<p>Potencia neta: (hp@rpm) 82 hp @ 6,000 rpm</p>'
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>TM: Transmisión manual de 5 velocidades<br />TA: Transmisión automática de 4 velocidades</p>'
+													'title' => '<p>Potencia neta (hp@rpm): 82 hp @ 6,000 rpm.</p>'
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>TM: Transmisión manual de 5 velocidades<br />TA: Transmisión automática de 4 velocidades</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p> Transmisión manual de 5 velocidades</p>'
+													'title' => '<p>TM: Transmisión manual de 5 velocidades o Transmisión automática de 6 velocidades.</p>'
 												)
 											)
 										),
 										array(
 											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>'
-												)
-											)
-										),
-										array(
-											'class' => 'dark',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p>Elevadores eléctricos de cristales.</p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Elevadores eléctricos de cristales.</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Elevadores eléctricos de cristales.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p>Elevadores eléctricos de cristales.</p>'
-												)
-											)
-										),
-										array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p>Seguros y espejos eléctricos.</p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Seguros y espejos eléctricos.</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Seguros y espejos eléctricos.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p>Seguros y espejos eléctricos.</p>'
-												)
-											)
-										),
-										array(
-											'class' => 'dark',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2515,33 +2581,7 @@
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>ABS (Sistema Antibloqueo de Frenos).</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p>ABS (Sistema Antibloqueo de Frenos).</p>'
-												)
-											)
-										),
-										array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p>Asistencia de frenado.</p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Asistencia de frenado.</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Asistencia de frenado.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p>Asistencia de frenado.</p>'
+													'title' => '<p>Potencia neta (hp@rpm): 110 hp @ 5,500 rpm.</p>'
 												)
 											)
 										),
@@ -2551,19 +2591,15 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Rines: Aluminio de 16".</p>'
+													'title' => '<p>Asistencia de frenado.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Rines: Aluminio de 16".</p>'
+													'title' => '<p>Seguros y espejos eléctricos.</p>'
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>Rine: pintado en color “Gun Metalic".</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p>Rines: Acero de 15".</p>'
+													'title' => '<p>Paletas de cambio en el volante (exclusivo para TA)</p>'
 												)
 											)
 										),
@@ -2577,15 +2613,11 @@
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>'
+													'title' => '<p>ABS (Sistema Antibloqueo de Frenos con EBD).</p>'
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>'
+													'title' => '<p>Control electrónico de  Estabilidad ESP.</p>'
 												)
 											)
 										),
@@ -2595,19 +2627,15 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Suspensión delantera: McPherson.</p>'
+													'title' => '<p>Controles de audio en el volante y manos libres.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Suspensión delantera: McPherson.</p>'
+													'title' => '<p>Asistencia de frenado.</p>'
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>Suspensión delantera: McPherson.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p>Suspensión delantera: McPherson.</p>'
+													'title' => '<p>ABS (Sistema Antibloqueo de Frenos con EBD).</p>'
 												)
 											)
 										),
@@ -2617,19 +2645,15 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Suspensión trasera: Eje rígido.</p>'
+													'title' => '<p>Sistema de audio AM / FM / CD / MP3.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Suspensión trasera: Eje rígido.</p>'
+													'title' => '<p> Rines de aleación de aluminio pulido de 16"</p>'
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>Suspensión trasera: Eje rígido.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p>Suspensión trasera: Eje rígido.</p>'
+													'title' => '<p>Asistencia de frenado. Frenos de disco en las cuatro ruedas.</p>'
 												)
 											)
 										),
@@ -2639,19 +2663,87 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Controles de audio en el volante.</p>'
+													'title' => '<p>4 bocinas.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Controles de audio y velocidad crucero en el volante.</p>'
+													'title' => '<p> Dirección Eléctricamente Asistida (EPS).</p>'
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p> Conexión Bluetooth®.</p>'
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p>Suspensión delantera: McPherson.</p>'
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Hill hold</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Elevadores eléctricos de cristales.</p>'
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p>Controles de audio y velocidad crucero en el volante y manos libres.</p>'
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Botón de arranque (Keyless push start).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Seguros y espejos eléctricos.</p>'
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p>Pantalla touch de 7” con integración Apple carplay y Android auto.</p>'
 												),
 												'third' => array(
 													'class' => 'third',
 													'title' => '<p>Controles de audio y velocidad crucero en el volante.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Faros de niebla.</p>'
 												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p>Conexión USB y Bluetooth®.</p>'
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Pantalla touch de 7” con integración Apple carplay y Android auto </p>'
 												)
 											)
 										),
@@ -2661,95 +2753,61 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Sistema de audio AM / FM / CD / MP3.</p>'
+													'title' => '<p>Faros de halogeno multireflector.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Sistema de audio AM / FM / CD / MP3.</p>'
+													'title' => '<p>4 bocinas + 2 tweeters frontales.</p>'
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>Sistema de audio AM / FM / CD / MP3.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
+													'title' => '<p>Conexión puerto USB y Bluetooth®.</p>'
 												)
 											)
 										),
-                                        array(
+										array(
 											'class' => 'dark',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Conexión USB.</p>'
+													'title' => '<p>Luces de circulación diurna. (DRL)</p>'
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Conexión USB.</p>'
+													'title' => '<p> Frenos de disco en las cuatro ruedas.</p>'
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>Conexión USB.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
+													'title' => '<p>4 bocinas + 2 tweeters frontales.</p>'
 												)
 											)
 										),
-                                        array(
+										array(
 											'class' => 'light',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Conexión Bluetooth®</p>'
+													'title' => '<p>Rines de aleación de aluminio R16.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Frenos de disco en las cuatro ruedas.</p>'
+													'title' => '<p>Botón de arranque (Keyless push start).</p>'
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>Frenos de disco en las cuatro ruedas.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
+													'title' => '<p> Seguros y espejos eléctricos.</p>'
 												)
 											)
 										),
-                                        array(
+										array(
 											'class' => 'dark',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Botón de arranque (Keyless start).</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Botón de arranque (Keyless start).</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => ''
 												),
 												'second' => array(
 													'class' => 'second',
@@ -2757,288 +2815,218 @@
 												),
 												'third' => array(
 													'class' => 'third',
+													'title' => '<p>Elevadores eléctricos de cristales.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => ''
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p>Volante con ajuste de altura y profundidad.</p>'
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Encendido automático de faros.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => ''
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p>Luces diurnas de led integradas en faros.</p>'
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Luces diurnas de led integradas en faros.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => ''
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p> Faros de led con lupas y ajuste de altura manual.</p>'
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Faros de led con ajuste manual de altura.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => ''
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p>Apertura electromagnética de 5ta puerta.</p>'
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Espejos abatibles eléctricamente.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => ''
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p>Faros de niebla.</p>'
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Espejos laterales con luz direccional integrada.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => ''
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p>Faros de niebla.</p>'
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Espejos laterales con luz direccional integrada.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => ''
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => ''
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Suspensión delantera: McPherson.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => ''
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => ''
+												),
+												'third' => array(
+													'class' => 'third',
+													'title' => '<p>Suspensión trasera: Barra de torsión</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => ''
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => ''
+												),
+												'third' => array(
+													'class' => 'third',
 													'title' => '<p>Aire acondicionado automático.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
 												)
 											)
 										),
-                                        array(
+										array(
 											'class' => 'dark',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => ''
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Quemacocos eléctrico, corredizo de tres posiciones.</p>'
+													'title' => ''
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>Quemacocos eléctrico, corredizo de tres posiciones.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
+													'title' => '<p>Seis bolsas de aire.</p>'
 												)
 											)
 										),
-                                        array(
+										array(
 											'class' => 'light',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => ''
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p>Pantalla Touch de 6.1" WVGA.</p>'
+													'title' => ''
 												),
 												'third' => array(
 													'class' => 'third',
-													'title' => '<p>Pantalla Touch de 6.1" WVGA.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'dark',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Conexión  Bluetooth®</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Conexión  Bluetooth®</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Luces de circulación diurna (DRL).</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Luces de circulación diurna (DRL).</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'dark',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Biseles de faros de niebla con luces Led.</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Biseles de faros de niebla con luces Led.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Luz de freno central en 5ta puerta con Led.</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Luz de freno central en 5ta puerta con Led.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'dark',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Parrilla cromada.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Spoiler superior trasero.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'dark',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Asientos con tapicería tipo gamuza/piel.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Costuras claras en asientos, volante y cubierta de palanca de velocidades.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'dark',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Tapicería tipo gamuza en puertas.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Estéreo Pioneer AVH-X8850BT con pantalla touch a color de 7" (panel desmontable).</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth last',
-													'title' => '<p></p>'
+													'title' => '<p>Rines de aleación de aluminio pulido R16.</p>'
 												)
 											)
 										)
 									),
 									'col' => array(
-										'class' => '4'
-									)/*,
-									'height' => 'equal-height'*/
+										'class' => '3'
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-swift-sport',
 									'href' => 'catalogo-swift-2017.pdf'
-								),
+								)
 							)
 						)
 					),
@@ -3529,10 +3517,12 @@
 					'id' => '4',
 					'inicio' => array(
 						'main' => array(
-							'image' => 'kizashi.png',
-							'title' => 'Kizashi 2017',
-							'slogan' => 'Experimenta evolución. Distinción a primera vista.',
-							'price' => '"Algo grande está por venir". Imponente diseño con finos acabados que roban miradas.'
+							'normal' => array(
+								'image' => 'kizashi.png',
+								'title' => 'Kizashi 2017',
+								'slogan' => 'Experimenta evolución. Distinción a primera vista.',
+								'price' => '"Algo grande está por venir". Imponente diseño con finos acabados que roban miradas.'
+							)
 						)
 					),
 					'caracteristicas' => array(
@@ -4513,10 +4503,70 @@
 					'id' => '5',
 					'inicio' => array(
 						'main' => array(
-							'image' => 'grand-vitara.png',
-							'title' => 'Grand Vitara 2017',
-							'slogan' => 'Experimenta libertad.',
-							'price' => 'Seguridad, control y poder. El balance perfecto en una SUV.'
+							'new' => array(
+								'image' => 'grand-vitara.png',
+								'title' => 'Grand Vitara 2017',
+								'subtitle' => 'Seguridad, control y poder. El balance perfecto en una SUV.',
+								'slogan' => 'Experimenta libertad.',
+								'medals' => array(
+								),
+								'price' => '$340,990.00',
+								'asterisk' => 'Versión SPECIAL TA',
+								'car_box' => array(
+									'img' => '02e16d69329e7d5052662df069178ce250b71222.png',
+									'description' => 'Plata Metalico  disponible en GL, GLS, 4x4',
+									'picker' => array(
+										array(
+											'class' => 'active',
+											'color_left' => '#c3ccd0',
+											'color_right' => '#',
+											'available' => 'GL, GLS, 4x4',
+											'colorname' => 'Plata Metalico',
+											'image' => '02e16d69329e7d5052662df069178ce250b71222.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#363a3f',
+											'color_right' => '#',
+											'available' => 'GL, GLS',
+											'colorname' => 'Quasar',
+											'image' => '407b9fdd4d03c407b59610a1cc7dbfd61c59b75d.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#88847f',
+											'color_right' => '#',
+											'available' => 'GL, GLS, 4x4',
+											'colorname' => 'Bronce',
+											'image' => 'd9c2d154f3ba227d140cc433cb1f8db6feca913d.png'
+										),
+										array(
+											'class' => 'm-model-colors__picker__item__link__clear',
+											'color_left' => '#e9ebeb',
+											'color_right' => '#',
+											'available' => 'GL, GLS,SPECIAL',
+											'colorname' => 'Blanco Perlado',
+											'image' => '1ca8832e13ffaf8e3a803dce3adc6b7d86e1bc89.png'
+										),
+										array(
+											'class' => 'm-model-colors__picker__item__link__clear',
+											'color_left' => '#b4b4b3',
+											'color_right' => '#',
+											'available' => 'SPECIAL',
+											'colorname' => 'Plata Special',
+											'image' => '8e43628b4fa31794f0c487c0540a68e59b503e71.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#3a2a2d',
+											'color_right' => '#',
+											'available' => 'GL, GLS, 4x4',
+											'colorname' => 'Tabaco',
+											'image' => 'fd3a13bc9f4ec622a0a60b727f0da07aa8b7c61f.png'
+										)
+									)
+								)
+							)
 						)
 					),
 					'caracteristicas' => array(
@@ -5311,8 +5361,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									)/*,
-									'height' => 'equal-height'*/
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-grand-vitara',
@@ -5843,10 +5893,62 @@
 					'id' => '6',
 					'inicio' => array(
 						'main' => array(
-							'image' => 's-cross.png',
-							'title' => 'S-CROSS 2017',
-							'slogan' => 'Experimenta sin límite. Una nueva visión.',
-							'price' => 'Fuerza, elegancia  y confort en cualquier condición.'
+							'new' => array(
+								'image' => 's-cross.png',
+								'title' => 'S-CROSS 2017',
+								'subtitle' => 'Fuerza, elegancia y confort en cualquier condición.',
+								'slogan' => 'Experimenta sin límite. Una nueva visión.',
+								'medals' => array(
+								),
+								'price' => '$289,990.00',
+								'asterisk' => 'Versión GL  TM',
+								'car_box' => array(
+									'img' => '7e8c5e52732d88954200358adcc02d746fbfcfec.png',
+									'description' => 'Blanco Iridio Perlado disponible en GL, GLX',
+									'picker' => array(
+										array(
+											'class' => 'active m-model-colors__picker__item__link__clear',
+											'color_left' => '#f4f4f4',
+											'color_right' => '#',
+											'available' => 'GL, GLX',
+											'colorname' => 'Blanco Iridio Perlado',
+											'image' => '7e8c5e52732d88954200358adcc02d746fbfcfec.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#c7cdd2',
+											'color_right' => '#',
+											'available' => 'GL',
+											'colorname' => 'Plata Paladio',
+											'image' => '7258bcb0cc2fe5a2df07ba26e9c293f919b1b078.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#686868',
+											'color_right' => '#',
+											'available' => 'GL, GLX, TURBO',
+											'colorname' => 'Plata Mercurio',
+											'image' => 'bb3880762a1fe5b3e5d12847dc371b91447fa58f.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#c2262a',
+											'color_right' => '#',
+											'available' => 'TURBO',
+											'colorname' => 'Rojo',
+											'image' => '2d89a55c6d0445c027d3b4b40889a240512161a5.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#D06F00',
+											'color_right' => '#',
+											'available' => 'GLX, TURBO',
+											'colorname' => 'Terracota',
+											'image' => 'f4c6087df112d175e7460e54c28cf171ff70c787.png'
+										)
+									)
+								)
+							)
 						)
 					),
 					'caracteristicas' => array(
@@ -6343,8 +6445,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									)/*,
-									'height' => 'equal-height'*/
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-s-cross',
@@ -6937,10 +7039,66 @@
 					'id' => '7',
 					'inicio' => array(
 						'main' => array(
-							'image' => 'ciaz.png',
-							'title' => 'Ciaz 2017',
-							'slogan' => 'Experimenta tu momento.',
-							'price' => 'Diseño perfecto con el equipamiento ideal. La revolución sedán está aquí.'
+							'new' => array(
+								'image' => 'ciaz.png',
+								'title' => 'Ciaz 2017',
+								'subtitle' => 'Diseño perfecto con el equipamiento ideal. La revolución sedán está aquí.',
+								'slogan' => 'Experimenta tu momento.',
+								'medals' => array(
+									array(
+										'img' => '4a1708fbf8ea0903af7ce19315efac33406dddd0.png',
+										'alt' => 'Reconocimiento'
+									)
+								),
+								'price' => '$224,990.00',
+								'asterisk' => 'Versión GLS TM',
+								'car_box' => array(
+									'img' => '207d8fa0cb20454aca49571a9a5b60d2eb0ffee3.png',
+									'description' => 'Blanco Horizonte disponible en GLS, GLX',
+									'picker' => array(
+										array(
+											'class' => 'active m-model-colors__picker__item__link__clear',
+											'color_left' => '#f1f1f1',
+											'color_right' => '#',
+											'available' => 'GLS, GLX',
+											'colorname' => 'Blanco Horizonte',
+											'image' => '207d8fa0cb20454aca49571a9a5b60d2eb0ffee3.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#b9bfc3',
+											'color_right' => '#',
+											'available' => 'GLS, GLX',
+											'colorname' => 'Plata Metálico',
+											'image' => 'f5bd8385465e5a5051528c0e0f90413d22d14432.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#424242',
+											'color_right' => '#',
+											'available' => 'GLX',
+											'colorname' => 'Plata Mercurio',
+											'image' => 'b0470a99a73bb87b2e3ed913b5fb00f2c15501cb.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#B51521',
+											'color_right' => '#',
+											'available' => 'RS',
+											'colorname' => 'Rojo Absoluto',
+											'image' => '6887453176bda0235af9fb6ffd6ceb2f9f95f489.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#1C1C1C',
+											'color_right' => '#',
+											'available' => 'RS',
+											'colorname' => 'Negro Ónix',
+											'image' => '5041b91a909e525162682bdd7fe6ab34c656db86.png'
+										)
+									)
+								)
+							)
 						)
 					),
 					'caracteristicas' => array(
@@ -7595,8 +7753,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									)/*,
-									'height' => 'equal-height'*/
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha_ciaz',
@@ -8119,10 +8277,111 @@
 					'id' => '8',
 					'inicio' => array(
 						'main' => array(
-							'image' => 'nueva-vitara.png',
-							'title' => 'Nueva Vitara 2017',
-							'slogan' => 'Diseño deportivo, movilidad feroz',
-							'price' => 'La más equipada, personalizable y divertida. Colores que inspiran a romper las reglas.'
+							'new' => array(
+								'image' => 'nueva-vitara.png',
+								'title' => 'Nueva Vitara 2017',
+								'subtitle' => 'Diseño perfecto con el equipamiento ideal. La revolución sedán está aquí.',
+								'slogan' => 'Diseño deportivo, movilidad feroz',
+								'medals' => array(
+									array(
+										'img' => '77b379eb58cc1fcd7e130e6b436ea8ac8d3a6519.png',
+										'alt' => 'Reconocimiento'
+									),
+									array(
+										'img' => '42ed9cb5cc709347e540d8e525ee90bd4e5cce04.png',
+										'alt' => 'Reconocimiento'
+									)
+								),
+								'price' => '$274,990.00',
+								'asterisk' => 'Versión GLS MT 2016',
+								'car_box' => array(
+									'img' => '0d349a03aab4f9f3cc6d0eb95fe6188144ead067.png',
+									'description' => 'Blanco Iridio Perlado disponible en GLS',
+									'picker' => array(
+										array(
+											'class' => 'active m-model-colors__picker__item__link__clear',
+											'color_left' => '#eaeaeb',
+											'color_right' => '#',
+											'available' => 'GLS',
+											'colorname' => 'Blanco Iridio Perlado',
+											'image' => '0d349a03aab4f9f3cc6d0eb95fe6188144ead067.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#c7c7cb',
+											'color_right' => '#',
+											'available' => 'GLS',
+											'colorname' => 'Plata Paladio',
+											'image' => '4744ad4c8eb5a214f7ac8d49e0156bf8f974da2f.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#848484',
+											'color_right' => '#',
+											'available' => 'GLS',
+											'colorname' => 'Plata Mercurio',
+											'image' => '9173add1f5396ffa2c0754bfbc7318198b5e8462.png'
+										),
+										array(
+											'class' => '',
+											'color_left' => '#2ab4be',
+											'color_right' => '#',
+											'available' => 'GLS',
+											'colorname' => 'Turquesa',
+											'image' => 'd570cf122eda439ccc7fd54b74a90bc18aba6ddc.png'
+										),
+										array(
+											'class' => 'bicolor',
+											'color_left' => '#c7c7cb',
+											'color_right' => '#2ab4be;',
+											'available' => 'GLX',
+											'colorname' => 'Océano',
+											'image' => '454937060f97b5bea53b5f4d65e0277564528ea0.png'
+										),
+										array(
+											'class' => 'bicolor',
+											'color_left' => '#2d2d2d',
+											'color_right' => '#989b9d',
+											'available' => 'GLX',
+											'colorname' => 'Rascacielos',
+											'image' => '90fffdab64e9c7ecb388026b8fc07101601435cc.png'
+										),
+										array(
+											'class' => 'bicolor',
+											'color_left' => '#2d2d2d',
+											'color_right' => '#bcb7ad;',
+											'available' => 'RGLXS',
+											'colorname' => 'Crema Irlandesa',
+											'image' => '284940be1ca9bb550caaceb7f21589d9b28fb384.png'
+										),
+										array(
+											'class' => 'bicolor',
+											'color_left' => '#2d2d2d',
+											'color_right' => '#c24648',
+											'available' => 'GLX',
+											'colorname' => 'Cardenal',
+											'image' => '0d9d2f76c2ea22af851c5781d3cf803637b06e99.png'										
+										),
+										array(
+											'class' => 'bicolor',
+											'color_left' => '#2d2d2d',
+											'color_right' => '#989b9d',
+											'available' => 'TURBO',
+											'colorname' => 'Rascacielos',
+											'image' => 'd50b835f6087549a1d4ff93564eb39d70b653810.png'
+										),
+										array(
+											'class' => 'bicolor',
+											'color_left' => '#2d2d2d',
+											'color_right' => '#CE1919',
+											'available' => 'TURBO',
+											'colorname' => 'Cardenal',
+											'image' => '7fbb3d7ff74cacca272a0caa6d47733922784160.png'
+										
+										)
+									)
+								)
+							)
 						)
 					),
 					'caracteristicas' => array(
@@ -8872,8 +9131,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									)/*,
-									'height' => 'equal-height'*/
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-nueva-vitara',

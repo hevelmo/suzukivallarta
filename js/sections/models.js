@@ -1,6 +1,6 @@
 detectNavigatorMethods.IE10();
 is_mobileMethods.is_mobile();
-modifyHeight("#features-space .suzuki-table .row");
+modifyHeight("#features-space .suzuki-table .body .row .cell div.title p");
 features_tables.init_is_mobile();
 is_mobileMethods.is_mobile_versions_price_table();
 
@@ -84,8 +84,8 @@ modelsMenuMethods.scrollSwitchMethod();
             $div = $(this);
             if( display_vct_class == $div.data('display-table') ){
                 $div.fadeOut().fadeIn(1000);
-                modifyHeight("#features-space .suzuki-table .row");
-                //modifyHeight("#features-space .suzuki-table .body .row");
+                //modifyHeight("#features-space .suzuki-table .row");
+                //modifyHeight("#features-space .suzuki-table .body .row .cell div.title p");
             }else{
                 $div.hide();
             }
@@ -100,16 +100,6 @@ modelsMenuMethods.scrollSwitchMethod();
         }, 900 );
     });
     display_versions_comparative();
-    /*$.fn.equalHeights = function(){
-        var max_height = 0;
-        $(this).each(function(){
-            max_height = Math.max($(this).height(), max_height);
-        });
-        $(this).each(function(){
-            $(this).height(max_height);
-        });
-    };
-    $('#features-space .suzuki-table .body .row .cell.equal-height').equalHeights();*/
     modelsMenuMethods.changeNameModel($(this));
 
     $('body').on('click', '#model-test-drive-flag-link', modelsMenuMethods.preventDefault_flag_link);
@@ -120,3 +110,19 @@ modelsMenuMethods.scrollSwitchMethod();
     $('body').on('click', '#caracteristicas', modelsMenuMethods.preventDefault_characterics);
     $('body').on('click', '.top', modelsMenuMethods.preventDefault_class_top);
     $('body').on('click', '#top', modelsMenuMethods.preventDefault_id_top);
+
+    
+
+/**
+ * Change the car color.
+ * @param  {Event} e)
+ */
+$(".js-color-picker").bind("click", function (e) {
+  e.preventDefault();
+
+  $(".js-color-picker").removeClass("active");
+  $(this).addClass("active");
+
+  $(".js-color-image").attr("src", $(this).data("color"));
+  $(".js-color-available").text($(this).data("colorname") + " disponible en " + $(this).data("available"));
+});

@@ -4,17 +4,93 @@
         {% set begin = model.inicio %}
         {% if begin %}
             <a class="section-separator" name="inicio"></a>
-            <div class="full-size-section gray-degree window-adaptable model-section" data-min-height="650">
-                <div class="car-main big-main" style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.image }}') center 175px no-repeat">
-                    <div class="car-main-title">
-                        <div class="title">{{ begin.main.title }}</div>
-                        <div class="slogan">{{ begin.main.slogan }}</div>
-                        <div class="price">{{ begin.main.price }}</div>
-                        <div class="car-main-image" id="car-image-{{ model.key }}">&nbsp;</div>
+            {% if begin.main.new %}
+                <div class="l-landing-section pos-relative js-full-height">
+                    <div class="m-model-colors">
+                        <div class="l-wrapper">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <h1 class="m-model-colors__title">{{ begin.main.new.title }}</h1>
+                                    <p class="m-model-colors__subtitle">{{ begin.main.new.subtitle }}</p>
+                                    <ul class="m-model-colors__medals">
+                                        {% if begin.main.new.medals %}
+                                            {% for item in begin.main.new.medals %}
+                                                <li class="m-model-colors__medals__item">
+                                                    <img src="{{ _host }}img/sections/models/main/{{ model.key }}/{{ item.img }}" alt="{{ item.alt }}" class="m-model-colors__medals__item__image">
+                                                </li>                                                
+                                            {% endfor %}
+                                        {% endif %}
+                                    </ul>                            
+                                    <p class="m-model-colors__from-price">
+                                        Desde
+                                        <span class="m-model-colors__from-price__price">{{ begin.main.new.price }}*</span>
+                                    </p>
+                                    <span class="m-model-colors__asterisk">*{{ begin.main.new.asterisk }}</span>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <div class="m-model-colors__car-box">
+                                        <img src="{{ _host }}img/sections/models/main/{{ model.key }}/{{ begin.main.new.car_box.img }}" alt="Color" class="m-model-colors__car-box__image js-color-image">
+                                    </div>
+                                    <p class="m-model-colors__available js-color-available">{{ begin.main.new.car_box.description }}</p>
+                                    <ul class="m-model-colors__picker">
+                                        {% for picker in begin.main.new.car_box.picker %}
+                                            <li class="m-model-colors__picker__item">
+                                                <a href="#" class="m-model-colors__picker__item__link js-color-picker {{ picker.class }}" style="color: {{ picker.color_left }};" data-hex="{{ picker.color_left }}" data-available="{{ picker.available }}" data-colorname="{{ picker.colorname }}" data-color="{{ _host }}img/sections/models/main/{{ model.key }}/{{ picker.image }}">
+                                                    <div class="m-model-colors__picker__item__link__circle-o" style="border-color: {{ picker.color_left }};"></div>
+                                                    <div class="m-model-colors__picker__item__link__circle" style="background-color: {{ picker.color_left }};"></div>
+                                                    <div class="m-model-colors__picker__item__link__bicolor">
+                                                        <div class="m-model-colors__picker__item__link__bicolor__left" style="background-color: {{ picker.color_left }};"></div>
+                                                        <div class="m-model-colors__picker__item__link__bicolor__right" style="background-color: {{ picker.color_right }};"></div>
+                                                    </div>
+                                                </a>
+                                            </li>                                        
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <p class="m-model-colors__disclaimer">
+                                        Los valores de rendimiento de combustible indicados para este modelo, convenido con las autoridades correspondientes, es el obtenido mediante <b> pruebas de ciclo combinado, en condiciones controladas de laboratorio que pueden no ser reproducibles ni obtenerse en condiciones y hábitos de manejo convencionales</b>, debido a factores climatológicos, de combustible, condiciones topográficas, entre otros.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="car-next-step"><a href="{{ _host }}modelos/{{ model.key }}#caracteristicas"><span>Características</span></a></div>
+                    {#
+                    <div class="m-scroll-down car-next-step">
+                        <a href="{{ _host }}modelos/{{ model.key }}#caracteristicas" class="m-scroll-down__link m-scroll-down__link--real js-scroll-to">
+                            <i class="fa fa-angle-down m-scroll-down__link__icon"></i>
+                        </a>
+                        <a href="{{ _host }}modelos/{{ model.key }}#caracteristicas" class="m-scroll-down__link m-scroll-down__link--fake js-scroll-to"></a>
+                    </div>
+                    #}
+                    <div class="full-size-section gray-degree window-adaptable model-section" data-min-height="650">
+                        <div class="car-main big-main" {#style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.image }}') center 175px no-repeat"#}>
+                            {#<div class="car-main-title">
+                                <div class="title">{{ begin.main.title }}</div>
+                                <div class="slogan">{{ begin.main.slogan }}</div>
+                                <div class="price">{{ begin.main.price }}</div>
+                                <div class="car-main-image" id="car-image-{{ model.key }}">&nbsp;</div>
+                            </div>#}
+                            <div class="car-next-step"><a href="{{ _host }}modelos/{{ model.key }}#caracteristicas"><span>Características</span></a></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            {% endif %}
+            {% if begin.main.normal %}
+                <div class="full-size-section gray-degree window-adaptable model-section model-section-normal" data-min-height="650">
+                    <div class="car-main big-main" style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.normal.image }}') center 175px no-repeat">
+                        <div class="car-main-title">
+                            <div class="title">{{ begin.main.normal.title }}</div>
+                            <div class="slogan">{{ begin.main.normal.slogan }}</div>
+                            <div class="price">{{ begin.main.normal.price }}</div>
+                            <div class="car-main-image" id="car-image-{{ model.key }}">&nbsp;</div>
+                        </div>
+                        <div class="car-next-step car-next-step-normal"><a href="{{ _host }}modelos/{{ model.key }}#caracteristicas"><span>Características</span></a></div>
+                    </div>
+                </div>
+            {% endif %}
         {% endif %}
     {# block home end #}
     {# block characteristics #}
@@ -192,7 +268,7 @@
                                                         {% if rows.cell.first %}
                                                             {% if rows.cell.first or rows.cell.first.price %}
                                                                 <div class="cell {#{{ body.height }}#} {{ rows.cell.first.price.class }} col-{{ rows.cell.class }} {{ rows.cell.first.class }}">
-                                                                    <div class="title to-html">
+                                                                    <div class="title to-html {{ body.height }}">
                                                                         {% if rows.cell.first.title %}
                                                                             {{ rows.cell.first.title }}
                                                                         {% endif %}
@@ -206,7 +282,7 @@
                                                             {% endif %}
                                                             {% if rows.cell.second or rows.cell.second.price %}
                                                                 <div class="cell {#{{ body.height }}#} {{ rows.cell.second.price.class }} col-{{ rows.cell.class }} {{ rows.cell.second.class }}">
-                                                                    <div class="title to-html">
+                                                                    <div class="title to-html {{ body.height }}">
                                                                         {% if rows.cell.second.title %}
                                                                             {{ rows.cell.second.title }}
                                                                         {% endif %}
@@ -220,7 +296,7 @@
                                                             {% endif %}
                                                             {% if rows.cell.third or rows.cell.third.price %}
                                                                 <div class="cell {#{{ body.height }}#} {{ rows.cell.third.price.class }} col-{{ rows.cell.class }} {{ rows.cell.third.class }}">
-                                                                    <div class="title to-html">
+                                                                    <div class="title to-html {{ body.height }}">
                                                                         {% if rows.cell.third.title %}
                                                                             {{ rows.cell.third.title }}
                                                                         {% endif %}
@@ -234,7 +310,7 @@
                                                             {% endif %}
                                                             {% if rows.cell.fourth or rows.cell.fourth.price %}
                                                                 <div class="cell {#{{ body.height }}#} {{ rows.cell.fourth.price.class }} col-{{ rows.cell.class }} {{ rows.cell.fourth.class }}">
-                                                                    <div class="title to-html">
+                                                                    <div class="title to-html {{ body.height }}">
                                                                         {% if rows.cell.fourth.title %}
                                                                             {{ rows.cell.fourth.title }}
                                                                         {% endif %}

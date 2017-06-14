@@ -183,7 +183,7 @@
 /* ------------------------------------------------------ *\
     [functions] modifyHeight
 \* ------------------------------------------------------ */
-    function modifyHeight(selector){
+    /*function modifyHeight(selector){
         $(selector).each(function (index, Element) {
             var cell_array = new Array(2);
             var cell_height = 0;
@@ -195,7 +195,7 @@
             cell_height = Math.min.apply( Math, cell_array );
             $(this).find(".cell").css("height", cell_height);
         });
-    }
+    }*/
 /* ------------------------------------------------------ *\
     [functions] switch_menus
 \* ------------------------------------------------------ */
@@ -330,7 +330,7 @@
 /* ------------------------------------------------------ *\
     [functions] display_versions_comparative
 \* ------------------------------------------------------ */
-    function display_versions_comparative(){
+    /*function display_versions_comparative(){
         var $div;
         $display_tables.each(function(){
             $div = $(this);
@@ -342,7 +342,7 @@
                 $div.hide();
             }
         });
-    }
+    }*/
 /* ------------------------------------------------------ *\
     [functions] resetAlert
 \* ------------------------------------------------------ */
@@ -2076,8 +2076,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    display_versions_comparative();
-                    modifyHeight("#features-space .suzuki-table .body .row");
+                    /*display_versions_comparative();
+                    modifyHeight("#features-space .suzuki-table .body .row");*/
                 break;
                 case 'swift-sport':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2090,8 +2090,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    display_versions_comparative();
-                    modifyHeight("#features-space .suzuki-table .body .row");
+                    /*display_versions_comparative();
+                    modifyHeight("#features-space .suzuki-table .body .row");*/
                 break;
                 case 'swift':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2104,8 +2104,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    display_versions_comparative();
-                    modifyHeight("#features-space .suzuki-table .body .row");
+                    /*display_versions_comparative();
+                    modifyHeight("#features-space .suzuki-table .body .row");*/
                 break;
                 case 'sx4-crossover':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2116,8 +2116,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    display_versions_comparative();
-                    modifyHeight("#features-space .suzuki-table .body .row");
+                    /*display_versions_comparative();
+                    modifyHeight("#features-space .suzuki-table .body .row");*/
                 break;
                 case 'sx4-sedan':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2128,8 +2128,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    display_versions_comparative();
-                    modifyHeight("#features-space .suzuki-table .body .row");
+                    /*display_versions_comparative();
+                    modifyHeight("#features-space .suzuki-table .body .row");*/
                 break;
                 case 'kizashi':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2142,8 +2142,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    display_versions_comparative();
-                    modifyHeight("#features-space .suzuki-table .body .row");
+                    /*display_versions_comparative();
+                    modifyHeight("#features-space .suzuki-table .body .row");*/
                 break;
                 case 'grand-vitara':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2156,8 +2156,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    display_versions_comparative();
-                    modifyHeight("#features-space .suzuki-table .body .row");
+                    /*display_versions_comparative();
+                    modifyHeight("#features-space .suzuki-table .body .row");*/
                 break;
                 case 's-cross':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2170,8 +2170,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    display_versions_comparative();
-                    modifyHeight("#features-space .suzuki-table .body .row");
+                    /*display_versions_comparative();
+                    modifyHeight("#features-space .suzuki-table .body .row");*/
                 break;
                 case 'ciaz':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2184,8 +2184,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    display_versions_comparative();
-                    modifyHeight("#features-space .suzuki-table .body .row");
+                    /*display_versions_comparative();
+                    modifyHeight("#features-space .suzuki-table .body .row");*/
                 break;
                 case 'nueva-vitara':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2198,8 +2198,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    display_versions_comparative();
-                    modifyHeight("#features-space .suzuki-table .body .row");
+                    /*display_versions_comparative();
+                    modifyHeight("#features-space .suzuki-table .body .row");*/
                 break;
                 case 'financing':
                     hidden_elements_funding_general_elements = [

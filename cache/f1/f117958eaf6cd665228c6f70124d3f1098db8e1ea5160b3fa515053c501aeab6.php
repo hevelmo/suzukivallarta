@@ -28,72 +28,237 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
         if ((isset($context["begin"]) ? $context["begin"] : null)) {
             // line 6
             echo "            <a class=\"section-separator\" name=\"inicio\"></a>
-            <div class=\"full-size-section gray-degree window-adaptable model-section\" data-min-height=\"650\">
-                <div class=\"car-main big-main\" style=\"background: url('";
-            // line 8
-            echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-            echo "img/sections/models/main/";
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "image", array()), "html", null, true);
-            echo "') center 175px no-repeat\">
-                    <div class=\"car-main-title\">
-                        <div class=\"title\">";
-            // line 10
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "title", array()), "html", null, true);
-            echo "</div>
-                        <div class=\"slogan\">";
-            // line 11
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "slogan", array()), "html", null, true);
-            echo "</div>
-                        <div class=\"price\">";
-            // line 12
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "price", array()), "html", null, true);
-            echo "</div>
-                        <div class=\"car-main-image\" id=\"car-image-";
-            // line 13
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
-            echo "\">&nbsp;</div>
+            ";
+            // line 7
+            if ($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "new", array())) {
+                // line 8
+                echo "                <div class=\"l-landing-section pos-relative js-full-height\">
+                    <div class=\"m-model-colors\">
+                        <div class=\"l-wrapper\">
+                            <div class=\"row\">
+                                <div class=\"col-md-6 col-sm-12\">
+                                    <h1 class=\"m-model-colors__title\">";
+                // line 13
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "new", array()), "title", array()), "html", null, true);
+                echo "</h1>
+                                    <p class=\"m-model-colors__subtitle\">";
+                // line 14
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "new", array()), "subtitle", array()), "html", null, true);
+                echo "</p>
+                                    <ul class=\"m-model-colors__medals\">
+                                        ";
+                // line 16
+                if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "new", array()), "medals", array())) {
+                    // line 17
+                    echo "                                            ";
+                    $context['_parent'] = $context;
+                    $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "new", array()), "medals", array()));
+                    foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+                        // line 18
+                        echo "                                                <li class=\"m-model-colors__medals__item\">
+                                                    <img src=\"";
+                        // line 19
+                        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+                        echo "img/sections/models/main/";
+                        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
+                        echo "/";
+                        echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "img", array()), "html", null, true);
+                        echo "\" alt=\"";
+                        echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "alt", array()), "html", null, true);
+                        echo "\" class=\"m-model-colors__medals__item__image\">
+                                                </li>                                                
+                                            ";
+                    }
+                    $_parent = $context['_parent'];
+                    unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
+                    $context = array_intersect_key($context, $_parent) + $_parent;
+                    // line 22
+                    echo "                                        ";
+                }
+                // line 23
+                echo "                                    </ul>                            
+                                    <p class=\"m-model-colors__from-price\">
+                                        Desde
+                                        <span class=\"m-model-colors__from-price__price\">";
+                // line 26
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "new", array()), "price", array()), "html", null, true);
+                echo "*</span>
+                                    </p>
+                                    <span class=\"m-model-colors__asterisk\">*";
+                // line 28
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "new", array()), "asterisk", array()), "html", null, true);
+                echo "</span>
+                                </div>
+                                <div class=\"col-md-5 col-sm-12\">
+                                    <div class=\"m-model-colors__car-box\">
+                                        <img src=\"";
+                // line 32
+                echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+                echo "img/sections/models/main/";
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
+                echo "/";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "new", array()), "car_box", array()), "img", array()), "html", null, true);
+                echo "\" alt=\"Color\" class=\"m-model-colors__car-box__image js-color-image\">
+                                    </div>
+                                    <p class=\"m-model-colors__available js-color-available\">";
+                // line 34
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "new", array()), "car_box", array()), "description", array()), "html", null, true);
+                echo "</p>
+                                    <ul class=\"m-model-colors__picker\">
+                                        ";
+                // line 36
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "new", array()), "car_box", array()), "picker", array()));
+                foreach ($context['_seq'] as $context["_key"] => $context["picker"]) {
+                    // line 37
+                    echo "                                            <li class=\"m-model-colors__picker__item\">
+                                                <a href=\"#\" class=\"m-model-colors__picker__item__link js-color-picker ";
+                    // line 38
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["picker"], "class", array()), "html", null, true);
+                    echo "\" style=\"color: ";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["picker"], "color_left", array()), "html", null, true);
+                    echo ";\" data-hex=\"";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["picker"], "color_left", array()), "html", null, true);
+                    echo "\" data-available=\"";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["picker"], "available", array()), "html", null, true);
+                    echo "\" data-colorname=\"";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["picker"], "colorname", array()), "html", null, true);
+                    echo "\" data-color=\"";
+                    echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+                    echo "img/sections/models/main/";
+                    echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
+                    echo "/";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["picker"], "image", array()), "html", null, true);
+                    echo "\">
+                                                    <div class=\"m-model-colors__picker__item__link__circle-o\" style=\"border-color: ";
+                    // line 39
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["picker"], "color_left", array()), "html", null, true);
+                    echo ";\"></div>
+                                                    <div class=\"m-model-colors__picker__item__link__circle\" style=\"background-color: ";
+                    // line 40
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["picker"], "color_left", array()), "html", null, true);
+                    echo ";\"></div>
+                                                    <div class=\"m-model-colors__picker__item__link__bicolor\">
+                                                        <div class=\"m-model-colors__picker__item__link__bicolor__left\" style=\"background-color: ";
+                    // line 42
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["picker"], "color_left", array()), "html", null, true);
+                    echo ";\"></div>
+                                                        <div class=\"m-model-colors__picker__item__link__bicolor__right\" style=\"background-color: ";
+                    // line 43
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["picker"], "color_right", array()), "html", null, true);
+                    echo ";\"></div>
+                                                    </div>
+                                                </a>
+                                            </li>                                        
+                                        ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['picker'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 48
+                echo "                                    </ul>
+                                </div>
+                            </div>
+                            <div class=\"row\">
+                                <div class=\"col-md-12 col-sm-12\">
+                                    <p class=\"m-model-colors__disclaimer\">
+                                        Los valores de rendimiento de combustible indicados para este modelo, convenido con las autoridades correspondientes, es el obtenido mediante <b> pruebas de ciclo combinado, en condiciones controladas de laboratorio que pueden no ser reproducibles ni obtenerse en condiciones y hábitos de manejo convencionales</b>, debido a factores climatológicos, de combustible, condiciones topográficas, entre otros.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class=\"car-next-step\"><a href=\"";
-            // line 15
-            echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-            echo "modelos/";
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
-            echo "#caracteristicas\"><span>Características</span></a></div>
+                    ";
+                // line 68
+                echo "                    <div class=\"full-size-section gray-degree window-adaptable model-section\" data-min-height=\"650\">
+                        <div class=\"car-main big-main\" ";
+                // line 69
+                echo ">
+                            ";
+                // line 76
+                echo "                            <div class=\"car-next-step\"><a href=\"";
+                echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+                echo "modelos/";
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
+                echo "#caracteristicas\"><span>Características</span></a></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        ";
+            ";
+            }
+            // line 81
+            echo "            ";
+            if ($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "normal", array())) {
+                // line 82
+                echo "                <div class=\"full-size-section gray-degree window-adaptable model-section model-section-normal\" data-min-height=\"650\">
+                    <div class=\"car-main big-main\" style=\"background: url('";
+                // line 83
+                echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+                echo "img/sections/models/main/";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "normal", array()), "image", array()), "html", null, true);
+                echo "') center 175px no-repeat\">
+                        <div class=\"car-main-title\">
+                            <div class=\"title\">";
+                // line 85
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "normal", array()), "title", array()), "html", null, true);
+                echo "</div>
+                            <div class=\"slogan\">";
+                // line 86
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "normal", array()), "slogan", array()), "html", null, true);
+                echo "</div>
+                            <div class=\"price\">";
+                // line 87
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["begin"]) ? $context["begin"] : null), "main", array()), "normal", array()), "price", array()), "html", null, true);
+                echo "</div>
+                            <div class=\"car-main-image\" id=\"car-image-";
+                // line 88
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
+                echo "\">&nbsp;</div>
+                        </div>
+                        <div class=\"car-next-step car-next-step-normal\"><a href=\"";
+                // line 90
+                echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+                echo "modelos/";
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
+                echo "#caracteristicas\"><span>Características</span></a></div>
+                    </div>
+                </div>
+            ";
+            }
+            // line 94
+            echo "        ";
         }
-        // line 19
+        // line 95
         echo "    ";
-        // line 20
+        // line 96
         echo "    ";
-        // line 21
+        // line 97
         echo "        ";
         $context["features"] = $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "caracteristicas", array());
-        // line 22
+        // line 98
         echo "        ";
         if ((isset($context["features"]) ? $context["features"] : null)) {
-            // line 23
+            // line 99
             echo "            <a class=\"section-separator\" name=\"caracteristicas\"></a>
             <div id=\"model-section-features\" class=\"window-adaptable model-section special-padding-top\" data-min-height=\"750\">
                 <div class=\"section-title\">
                     <div class=\"title\">";
-            // line 26
+            // line 102
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["features"]) ? $context["features"] : null), "main", array()), "section_features", array()), "title", array()), "html", null, true);
             echo "</div>
                     <div class=\"description\">";
-            // line 27
+            // line 103
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["features"]) ? $context["features"] : null), "main", array()), "section_features", array()), "description", array()), "html", null, true);
             echo "</div>
                 </div>
                 <div class=\"specifications-wrapper\">
                     <div class=\"specifications\" id=\"features-wrapper\">
                         ";
-            // line 31
+            // line 107
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["features"]) ? $context["features"] : null), "main", array()), "specifications", array()), "banner", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["banner"]) {
-                // line 32
+                // line 108
                 echo "                            <div class=\"specification\" style=\"background-image: url('";
                 echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                 echo "img/sections/models/features/";
@@ -102,14 +267,14 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                                 <div class=\"title-wrapper\" style=\"color: #fff\">
                                     <div class=\"title\">
                                         ";
-                // line 35
+                // line 111
                 echo twig_escape_filter($this->env, $this->getAttribute($context["banner"], "title", array()), "html", null, true);
                 echo "
                                     </div>
                                 </div>
                                 <div class=\"description compact\">
                                     <p>";
-                // line 39
+                // line 115
                 echo twig_escape_filter($this->env, $this->getAttribute($context["banner"], "description", array()), "html", null, true);
                 echo "</p>
                                 </div>
@@ -119,7 +284,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['banner'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 43
+            // line 119
             echo "                    </div>
                     <div class=\"clearfix\"></div>
                 </div>
@@ -132,7 +297,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                 </div>
                 <div class=\"next-link-text gallery\">
                     <a  class=\"scroll-in-site\" id=\"galeria\" href=\"";
-            // line 54
+            // line 130
             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
             echo "modelos/";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -141,45 +306,45 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
             </div>
         ";
         }
-        // line 58
+        // line 134
         echo "    ";
-        // line 59
+        // line 135
         echo "    ";
-        // line 60
+        // line 136
         echo "        ";
         $context["gallery"] = $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "galeria", array());
-        // line 61
+        // line 137
         echo "        ";
         if ((isset($context["gallery"]) ? $context["gallery"] : null)) {
-            // line 62
+            // line 138
             echo "            <a class=\"section-separator\"  name=\"galeria\"></a>
             <div class=\"window-adaptable model-section special-padding-top\" data-min-height=\"750\">
                 <div class=\"section-title\">
                     <div class=\"title\">";
-            // line 65
+            // line 141
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["gallery"]) ? $context["gallery"] : null), "main", array()), "section_gallery", array()), "title", array()), "html", null, true);
             echo "</div>
                     <div class=\"description\">";
-            // line 66
+            // line 142
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["gallery"]) ? $context["gallery"] : null), "main", array()), "section_gallery", array()), "description", array()), "html", null, true);
             echo "</div>
                 </div>
                 <div class=\"galery-grid galery-of-";
-            // line 68
+            // line 144
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
             echo "\">
                     <div class=\"content\">
                         ";
-            // line 70
+            // line 146
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["gallery"]) ? $context["gallery"] : null), "main", array()), "grid", array()), "boxes", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["boxes_gallery"]) {
-                // line 71
+                // line 147
                 echo "                            <div class=\"view view-first ";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["boxes_gallery"], "class", array()), "html", null, true);
                 echo "\">
                                 <img src=\"";
-                // line 72
+                // line 148
                 echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                 echo "img/sections/models/gallery/";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -188,7 +353,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                 echo "\" />
                                 <div class=\"mask\">
                                     <a href=\"";
-                // line 74
+                // line 150
                 echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                 echo "img/sections/models/gallery/";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -208,28 +373,28 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['boxes_gallery'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 80
+            // line 156
             echo "                    </div>
                     ";
-            // line 81
+            // line 157
             $context["exterior"] = $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["gallery"]) ? $context["gallery"] : null), "main", array()), "grid", array()), "fancybox", array()), "ext", array());
-            // line 82
+            // line 158
             echo "                    ";
             $context["interior"] = $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["gallery"]) ? $context["gallery"] : null), "main", array()), "grid", array()), "fancybox", array()), "int", array());
-            // line 83
+            // line 159
             echo "                    ";
             $context["special"] = $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["gallery"]) ? $context["gallery"] : null), "main", array()), "grid", array()), "fancybox", array()), "special", array());
-            // line 84
+            // line 160
             echo "                    ";
             if ((isset($context["exterior"]) ? $context["exterior"] : null)) {
-                // line 85
+                // line 161
                 echo "                        <div class=\"hidden-list\">
                             ";
-                // line 86
+                // line 162
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable((isset($context["exterior"]) ? $context["exterior"] : null));
                 foreach ($context['_seq'] as $context["_key"] => $context["ext"]) {
-                    // line 87
+                    // line 163
                     echo "                                <a class=\"fancybox-thumbs\" href=\"";
                     echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                     echo "img/sections/models/gallery/";
@@ -242,7 +407,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                     echo twig_escape_filter($this->env, $this->getAttribute($context["ext"], "group", array()), "html", null, true);
                     echo "\" title=\". . .\" alt=\". . .\">
                                     <img src=\"";
-                    // line 88
+                    // line 164
                     echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                     echo "img/sections/models/gallery/";
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -257,21 +422,21 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ext'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 91
+                // line 167
                 echo "                        </div>
                     ";
             }
-            // line 93
+            // line 169
             echo "                    ";
             if ((isset($context["interior"]) ? $context["interior"] : null)) {
-                // line 94
+                // line 170
                 echo "                        <div class=\"hidden-list\">
                             ";
-                // line 95
+                // line 171
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable((isset($context["interior"]) ? $context["interior"] : null));
                 foreach ($context['_seq'] as $context["_key"] => $context["int"]) {
-                    // line 96
+                    // line 172
                     echo "                                <a class=\"fancybox-thumbs\" href=\"";
                     echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                     echo "img/sections/models/gallery/";
@@ -284,7 +449,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                     echo twig_escape_filter($this->env, $this->getAttribute($context["int"], "group", array()), "html", null, true);
                     echo "\" title=\". . .\" alt=\". . .\">
                                     <img src=\"";
-                    // line 97
+                    // line 173
                     echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                     echo "img/sections/models/gallery/";
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -299,21 +464,21 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['int'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 100
+                // line 176
                 echo "                        </div>
                     ";
             }
-            // line 102
+            // line 178
             echo "                    ";
             if ((isset($context["special"]) ? $context["special"] : null)) {
-                // line 103
+                // line 179
                 echo "                        <div class=\"hidden-list\">
                             ";
-                // line 104
+                // line 180
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable((isset($context["special"]) ? $context["special"] : null));
                 foreach ($context['_seq'] as $context["_key"] => $context["spe"]) {
-                    // line 105
+                    // line 181
                     echo "                                <a class=\"fancybox-thumbs\" href=\"";
                     echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                     echo "img/sections/models/gallery/";
@@ -326,7 +491,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                     echo twig_escape_filter($this->env, $this->getAttribute($context["spe"], "group", array()), "html", null, true);
                     echo "\" title=\". . .\" alt=\". . .\">
                                     <img src=\"";
-                    // line 106
+                    // line 182
                     echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                     echo "img/sections/models/gallery/";
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -341,15 +506,15 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['spe'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 109
+                // line 185
                 echo "                        </div>
                     ";
             }
-            // line 111
+            // line 187
             echo "                </div>
                 <div class=\"next-link-text prices\" style=\"margin-top: 40px;\">
                     <a class=\"scroll-in-site\" id=\"precios\" href=\"";
-            // line 113
+            // line 189
             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
             echo "modelos/";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -358,26 +523,26 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
             </div>
         ";
         }
-        // line 117
+        // line 193
         echo "    ";
-        // line 118
+        // line 194
         echo "    ";
-        // line 119
+        // line 195
         echo "        ";
         $context["prices"] = $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "precios", array());
-        // line 120
+        // line 196
         echo "        ";
         if ((isset($context["prices"]) ? $context["prices"] : null)) {
-            // line 121
+            // line 197
             echo "            <a class=\"section-separator\"  name=\"precios\"></a>
             <div class=\"model-section special-padding-top\">
                 <div class=\"section-title\">
                     <div class=\"title\">";
-            // line 124
+            // line 200
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["prices"]) ? $context["prices"] : null), "main", array()), "section_prices", array()), "title", array()), "html", null, true);
             echo "</div>
                     <div class=\"description\">";
-            // line 125
+            // line 201
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["prices"]) ? $context["prices"] : null), "main", array()), "section_prices", array()), "description", array()), "html", null, true);
             echo "</div>
                 </div>
@@ -387,49 +552,49 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                     <div id=\"features-space-wrapper\" class=\"display-tables\" data-display-table=\"prices\">
                         <div id=\"features-space-mask\">
                             ";
-            // line 132
+            // line 208
             $context["columns"] = $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["prices"]) ? $context["prices"] : null), "main", array()), "model_prices", array()), "columns", array());
-            // line 133
+            // line 209
             echo "                            ";
             $context["head"] = $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["prices"]) ? $context["prices"] : null), "main", array()), "model_prices", array()), "head", array());
-            // line 134
+            // line 210
             echo "                            ";
             $context["body"] = $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["prices"]) ? $context["prices"] : null), "main", array()), "model_prices", array()), "body", array());
-            // line 135
+            // line 211
             echo "                            <div id=\"features-space\">
                                 <div class=\"suzuki-table cols-";
-            // line 136
+            // line 212
             echo twig_escape_filter($this->env, (isset($context["columns"]) ? $context["columns"] : null), "html", null, true);
             echo "\" id=\"versions-price-table\">
                                     <div class=\"data-wrapper\">
                                         ";
-            // line 138
+            // line 214
             if ((isset($context["head"]) ? $context["head"] : null)) {
-                // line 139
+                // line 215
                 echo "                                            <div class=\"head\">
                                                 ";
-                // line 140
+                // line 216
                 if (($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "row", array()) && $this->getAttribute((isset($context["head"]) ? $context["head"] : null), "col", array()))) {
-                    // line 141
+                    // line 217
                     echo "                                                    <div class=\"row  row-";
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "row", array()), "class", array()), "html", null, true);
                     echo " cols-";
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "col", array()), "class", array()), "html", null, true);
                     echo "\">
                                                         ";
-                    // line 142
+                    // line 218
                     if ($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array())) {
-                        // line 143
+                        // line 219
                         echo "                                                            ";
                         if ($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "first", array())) {
-                            // line 144
+                            // line 220
                             echo "                                                                <div class=\"cell  col-";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "class", array()), "html", null, true);
                             echo " ";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "first", array()), "class", array()), "html", null, true);
                             echo "\">
                                                                     <div class=\"image\" ";
-                            // line 145
+                            // line 221
                             if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "first", array()), "style", array())) {
                                 echo " style=\"";
                                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "first", array()), "style", array()), "html", null, true);
@@ -437,7 +602,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                             }
                             echo ">
                                                                         <img src=\"";
-                            // line 146
+                            // line 222
                             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                             echo "img/sections/models/prices/mini-models/";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "first", array()), "image", array()), "html", null, true);
@@ -445,22 +610,22 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                                                                     </div>
                                                                     <div class=\"title\">
                                                                         <p>";
-                            // line 149
+                            // line 225
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "first", array()), "title", array()), "html", null, true);
                             echo "</p>
                                                                     </div>
                                                                 </div>
                                                             ";
                         }
-                        // line 153
+                        // line 229
                         echo "                                                            ";
                         if ($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "second", array())) {
-                            // line 154
+                            // line 230
                             echo "                                                                <div class=\"cell  col-";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "class", array()), "html", null, true);
                             echo "\">
                                                                     <div class=\"image\" ";
-                            // line 155
+                            // line 231
                             if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "second", array()), "style", array())) {
                                 echo " style=\"";
                                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "second", array()), "style", array()), "html", null, true);
@@ -468,7 +633,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                             }
                             echo ">
                                                                         <img src=\"";
-                            // line 156
+                            // line 232
                             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                             echo "img/sections/models/prices/mini-models/";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "second", array()), "image", array()), "html", null, true);
@@ -476,22 +641,22 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                                                                     </div>
                                                                     <div class=\"title\">
                                                                         <p>";
-                            // line 159
+                            // line 235
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "second", array()), "title", array()), "html", null, true);
                             echo "</p>
                                                                     </div>
                                                                 </div>
                                                             ";
                         }
-                        // line 163
+                        // line 239
                         echo "                                                            ";
                         if ($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "third", array())) {
-                            // line 164
+                            // line 240
                             echo "                                                                <div class=\"cell  col-";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "class", array()), "html", null, true);
                             echo "\">
                                                                     <div class=\"image\" ";
-                            // line 165
+                            // line 241
                             if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "third", array()), "style", array())) {
                                 echo " style=\"";
                                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "third", array()), "style", array()), "html", null, true);
@@ -499,7 +664,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                             }
                             echo ">
                                                                         <img src=\"";
-                            // line 166
+                            // line 242
                             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                             echo "img/sections/models/prices/mini-models/";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "third", array()), "image", array()), "html", null, true);
@@ -507,24 +672,24 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                                                                     </div>
                                                                     <div class=\"title\">
                                                                         <p>";
-                            // line 169
+                            // line 245
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "third", array()), "title", array()), "html", null, true);
                             echo "</p>
                                                                     </div>
                                                                 </div>
                                                             ";
                         }
-                        // line 173
+                        // line 249
                         echo "                                                            ";
                         if ($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "fourth", array())) {
-                            // line 174
+                            // line 250
                             echo "                                                                <div class=\"cell  col-";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "class", array()), "html", null, true);
                             echo " ";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "fourth", array()), "class", array()), "html", null, true);
                             echo "\">
                                                                     <div class=\"image\" ";
-                            // line 175
+                            // line 251
                             if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "fourth", array()), "style", array())) {
                                 echo " style=\"";
                                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "fourth", array()), "style", array()), "html", null, true);
@@ -532,7 +697,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                             }
                             echo ">
                                                                         <img src=\"";
-                            // line 176
+                            // line 252
                             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                             echo "img/sections/models/prices/mini-models/";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "fourth", array()), "image", array()), "html", null, true);
@@ -540,47 +705,47 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                                                                     </div>
                                                                     <div class=\"title\">
                                                                         <p>";
-                            // line 179
+                            // line 255
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["head"]) ? $context["head"] : null), "cell", array()), "fourth", array()), "title", array()), "html", null, true);
                             echo "</p>
                                                                     </div>
                                                                 </div>
                                                             ";
                         }
-                        // line 183
+                        // line 259
                         echo "                                                        ";
                     }
-                    // line 184
+                    // line 260
                     echo "                                                    </div>
                                                 ";
                 }
-                // line 186
+                // line 262
                 echo "                                            </div>
                                         ";
             }
-            // line 188
+            // line 264
             echo "                                        ";
             if ((isset($context["body"]) ? $context["body"] : null)) {
-                // line 189
+                // line 265
                 echo "                                            <div class=\"body\">
                                                 ";
-                // line 190
+                // line 266
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["body"]) ? $context["body"] : null), "row", array()));
                 foreach ($context['_seq'] as $context["_key"] => $context["rows"]) {
-                    // line 191
+                    // line 267
                     echo "                                                    <div class=\"row  row-";
                     echo twig_escape_filter($this->env, $this->getAttribute($context["rows"], "class", array()), "html", null, true);
                     echo " cols-";
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["body"]) ? $context["body"] : null), "col", array()), "class", array()), "html", null, true);
                     echo "\">
                                                         ";
-                    // line 192
+                    // line 268
                     if ($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array())) {
-                        // line 193
+                        // line 269
                         echo "                                                            ";
                         if (($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()) || $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()), "price", array()))) {
-                            // line 194
+                            // line 270
                             echo "                                                                <div class=\"cell ";
                             echo " ";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()), "price", array()), "class", array()), "html", null, true);
@@ -589,45 +754,48 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                             echo " ";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()), "class", array()), "html", null, true);
                             echo "\">
-                                                                    <div class=\"title to-html\">
+                                                                    <div class=\"title to-html ";
+                            // line 271
+                            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["body"]) ? $context["body"] : null), "height", array()), "html", null, true);
+                            echo "\">
                                                                         ";
-                            // line 196
+                            // line 272
                             if ($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()), "title", array())) {
-                                // line 197
+                                // line 273
                                 echo "                                                                            ";
                                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()), "title", array()), "html", null, true);
                                 echo "
                                                                         ";
                             }
-                            // line 199
+                            // line 275
                             echo "                                                                        ";
                             $context['_parent'] = $context;
                             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()), "titles", array()));
                             foreach ($context['_seq'] as $context["_key"] => $context["titles"]) {
-                                // line 200
+                                // line 276
                                 echo "                                                                            ";
                                 if ($this->getAttribute($context["titles"], "span", array())) {
-                                    // line 201
+                                    // line 277
                                     echo "                                                                                ";
                                     echo twig_escape_filter($this->env, $this->getAttribute($context["titles"], "span", array()), "html", null, true);
                                     echo "
                                                                             ";
                                 }
-                                // line 203
+                                // line 279
                                 echo "                                                                        ";
                             }
                             $_parent = $context['_parent'];
                             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['titles'], $context['_parent'], $context['loop']);
                             $context = array_intersect_key($context, $_parent) + $_parent;
-                            // line 204
+                            // line 280
                             echo "                                                                    </div>
                                                                 </div>
                                                             ";
                         }
-                        // line 207
+                        // line 283
                         echo "                                                            ";
                         if (($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()) || $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()), "price", array()))) {
-                            // line 208
+                            // line 284
                             echo "                                                                <div class=\"cell ";
                             echo " ";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()), "price", array()), "class", array()), "html", null, true);
@@ -636,45 +804,48 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                             echo " ";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()), "class", array()), "html", null, true);
                             echo "\">
-                                                                    <div class=\"title to-html\">
+                                                                    <div class=\"title to-html ";
+                            // line 285
+                            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["body"]) ? $context["body"] : null), "height", array()), "html", null, true);
+                            echo "\">
                                                                         ";
-                            // line 210
+                            // line 286
                             if ($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()), "title", array())) {
-                                // line 211
+                                // line 287
                                 echo "                                                                            ";
                                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()), "title", array()), "html", null, true);
                                 echo "
                                                                         ";
                             }
-                            // line 213
+                            // line 289
                             echo "                                                                        ";
                             $context['_parent'] = $context;
                             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()), "titles", array()));
                             foreach ($context['_seq'] as $context["_key"] => $context["titles"]) {
-                                // line 214
+                                // line 290
                                 echo "                                                                            ";
                                 if ($this->getAttribute($context["titles"], "span", array())) {
-                                    // line 215
+                                    // line 291
                                     echo "                                                                                ";
                                     echo twig_escape_filter($this->env, $this->getAttribute($context["titles"], "span", array()), "html", null, true);
                                     echo "
                                                                             ";
                                 }
-                                // line 217
+                                // line 293
                                 echo "                                                                        ";
                             }
                             $_parent = $context['_parent'];
                             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['titles'], $context['_parent'], $context['loop']);
                             $context = array_intersect_key($context, $_parent) + $_parent;
-                            // line 218
+                            // line 294
                             echo "                                                                    </div>
                                                                 </div>
                                                             ";
                         }
-                        // line 221
+                        // line 297
                         echo "                                                            ";
                         if (($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()) || $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()), "price", array()))) {
-                            // line 222
+                            // line 298
                             echo "                                                                <div class=\"cell ";
                             echo " ";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()), "price", array()), "class", array()), "html", null, true);
@@ -683,45 +854,48 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                             echo " ";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()), "class", array()), "html", null, true);
                             echo "\">
-                                                                    <div class=\"title to-html\">
+                                                                    <div class=\"title to-html ";
+                            // line 299
+                            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["body"]) ? $context["body"] : null), "height", array()), "html", null, true);
+                            echo "\">
                                                                         ";
-                            // line 224
+                            // line 300
                             if ($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()), "title", array())) {
-                                // line 225
+                                // line 301
                                 echo "                                                                            ";
                                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()), "title", array()), "html", null, true);
                                 echo "
                                                                         ";
                             }
-                            // line 227
+                            // line 303
                             echo "                                                                        ";
                             $context['_parent'] = $context;
                             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()), "titles", array()));
                             foreach ($context['_seq'] as $context["_key"] => $context["titles"]) {
-                                // line 228
+                                // line 304
                                 echo "                                                                            ";
                                 if ($this->getAttribute($context["titles"], "span", array())) {
-                                    // line 229
+                                    // line 305
                                     echo "                                                                                ";
                                     echo twig_escape_filter($this->env, $this->getAttribute($context["titles"], "span", array()), "html", null, true);
                                     echo "
                                                                             ";
                                 }
-                                // line 231
+                                // line 307
                                 echo "                                                                        ";
                             }
                             $_parent = $context['_parent'];
                             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['titles'], $context['_parent'], $context['loop']);
                             $context = array_intersect_key($context, $_parent) + $_parent;
-                            // line 232
+                            // line 308
                             echo "                                                                    </div>
                                                                 </div>
                                                             ";
                         }
-                        // line 235
+                        // line 311
                         echo "                                                            ";
                         if (($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()) || $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()), "price", array()))) {
-                            // line 236
+                            // line 312
                             echo "                                                                <div class=\"cell ";
                             echo " ";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()), "price", array()), "class", array()), "html", null, true);
@@ -730,61 +904,64 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                             echo " ";
                             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()), "class", array()), "html", null, true);
                             echo "\">
-                                                                    <div class=\"title to-html\">
+                                                                    <div class=\"title to-html ";
+                            // line 313
+                            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["body"]) ? $context["body"] : null), "height", array()), "html", null, true);
+                            echo "\">
                                                                         ";
-                            // line 238
+                            // line 314
                             if ($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()), "title", array())) {
-                                // line 239
+                                // line 315
                                 echo "                                                                            ";
                                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()), "title", array()), "html", null, true);
                                 echo "
                                                                         ";
                             }
-                            // line 241
+                            // line 317
                             echo "                                                                        ";
                             $context['_parent'] = $context;
                             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()), "titles", array()));
                             foreach ($context['_seq'] as $context["_key"] => $context["titles"]) {
-                                // line 242
+                                // line 318
                                 echo "                                                                            ";
                                 if ($this->getAttribute($context["titles"], "span", array())) {
-                                    // line 243
+                                    // line 319
                                     echo "                                                                                ";
                                     echo twig_escape_filter($this->env, $this->getAttribute($context["titles"], "span", array()), "html", null, true);
                                     echo "
                                                                             ";
                                 }
-                                // line 245
+                                // line 321
                                 echo "                                                                        ";
                             }
                             $_parent = $context['_parent'];
                             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['titles'], $context['_parent'], $context['loop']);
                             $context = array_intersect_key($context, $_parent) + $_parent;
-                            // line 246
+                            // line 322
                             echo "                                                                    </div>
                                                                 </div>
                                                             ";
                         }
-                        // line 249
+                        // line 325
                         echo "                                                        ";
                     }
-                    // line 250
+                    // line 326
                     echo "                                                    </div>                                                
                                                 ";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['rows'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 252
+                // line 328
                 echo "                                            </div>
                                         ";
             }
-            // line 254
+            // line 330
             echo "                                    </div>
                                 </div>
                             </div>
                             <a style='text-align: center; margin: 30px auto 0 auto; display: block' onclick=ga('send', 'event', 'Material de apoyo', 'Descarga', '";
-            // line 257
+            // line 333
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["model"]) ? $context["model"] : null), "precios", array()), "main", array()), "model_prices", array()), "event", array()), "ga", array()), "html", null, true);
             echo "' ); href=\"";
             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
@@ -794,41 +971,41 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                                 <span class=\"entypo\">&#128196;</span><span>Descargar ficha completa en PDF</span>
                             </a>
                             ";
-            // line 261
+            // line 337
             echo "                                ";
-            // line 262
+            // line 338
             echo "                            ";
-            // line 263
+            // line 339
             echo "                        </div>
         ";
         }
-        // line 265
+        // line 341
         echo "        ";
         $context["maintenance"] = $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "mantenimieto", array());
-        // line 266
+        // line 342
         echo "        ";
         if ((isset($context["maintenance"]) ? $context["maintenance"] : null)) {
-            // line 267
+            // line 343
             echo "                        <a name=\"mantenimiento\" id=\"maintenance-prices\" class=\"maintenance-anchors\"></a>
                         <div class=\"maintenance-prices\">
                             <div id=\"maintenance-title\" class=\"section-title\">
                                 <div class=\"title\">";
-            // line 270
+            // line 346
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["maintenance"]) ? $context["maintenance"] : null), "main", array()), "maintenance_prices", array()), "section_maintenance_prices", array()), "title", array()), "html", null, true);
             echo "</div>
                             </div>
                             <div class=\"suzuki-table cols-";
-            // line 272
+            // line 348
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["maintenance"]) ? $context["maintenance"] : null), "main", array()), "maintenance_prices", array()), "table", array()), "columns", array()), "html", null, true);
             echo "\" id=\"versions-maintenance-table\">
                                 <div class=\"data-wrapper\">
                                     <div class=\"body\">
                                         ";
-            // line 275
+            // line 351
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["maintenance"]) ? $context["maintenance"] : null), "main", array()), "maintenance_prices", array()), "table", array()), "body", array()), "row", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["rows"]) {
-                // line 276
+                // line 352
                 echo "                                            <div class=\"row row-";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["rows"], "class", array()), "html", null, true);
                 echo " cols-";
@@ -837,9 +1014,9 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                 echo twig_escape_filter($this->env, $this->getAttribute($context["rows"], "id", array()), "html", null, true);
                 echo "\">
                                                 ";
-                // line 277
+                // line 353
                 if ((($this->getAttribute($context["rows"], "cell", array()) || $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()), "head_class", array())) || $this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()))) {
-                    // line 278
+                    // line 354
                     echo "                                                    <div class=\"cell ";
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()), "head_class", array()), "html", null, true);
                     echo " col-";
@@ -849,17 +1026,17 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                     echo "\">
                                                         <div class=\"title\">
                                                             <p>";
-                    // line 280
+                    // line 356
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "first", array()), "title", array()), "html", null, true);
                     echo "</p>
                                                         </div>
                                                     </div>
                                                 ";
                 }
-                // line 284
+                // line 360
                 echo "                                                ";
                 if ((($this->getAttribute($context["rows"], "cell", array()) || $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()), "head_class", array())) || $this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()))) {
-                    // line 285
+                    // line 361
                     echo "                                                    <div class=\"cell ";
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()), "head_class", array()), "html", null, true);
                     echo " col-";
@@ -869,17 +1046,17 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                     echo "\">
                                                         <div class=\"title\">
                                                             <p>";
-                    // line 287
+                    // line 363
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "second", array()), "title", array()), "html", null, true);
                     echo "</p>
                                                         </div>
                                                     </div>
                                                 ";
                 }
-                // line 291
+                // line 367
                 echo "                                                ";
                 if ((($this->getAttribute($context["rows"], "cell", array()) || $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()), "head_class", array())) || $this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()))) {
-                    // line 292
+                    // line 368
                     echo "                                                    <div class=\"cell ";
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()), "head_class", array()), "html", null, true);
                     echo " col-";
@@ -889,17 +1066,17 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                     echo "\">
                                                         <div class=\"title\">
                                                             <p>";
-                    // line 294
+                    // line 370
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "third", array()), "title", array()), "html", null, true);
                     echo "</p>
                                                         </div>
                                                     </div>
                                                 ";
                 }
-                // line 298
+                // line 374
                 echo "                                                ";
                 if ((( !$this->getAttribute($context["rows"], "cell", array()) || $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()), "head_class", array())) || $this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()))) {
-                    // line 299
+                    // line 375
                     echo "                                                    <div class=\"cell ";
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()), "head_class", array()), "html", null, true);
                     echo " col-";
@@ -909,17 +1086,17 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                     echo "\">
                                                         <div class=\"title\">
                                                             <p>";
-                    // line 301
+                    // line 377
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fourth", array()), "title", array()), "html", null, true);
                     echo "</p>
                                                         </div>
                                                     </div>
                                                 ";
                 }
-                // line 305
+                // line 381
                 echo "                                                ";
                 if ((( !$this->getAttribute($context["rows"], "cell", array()) || $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fifth", array()), "head_class", array())) || $this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fifth", array()))) {
-                    // line 306
+                    // line 382
                     echo "                                                    <div class=\"cell ";
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fifth", array()), "head_class", array()), "html", null, true);
                     echo " col-";
@@ -929,33 +1106,33 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                     echo "\">
                                                         <div class=\"title\">
                                                             <p>";
-                    // line 308
+                    // line 384
                     echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($context["rows"], "cell", array()), "fifth", array()), "title", array()), "html", null, true);
                     echo "</p>
                                                         </div>
                                                     </div>
                                                 ";
                 }
-                // line 312
+                // line 388
                 echo "                                            </div>                                        
                                         ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['rows'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 314
+            // line 390
             echo "                                    </div>
                                 </div>
                             </div>
                             <div class=\"clearfix\"></div>
                         </div>
                         ";
-            // line 320
+            // line 396
             echo "                        <div class=\"clearfix\"></div>
                         <br><br>
                         <p style=\"margin: 5px 0 30px; text-align: center;\">
                             <a href=\"";
-            // line 323
+            // line 399
             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
             echo "financiamiento/";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["maintenance"]) ? $context["maintenance"] : null), "main", array()), "key", array()), "html", null, true);
@@ -972,7 +1149,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                         <p id=\"p-empty\">&nbsp;</p>
                         <div class=\"next-link-text accesories\" style=\"margin-top: 20px;\">
                             <a class=\"scroll-in-site\" id=\"accesorios\" href=\"";
-            // line 327
+            // line 403
             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
             echo "modelos/";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -983,45 +1160,45 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
             </div>
         ";
         }
-        // line 333
+        // line 409
         echo "    ";
-        // line 334
+        // line 410
         echo "    ";
-        // line 335
+        // line 411
         echo "        ";
         $context["accessories"] = $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "accesorios", array());
-        // line 336
+        // line 412
         echo "        ";
         if ((isset($context["accessories"]) ? $context["accessories"] : null)) {
-            // line 337
+            // line 413
             echo "            <a class=\"section-separator\"  name=\"accesorios\"></a>
             <div class=\"model-section special-padding-top\">
                 <div class=\"section-title\">
                     <div class=\"title\">";
-            // line 340
+            // line 416
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["accessories"]) ? $context["accessories"] : null), "main", array()), "section_gallery", array()), "title", array()), "html", null, true);
             echo "</div>
                     <div class=\"description\">";
-            // line 341
+            // line 417
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["accessories"]) ? $context["accessories"] : null), "main", array()), "section_gallery", array()), "description", array()), "html", null, true);
             echo "</div>
                 </div>
                 <div class=\"galery-grid galery-of-";
-            // line 343
+            // line 419
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
             echo "\" id=\"accesorios-padding\">
                     <div class=\"content\">
                         ";
-            // line 345
+            // line 421
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["accessories"]) ? $context["accessories"] : null), "main", array()), "grid", array()), "boxes", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["boxes_gallery"]) {
-                // line 346
+                // line 422
                 echo "                            <div class=\"view view-first ";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["boxes_gallery"], "class", array()), "html", null, true);
                 echo "\">
                                 <img src=\"";
-                // line 347
+                // line 423
                 echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                 echo "img/sections/models/accessories/";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -1030,7 +1207,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                 echo "\" />
                                 <div class=\"mask\">
                                     <a href=\"";
-                // line 349
+                // line 425
                 echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                 echo "img/sections/models/accessories/";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -1048,22 +1225,22 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['boxes_gallery'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 355
+            // line 431
             echo "                    </div>
                     ";
-            // line 356
+            // line 432
             $context["interior"] = $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["accessories"]) ? $context["accessories"] : null), "main", array()), "grid", array()), "fancybox", array()), "thumbs", array());
-            // line 357
+            // line 433
             echo "                    <div class=\"hidden-list\">
                         ";
-            // line 358
+            // line 434
             if ((isset($context["interior"]) ? $context["interior"] : null)) {
-                // line 359
+                // line 435
                 echo "                            ";
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable((isset($context["interior"]) ? $context["interior"] : null));
                 foreach ($context['_seq'] as $context["_key"] => $context["thumb"]) {
-                    // line 360
+                    // line 436
                     echo "                                <a class=\"fancybox-thumbs\" href=\"";
                     echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                     echo "img/sections/models/accessories/";
@@ -1076,7 +1253,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                     echo twig_escape_filter($this->env, $this->getAttribute($context["thumb"], "title", array()), "html", null, true);
                     echo "\">
                                     <img src=\"";
-                    // line 361
+                    // line 437
                     echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
                     echo "img/sections/models/accessories/";
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -1089,19 +1266,19 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['thumb'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 364
+                // line 440
                 echo "                        ";
             }
-            // line 365
+            // line 441
             echo "                    </div>
                     ";
-            // line 366
+            // line 442
             if ($this->getAttribute($this->getAttribute((isset($context["accessories"]) ? $context["accessories"] : null), "main", array()), "event", array())) {
-                // line 367
+                // line 443
                 echo "                        <p style=\"margin: 5px 0 30px; text-align: center;\">
                             Pregunta en tu concesionaria por los accesorios para que personalices tu Suzuki.<br /><br />
                             <a onclick=\"ga('send', 'event', 'Material de apoyo', 'Descarga', '";
-                // line 369
+                // line 445
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["accessories"]) ? $context["accessories"] : null), "main", array()), "event", array()), "ga", array()), "html", null, true);
                 echo "');\" href=\"";
                 echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
@@ -1111,10 +1288,10 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                         </p>
                     ";
             }
-            // line 372
+            // line 448
             echo "                    <div id=\"next-test\" class=\"next-link-text\" style=\"margin-top: 40px;\">
                         <a  class=\"scroll-in-site\" id=\"prueba-de-manejo\" href=\"";
-            // line 373
+            // line 449
             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
             echo "modelos/";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -1124,11 +1301,11 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
             </div>
         ";
         }
-        // line 378
+        // line 454
         echo "    ";
-        // line 379
+        // line 455
         echo "    ";
-        // line 380
+        // line 456
         echo "        <a class=\"section-separator\"  name=\"prueba-de-manejo\"></a>
         <div id=\"instant-drive-section\"></div>
         <div id=\"text-drive-section\" class=\"model-section special-padding-top  window-adaptable\"  data-min-height=\"700\">
@@ -1143,7 +1320,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                             <ul>
                                 <li class=\"test-tabs model-test-tab active\">
                                     <a class=\"model-change-tab\" data-number=\"";
-        // line 393
+        // line 469
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "id", array()), "html", null, true);
         echo "\">
                                         ¿Cuándo quieres hacer tu prueba de manejo?
@@ -1151,7 +1328,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                                 </li>
                                 <li class=\"test-tabs model-test-tab bg-button-fuinancing active\">
                                     <a class=\"model-change-tab\" href=\"";
-        // line 398
+        // line 474
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "financiamiento/";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
@@ -1163,7 +1340,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "id", array()), "html", null, true);
         echo "\">
                                         Pide tu cotización y estrena un Suzuki ";
-        // line 399
+        // line 475
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "name", array()), "html", null, true);
         echo ".
                                     </a>
@@ -1172,9 +1349,9 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
                         </div>
                         <div id=\"content-test-drive-section\">
                             ";
-        // line 405
-        $this->loadTemplate("modelos/modelo/container.twig", "modelos/modelo/container.twig", 405, "190491979")->display($context);
-        // line 406
+        // line 481
+        $this->loadTemplate("modelos/modelo/container.twig", "modelos/modelo/container.twig", 481, "1054523841")->display($context);
+        // line 482
         echo "                        </div>
                     </div>
                 </div>
@@ -1182,7 +1359,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
         </div>
         <div class=\"model-section\"></div>
     ";
-        // line 413
+        // line 489
         echo "</div>
 ";
     }
@@ -1199,20 +1376,20 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
 
     public function getDebugInfo()
     {
-        return array (  1186 => 413,  1178 => 406,  1176 => 405,  1167 => 399,  1155 => 398,  1147 => 393,  1132 => 380,  1130 => 379,  1128 => 378,  1118 => 373,  1115 => 372,  1105 => 369,  1101 => 367,  1099 => 366,  1096 => 365,  1093 => 364,  1080 => 361,  1067 => 360,  1062 => 359,  1060 => 358,  1057 => 357,  1055 => 356,  1052 => 355,  1034 => 349,  1025 => 347,  1020 => 346,  1016 => 345,  1011 => 343,  1006 => 341,  1002 => 340,  997 => 337,  994 => 336,  991 => 335,  989 => 334,  987 => 333,  976 => 327,  959 => 323,  954 => 320,  947 => 314,  940 => 312,  933 => 308,  923 => 306,  920 => 305,  913 => 301,  903 => 299,  900 => 298,  893 => 294,  883 => 292,  880 => 291,  873 => 287,  863 => 285,  860 => 284,  853 => 280,  843 => 278,  841 => 277,  832 => 276,  828 => 275,  822 => 272,  817 => 270,  812 => 267,  809 => 266,  806 => 265,  802 => 263,  800 => 262,  798 => 261,  788 => 257,  783 => 254,  779 => 252,  772 => 250,  769 => 249,  764 => 246,  758 => 245,  752 => 243,  749 => 242,  744 => 241,  738 => 239,  736 => 238,  725 => 236,  722 => 235,  717 => 232,  711 => 231,  705 => 229,  702 => 228,  697 => 227,  691 => 225,  689 => 224,  678 => 222,  675 => 221,  670 => 218,  664 => 217,  658 => 215,  655 => 214,  650 => 213,  644 => 211,  642 => 210,  631 => 208,  628 => 207,  623 => 204,  617 => 203,  611 => 201,  608 => 200,  603 => 199,  597 => 197,  595 => 196,  584 => 194,  581 => 193,  579 => 192,  572 => 191,  568 => 190,  565 => 189,  562 => 188,  558 => 186,  554 => 184,  551 => 183,  544 => 179,  536 => 176,  528 => 175,  521 => 174,  518 => 173,  511 => 169,  503 => 166,  495 => 165,  490 => 164,  487 => 163,  480 => 159,  472 => 156,  464 => 155,  459 => 154,  456 => 153,  449 => 149,  441 => 146,  433 => 145,  426 => 144,  423 => 143,  421 => 142,  414 => 141,  412 => 140,  409 => 139,  407 => 138,  402 => 136,  399 => 135,  396 => 134,  393 => 133,  391 => 132,  381 => 125,  377 => 124,  372 => 121,  369 => 120,  366 => 119,  364 => 118,  362 => 117,  353 => 113,  349 => 111,  345 => 109,  330 => 106,  317 => 105,  313 => 104,  310 => 103,  307 => 102,  303 => 100,  288 => 97,  275 => 96,  271 => 95,  268 => 94,  265 => 93,  261 => 91,  246 => 88,  233 => 87,  229 => 86,  226 => 85,  223 => 84,  220 => 83,  217 => 82,  215 => 81,  212 => 80,  192 => 74,  183 => 72,  178 => 71,  174 => 70,  169 => 68,  164 => 66,  160 => 65,  155 => 62,  152 => 61,  149 => 60,  147 => 59,  145 => 58,  136 => 54,  123 => 43,  113 => 39,  106 => 35,  97 => 32,  93 => 31,  86 => 27,  82 => 26,  77 => 23,  74 => 22,  71 => 21,  69 => 20,  67 => 19,  58 => 15,  53 => 13,  49 => 12,  45 => 11,  41 => 10,  34 => 8,  30 => 6,  27 => 5,  24 => 4,  21 => 2,  19 => 1,);
+        return array (  1363 => 489,  1355 => 482,  1353 => 481,  1344 => 475,  1332 => 474,  1324 => 469,  1309 => 456,  1307 => 455,  1305 => 454,  1295 => 449,  1292 => 448,  1282 => 445,  1278 => 443,  1276 => 442,  1273 => 441,  1270 => 440,  1257 => 437,  1244 => 436,  1239 => 435,  1237 => 434,  1234 => 433,  1232 => 432,  1229 => 431,  1211 => 425,  1202 => 423,  1197 => 422,  1193 => 421,  1188 => 419,  1183 => 417,  1179 => 416,  1174 => 413,  1171 => 412,  1168 => 411,  1166 => 410,  1164 => 409,  1153 => 403,  1136 => 399,  1131 => 396,  1124 => 390,  1117 => 388,  1110 => 384,  1100 => 382,  1097 => 381,  1090 => 377,  1080 => 375,  1077 => 374,  1070 => 370,  1060 => 368,  1057 => 367,  1050 => 363,  1040 => 361,  1037 => 360,  1030 => 356,  1020 => 354,  1018 => 353,  1009 => 352,  1005 => 351,  999 => 348,  994 => 346,  989 => 343,  986 => 342,  983 => 341,  979 => 339,  977 => 338,  975 => 337,  965 => 333,  960 => 330,  956 => 328,  949 => 326,  946 => 325,  941 => 322,  935 => 321,  929 => 319,  926 => 318,  921 => 317,  915 => 315,  913 => 314,  909 => 313,  899 => 312,  896 => 311,  891 => 308,  885 => 307,  879 => 305,  876 => 304,  871 => 303,  865 => 301,  863 => 300,  859 => 299,  849 => 298,  846 => 297,  841 => 294,  835 => 293,  829 => 291,  826 => 290,  821 => 289,  815 => 287,  813 => 286,  809 => 285,  799 => 284,  796 => 283,  791 => 280,  785 => 279,  779 => 277,  776 => 276,  771 => 275,  765 => 273,  763 => 272,  759 => 271,  749 => 270,  746 => 269,  744 => 268,  737 => 267,  733 => 266,  730 => 265,  727 => 264,  723 => 262,  719 => 260,  716 => 259,  709 => 255,  701 => 252,  693 => 251,  686 => 250,  683 => 249,  676 => 245,  668 => 242,  660 => 241,  655 => 240,  652 => 239,  645 => 235,  637 => 232,  629 => 231,  624 => 230,  621 => 229,  614 => 225,  606 => 222,  598 => 221,  591 => 220,  588 => 219,  586 => 218,  579 => 217,  577 => 216,  574 => 215,  572 => 214,  567 => 212,  564 => 211,  561 => 210,  558 => 209,  556 => 208,  546 => 201,  542 => 200,  537 => 197,  534 => 196,  531 => 195,  529 => 194,  527 => 193,  518 => 189,  514 => 187,  510 => 185,  495 => 182,  482 => 181,  478 => 180,  475 => 179,  472 => 178,  468 => 176,  453 => 173,  440 => 172,  436 => 171,  433 => 170,  430 => 169,  426 => 167,  411 => 164,  398 => 163,  394 => 162,  391 => 161,  388 => 160,  385 => 159,  382 => 158,  380 => 157,  377 => 156,  357 => 150,  348 => 148,  343 => 147,  339 => 146,  334 => 144,  329 => 142,  325 => 141,  320 => 138,  317 => 137,  314 => 136,  312 => 135,  310 => 134,  301 => 130,  288 => 119,  278 => 115,  271 => 111,  262 => 108,  258 => 107,  251 => 103,  247 => 102,  242 => 99,  239 => 98,  236 => 97,  234 => 96,  232 => 95,  229 => 94,  220 => 90,  215 => 88,  211 => 87,  207 => 86,  203 => 85,  196 => 83,  193 => 82,  190 => 81,  179 => 76,  176 => 69,  173 => 68,  159 => 48,  148 => 43,  144 => 42,  139 => 40,  135 => 39,  117 => 38,  114 => 37,  110 => 36,  105 => 34,  96 => 32,  89 => 28,  84 => 26,  79 => 23,  76 => 22,  61 => 19,  58 => 18,  53 => 17,  51 => 16,  46 => 14,  42 => 13,  35 => 8,  33 => 7,  30 => 6,  27 => 5,  24 => 4,  21 => 2,  19 => 1,);
     }
 }
 
 
 /* modelos/modelo/container.twig */
-class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1966c4_190491979 extends Twig_Template
+class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1966c4_1054523841 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 405
-        $this->parent = $this->loadTemplate("modelos/modelo/testdrive_form.twig", "modelos/modelo/container.twig", 405);
+        // line 481
+        $this->parent = $this->loadTemplate("modelos/modelo/testdrive_form.twig", "modelos/modelo/container.twig", 481);
         $this->blocks = array(
         );
     }
@@ -1239,7 +1416,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
 
     public function getDebugInfo()
     {
-        return array (  1215 => 405,  1186 => 413,  1178 => 406,  1176 => 405,  1167 => 399,  1155 => 398,  1147 => 393,  1132 => 380,  1130 => 379,  1128 => 378,  1118 => 373,  1115 => 372,  1105 => 369,  1101 => 367,  1099 => 366,  1096 => 365,  1093 => 364,  1080 => 361,  1067 => 360,  1062 => 359,  1060 => 358,  1057 => 357,  1055 => 356,  1052 => 355,  1034 => 349,  1025 => 347,  1020 => 346,  1016 => 345,  1011 => 343,  1006 => 341,  1002 => 340,  997 => 337,  994 => 336,  991 => 335,  989 => 334,  987 => 333,  976 => 327,  959 => 323,  954 => 320,  947 => 314,  940 => 312,  933 => 308,  923 => 306,  920 => 305,  913 => 301,  903 => 299,  900 => 298,  893 => 294,  883 => 292,  880 => 291,  873 => 287,  863 => 285,  860 => 284,  853 => 280,  843 => 278,  841 => 277,  832 => 276,  828 => 275,  822 => 272,  817 => 270,  812 => 267,  809 => 266,  806 => 265,  802 => 263,  800 => 262,  798 => 261,  788 => 257,  783 => 254,  779 => 252,  772 => 250,  769 => 249,  764 => 246,  758 => 245,  752 => 243,  749 => 242,  744 => 241,  738 => 239,  736 => 238,  725 => 236,  722 => 235,  717 => 232,  711 => 231,  705 => 229,  702 => 228,  697 => 227,  691 => 225,  689 => 224,  678 => 222,  675 => 221,  670 => 218,  664 => 217,  658 => 215,  655 => 214,  650 => 213,  644 => 211,  642 => 210,  631 => 208,  628 => 207,  623 => 204,  617 => 203,  611 => 201,  608 => 200,  603 => 199,  597 => 197,  595 => 196,  584 => 194,  581 => 193,  579 => 192,  572 => 191,  568 => 190,  565 => 189,  562 => 188,  558 => 186,  554 => 184,  551 => 183,  544 => 179,  536 => 176,  528 => 175,  521 => 174,  518 => 173,  511 => 169,  503 => 166,  495 => 165,  490 => 164,  487 => 163,  480 => 159,  472 => 156,  464 => 155,  459 => 154,  456 => 153,  449 => 149,  441 => 146,  433 => 145,  426 => 144,  423 => 143,  421 => 142,  414 => 141,  412 => 140,  409 => 139,  407 => 138,  402 => 136,  399 => 135,  396 => 134,  393 => 133,  391 => 132,  381 => 125,  377 => 124,  372 => 121,  369 => 120,  366 => 119,  364 => 118,  362 => 117,  353 => 113,  349 => 111,  345 => 109,  330 => 106,  317 => 105,  313 => 104,  310 => 103,  307 => 102,  303 => 100,  288 => 97,  275 => 96,  271 => 95,  268 => 94,  265 => 93,  261 => 91,  246 => 88,  233 => 87,  229 => 86,  226 => 85,  223 => 84,  220 => 83,  217 => 82,  215 => 81,  212 => 80,  192 => 74,  183 => 72,  178 => 71,  174 => 70,  169 => 68,  164 => 66,  160 => 65,  155 => 62,  152 => 61,  149 => 60,  147 => 59,  145 => 58,  136 => 54,  123 => 43,  113 => 39,  106 => 35,  97 => 32,  93 => 31,  86 => 27,  82 => 26,  77 => 23,  74 => 22,  71 => 21,  69 => 20,  67 => 19,  58 => 15,  53 => 13,  49 => 12,  45 => 11,  41 => 10,  34 => 8,  30 => 6,  27 => 5,  24 => 4,  21 => 2,  19 => 1,);
+        return array (  1392 => 481,  1363 => 489,  1355 => 482,  1353 => 481,  1344 => 475,  1332 => 474,  1324 => 469,  1309 => 456,  1307 => 455,  1305 => 454,  1295 => 449,  1292 => 448,  1282 => 445,  1278 => 443,  1276 => 442,  1273 => 441,  1270 => 440,  1257 => 437,  1244 => 436,  1239 => 435,  1237 => 434,  1234 => 433,  1232 => 432,  1229 => 431,  1211 => 425,  1202 => 423,  1197 => 422,  1193 => 421,  1188 => 419,  1183 => 417,  1179 => 416,  1174 => 413,  1171 => 412,  1168 => 411,  1166 => 410,  1164 => 409,  1153 => 403,  1136 => 399,  1131 => 396,  1124 => 390,  1117 => 388,  1110 => 384,  1100 => 382,  1097 => 381,  1090 => 377,  1080 => 375,  1077 => 374,  1070 => 370,  1060 => 368,  1057 => 367,  1050 => 363,  1040 => 361,  1037 => 360,  1030 => 356,  1020 => 354,  1018 => 353,  1009 => 352,  1005 => 351,  999 => 348,  994 => 346,  989 => 343,  986 => 342,  983 => 341,  979 => 339,  977 => 338,  975 => 337,  965 => 333,  960 => 330,  956 => 328,  949 => 326,  946 => 325,  941 => 322,  935 => 321,  929 => 319,  926 => 318,  921 => 317,  915 => 315,  913 => 314,  909 => 313,  899 => 312,  896 => 311,  891 => 308,  885 => 307,  879 => 305,  876 => 304,  871 => 303,  865 => 301,  863 => 300,  859 => 299,  849 => 298,  846 => 297,  841 => 294,  835 => 293,  829 => 291,  826 => 290,  821 => 289,  815 => 287,  813 => 286,  809 => 285,  799 => 284,  796 => 283,  791 => 280,  785 => 279,  779 => 277,  776 => 276,  771 => 275,  765 => 273,  763 => 272,  759 => 271,  749 => 270,  746 => 269,  744 => 268,  737 => 267,  733 => 266,  730 => 265,  727 => 264,  723 => 262,  719 => 260,  716 => 259,  709 => 255,  701 => 252,  693 => 251,  686 => 250,  683 => 249,  676 => 245,  668 => 242,  660 => 241,  655 => 240,  652 => 239,  645 => 235,  637 => 232,  629 => 231,  624 => 230,  621 => 229,  614 => 225,  606 => 222,  598 => 221,  591 => 220,  588 => 219,  586 => 218,  579 => 217,  577 => 216,  574 => 215,  572 => 214,  567 => 212,  564 => 211,  561 => 210,  558 => 209,  556 => 208,  546 => 201,  542 => 200,  537 => 197,  534 => 196,  531 => 195,  529 => 194,  527 => 193,  518 => 189,  514 => 187,  510 => 185,  495 => 182,  482 => 181,  478 => 180,  475 => 179,  472 => 178,  468 => 176,  453 => 173,  440 => 172,  436 => 171,  433 => 170,  430 => 169,  426 => 167,  411 => 164,  398 => 163,  394 => 162,  391 => 161,  388 => 160,  385 => 159,  382 => 158,  380 => 157,  377 => 156,  357 => 150,  348 => 148,  343 => 147,  339 => 146,  334 => 144,  329 => 142,  325 => 141,  320 => 138,  317 => 137,  314 => 136,  312 => 135,  310 => 134,  301 => 130,  288 => 119,  278 => 115,  271 => 111,  262 => 108,  258 => 107,  251 => 103,  247 => 102,  242 => 99,  239 => 98,  236 => 97,  234 => 96,  232 => 95,  229 => 94,  220 => 90,  215 => 88,  211 => 87,  207 => 86,  203 => 85,  196 => 83,  193 => 82,  190 => 81,  179 => 76,  176 => 69,  173 => 68,  159 => 48,  148 => 43,  144 => 42,  139 => 40,  135 => 39,  117 => 38,  114 => 37,  110 => 36,  105 => 34,  96 => 32,  89 => 28,  84 => 26,  79 => 23,  76 => 22,  61 => 19,  58 => 18,  53 => 17,  51 => 16,  46 => 14,  42 => 13,  35 => 8,  33 => 7,  30 => 6,  27 => 5,  24 => 4,  21 => 2,  19 => 1,);
     }
 }
 /* {% set model = mdopa %}*/
@@ -1248,17 +1425,93 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
 /*         {% set begin = model.inicio %}*/
 /*         {% if begin %}*/
 /*             <a class="section-separator" name="inicio"></a>*/
-/*             <div class="full-size-section gray-degree window-adaptable model-section" data-min-height="650">*/
-/*                 <div class="car-main big-main" style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.image }}') center 175px no-repeat">*/
-/*                     <div class="car-main-title">*/
-/*                         <div class="title">{{ begin.main.title }}</div>*/
-/*                         <div class="slogan">{{ begin.main.slogan }}</div>*/
-/*                         <div class="price">{{ begin.main.price }}</div>*/
-/*                         <div class="car-main-image" id="car-image-{{ model.key }}">&nbsp;</div>*/
+/*             {% if begin.main.new %}*/
+/*                 <div class="l-landing-section pos-relative js-full-height">*/
+/*                     <div class="m-model-colors">*/
+/*                         <div class="l-wrapper">*/
+/*                             <div class="row">*/
+/*                                 <div class="col-md-6 col-sm-12">*/
+/*                                     <h1 class="m-model-colors__title">{{ begin.main.new.title }}</h1>*/
+/*                                     <p class="m-model-colors__subtitle">{{ begin.main.new.subtitle }}</p>*/
+/*                                     <ul class="m-model-colors__medals">*/
+/*                                         {% if begin.main.new.medals %}*/
+/*                                             {% for item in begin.main.new.medals %}*/
+/*                                                 <li class="m-model-colors__medals__item">*/
+/*                                                     <img src="{{ _host }}img/sections/models/main/{{ model.key }}/{{ item.img }}" alt="{{ item.alt }}" class="m-model-colors__medals__item__image">*/
+/*                                                 </li>                                                */
+/*                                             {% endfor %}*/
+/*                                         {% endif %}*/
+/*                                     </ul>                            */
+/*                                     <p class="m-model-colors__from-price">*/
+/*                                         Desde*/
+/*                                         <span class="m-model-colors__from-price__price">{{ begin.main.new.price }}*</span>*/
+/*                                     </p>*/
+/*                                     <span class="m-model-colors__asterisk">*{{ begin.main.new.asterisk }}</span>*/
+/*                                 </div>*/
+/*                                 <div class="col-md-5 col-sm-12">*/
+/*                                     <div class="m-model-colors__car-box">*/
+/*                                         <img src="{{ _host }}img/sections/models/main/{{ model.key }}/{{ begin.main.new.car_box.img }}" alt="Color" class="m-model-colors__car-box__image js-color-image">*/
+/*                                     </div>*/
+/*                                     <p class="m-model-colors__available js-color-available">{{ begin.main.new.car_box.description }}</p>*/
+/*                                     <ul class="m-model-colors__picker">*/
+/*                                         {% for picker in begin.main.new.car_box.picker %}*/
+/*                                             <li class="m-model-colors__picker__item">*/
+/*                                                 <a href="#" class="m-model-colors__picker__item__link js-color-picker {{ picker.class }}" style="color: {{ picker.color_left }};" data-hex="{{ picker.color_left }}" data-available="{{ picker.available }}" data-colorname="{{ picker.colorname }}" data-color="{{ _host }}img/sections/models/main/{{ model.key }}/{{ picker.image }}">*/
+/*                                                     <div class="m-model-colors__picker__item__link__circle-o" style="border-color: {{ picker.color_left }};"></div>*/
+/*                                                     <div class="m-model-colors__picker__item__link__circle" style="background-color: {{ picker.color_left }};"></div>*/
+/*                                                     <div class="m-model-colors__picker__item__link__bicolor">*/
+/*                                                         <div class="m-model-colors__picker__item__link__bicolor__left" style="background-color: {{ picker.color_left }};"></div>*/
+/*                                                         <div class="m-model-colors__picker__item__link__bicolor__right" style="background-color: {{ picker.color_right }};"></div>*/
+/*                                                     </div>*/
+/*                                                 </a>*/
+/*                                             </li>                                        */
+/*                                         {% endfor %}*/
+/*                                     </ul>*/
+/*                                 </div>*/
+/*                             </div>*/
+/*                             <div class="row">*/
+/*                                 <div class="col-md-12 col-sm-12">*/
+/*                                     <p class="m-model-colors__disclaimer">*/
+/*                                         Los valores de rendimiento de combustible indicados para este modelo, convenido con las autoridades correspondientes, es el obtenido mediante <b> pruebas de ciclo combinado, en condiciones controladas de laboratorio que pueden no ser reproducibles ni obtenerse en condiciones y hábitos de manejo convencionales</b>, debido a factores climatológicos, de combustible, condiciones topográficas, entre otros.*/
+/*                                     </p>*/
+/*                                 </div>*/
+/*                             </div>*/
+/*                         </div>*/
 /*                     </div>*/
-/*                     <div class="car-next-step"><a href="{{ _host }}modelos/{{ model.key }}#caracteristicas"><span>Características</span></a></div>*/
+/*                     {#*/
+/*                     <div class="m-scroll-down car-next-step">*/
+/*                         <a href="{{ _host }}modelos/{{ model.key }}#caracteristicas" class="m-scroll-down__link m-scroll-down__link--real js-scroll-to">*/
+/*                             <i class="fa fa-angle-down m-scroll-down__link__icon"></i>*/
+/*                         </a>*/
+/*                         <a href="{{ _host }}modelos/{{ model.key }}#caracteristicas" class="m-scroll-down__link m-scroll-down__link--fake js-scroll-to"></a>*/
+/*                     </div>*/
+/*                     #}*/
+/*                     <div class="full-size-section gray-degree window-adaptable model-section" data-min-height="650">*/
+/*                         <div class="car-main big-main" {#style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.image }}') center 175px no-repeat"#}>*/
+/*                             {#<div class="car-main-title">*/
+/*                                 <div class="title">{{ begin.main.title }}</div>*/
+/*                                 <div class="slogan">{{ begin.main.slogan }}</div>*/
+/*                                 <div class="price">{{ begin.main.price }}</div>*/
+/*                                 <div class="car-main-image" id="car-image-{{ model.key }}">&nbsp;</div>*/
+/*                             </div>#}*/
+/*                             <div class="car-next-step"><a href="{{ _host }}modelos/{{ model.key }}#caracteristicas"><span>Características</span></a></div>*/
+/*                         </div>*/
+/*                     </div>*/
 /*                 </div>*/
-/*             </div>*/
+/*             {% endif %}*/
+/*             {% if begin.main.normal %}*/
+/*                 <div class="full-size-section gray-degree window-adaptable model-section model-section-normal" data-min-height="650">*/
+/*                     <div class="car-main big-main" style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.normal.image }}') center 175px no-repeat">*/
+/*                         <div class="car-main-title">*/
+/*                             <div class="title">{{ begin.main.normal.title }}</div>*/
+/*                             <div class="slogan">{{ begin.main.normal.slogan }}</div>*/
+/*                             <div class="price">{{ begin.main.normal.price }}</div>*/
+/*                             <div class="car-main-image" id="car-image-{{ model.key }}">&nbsp;</div>*/
+/*                         </div>*/
+/*                         <div class="car-next-step car-next-step-normal"><a href="{{ _host }}modelos/{{ model.key }}#caracteristicas"><span>Características</span></a></div>*/
+/*                     </div>*/
+/*                 </div>*/
+/*             {% endif %}*/
 /*         {% endif %}*/
 /*     {# block home end #}*/
 /*     {# block characteristics #}*/
@@ -1436,7 +1689,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
 /*                                                         {% if rows.cell.first %}*/
 /*                                                             {% if rows.cell.first or rows.cell.first.price %}*/
 /*                                                                 <div class="cell {#{{ body.height }}#} {{ rows.cell.first.price.class }} col-{{ rows.cell.class }} {{ rows.cell.first.class }}">*/
-/*                                                                     <div class="title to-html">*/
+/*                                                                     <div class="title to-html {{ body.height }}">*/
 /*                                                                         {% if rows.cell.first.title %}*/
 /*                                                                             {{ rows.cell.first.title }}*/
 /*                                                                         {% endif %}*/
@@ -1450,7 +1703,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
 /*                                                             {% endif %}*/
 /*                                                             {% if rows.cell.second or rows.cell.second.price %}*/
 /*                                                                 <div class="cell {#{{ body.height }}#} {{ rows.cell.second.price.class }} col-{{ rows.cell.class }} {{ rows.cell.second.class }}">*/
-/*                                                                     <div class="title to-html">*/
+/*                                                                     <div class="title to-html {{ body.height }}">*/
 /*                                                                         {% if rows.cell.second.title %}*/
 /*                                                                             {{ rows.cell.second.title }}*/
 /*                                                                         {% endif %}*/
@@ -1464,7 +1717,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
 /*                                                             {% endif %}*/
 /*                                                             {% if rows.cell.third or rows.cell.third.price %}*/
 /*                                                                 <div class="cell {#{{ body.height }}#} {{ rows.cell.third.price.class }} col-{{ rows.cell.class }} {{ rows.cell.third.class }}">*/
-/*                                                                     <div class="title to-html">*/
+/*                                                                     <div class="title to-html {{ body.height }}">*/
 /*                                                                         {% if rows.cell.third.title %}*/
 /*                                                                             {{ rows.cell.third.title }}*/
 /*                                                                         {% endif %}*/
@@ -1478,7 +1731,7 @@ class __TwigTemplate_5074b901e51835c72dc9c7e0c46c9d1d407eccb7b04dd364a835e30e7e1
 /*                                                             {% endif %}*/
 /*                                                             {% if rows.cell.fourth or rows.cell.fourth.price %}*/
 /*                                                                 <div class="cell {#{{ body.height }}#} {{ rows.cell.fourth.price.class }} col-{{ rows.cell.class }} {{ rows.cell.fourth.class }}">*/
-/*                                                                     <div class="title to-html">*/
+/*                                                                     <div class="title to-html {{ body.height }}">*/
 /*                                                                         {% if rows.cell.fourth.title %}*/
 /*                                                                             {{ rows.cell.fourth.title }}*/
 /*                                                                         {% endif %}*/

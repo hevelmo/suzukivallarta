@@ -1,10 +1,10 @@
 /*
-#features-space .suzuki-table .data-wrapper .body .row.cols-2,
-#features-space .suzuki-table .data-wrapper .body .row.cols-3,
-#features-space .suzuki-table .data-wrapper .body .row.cols-4 {
+#features-space .suzuki-table .data-wrapper .body .row.cols-2 .cell div.equal-height,
+#features-space .suzuki-table .data-wrapper .body .row.cols-3 .cell div.equal-height,
+#features-space .suzuki-table .data-wrapper .body .row.cols-4 .cell div.equal-height {
     display: table;
 }
-#features-space .suzuki-table .data-wrapper .body .row .cell.equal-height {
+#features-space .suzuki-table .data-wrapper .body .row .cell div.equal-height p {
     display: table-cell;
     margin-bottom: -99999px;
     padding-bottom: 99999px;
@@ -32,6 +32,9 @@
     text-decoration:none;
 }
 .full-size-section.gray-degree {
+    /*background:url("../../img/template/models/gray-bg.png") left top repeat-x;*/
+}
+.full-size-section.gray-degree.model-section-normal {
     background:url("../../img/template/models/gray-bg.png") left top repeat-x;
 }
 .special-padding-top {
@@ -93,8 +96,14 @@
     width:82px;
 }
 .car-main.big-main .car-next-step {
-    height: 210px;
-    margin: 470px auto 0;
+    /*height: 210px;
+    margin: 470px auto 0;*/
+    height: 110px;
+    margin: 20px auto 0;
+}
+.car-main.big-main .car-next-step.car-next-step-normal {
+    height:210px;
+    margin:470px auto 0;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .car-main .car-next-step {
@@ -113,6 +122,12 @@
     background-position:center 210px !important;
 }
 .car-main.big-main .car-next-step {
+    /*height:210px;
+    margin:470px auto 0;*/
+    height: 110px;
+    margin: 20px auto 0;
+}
+.car-main.big-main .car-next-step.car-next-step-normal {
     height:210px;
     margin:470px auto 0;
 }

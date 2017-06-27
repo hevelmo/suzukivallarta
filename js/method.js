@@ -2657,6 +2657,7 @@
                 "agencie": "agencia",
                 "product": "producto",
                 "campaign_max" : "campaign",
+                "comment": "mensaje",
                 "news" : "news"
             });
             dataRenamed = dataRenamed[0];
@@ -2774,6 +2775,7 @@
                 "agencie": "agencia",
                 "product": "producto",
                 "campaign_max" : "campaign",
+                "comment": "mensaje",
                 "news" : "news"
             });
             dataRenamed = dataRenamed[0];

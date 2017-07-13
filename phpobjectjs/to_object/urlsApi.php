@@ -18,6 +18,7 @@ function urlsApi() {
     //$srv = "servicio";
     //$rep = "refacciones";
     $cnt = "contacto";
+    $job = "bolsa-de-trabajo";
     // newsletter
     $new = "newsletter";
 
@@ -44,6 +45,9 @@ function urlsApi() {
 
         // SEND TESTDRIVE
         'snd_drv' => "$root/$snd/$drv",
-        'snd_drvn_news' => "$root/$snd/$new/$drv"
+        'snd_drvn_news' => "$root/$snd/$new/$drv",
+
+        // SEND JOB BOARD
+        "snd_job" => "$root/$snd/$job"
     );
 }

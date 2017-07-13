@@ -267,7 +267,7 @@
                                                     <div class="row  row-{{ rows.class }} cols-{{ body.col.class }}">
                                                         {% if rows.cell.first %}
                                                             {% if rows.cell.first or rows.cell.first.price %}
-                                                                <div class="cell {#{{ body.height }}#} {{ rows.cell.first.price.class }} col-{{ rows.cell.class }} {{ rows.cell.first.class }}">
+                                                                <div class="cell {{ rows.cell.first.price.class }} col-{{ rows.cell.class }} {{ rows.cell.first.class }}" {% if rows.height %} style="height: {{ rows.height }};" {% endif %}>
                                                                     <div class="title to-html {{ body.height }}">
                                                                         {% if rows.cell.first.title %}
                                                                             {{ rows.cell.first.title }}
@@ -281,7 +281,7 @@
                                                                 </div>
                                                             {% endif %}
                                                             {% if rows.cell.second or rows.cell.second.price %}
-                                                                <div class="cell {#{{ body.height }}#} {{ rows.cell.second.price.class }} col-{{ rows.cell.class }} {{ rows.cell.second.class }}">
+                                                                <div class="cell {{ rows.cell.second.price.class }} col-{{ rows.cell.class }} {{ rows.cell.second.class }}" {% if rows.height %} style="height: {{ rows.height }};" {% endif %}>
                                                                     <div class="title to-html {{ body.height }}">
                                                                         {% if rows.cell.second.title %}
                                                                             {{ rows.cell.second.title }}
@@ -295,7 +295,7 @@
                                                                 </div>
                                                             {% endif %}
                                                             {% if rows.cell.third or rows.cell.third.price %}
-                                                                <div class="cell {#{{ body.height }}#} {{ rows.cell.third.price.class }} col-{{ rows.cell.class }} {{ rows.cell.third.class }}">
+                                                                <div class="cell {{ rows.cell.third.price.class }} col-{{ rows.cell.class }} {{ rows.cell.third.class }}" {% if rows.height %} style="height: {{ rows.height }};" {% endif %}>
                                                                     <div class="title to-html {{ body.height }}">
                                                                         {% if rows.cell.third.title %}
                                                                             {{ rows.cell.third.title }}
@@ -309,7 +309,7 @@
                                                                 </div>
                                                             {% endif %}
                                                             {% if rows.cell.fourth or rows.cell.fourth.price %}
-                                                                <div class="cell {#{{ body.height }}#} {{ rows.cell.fourth.price.class }} col-{{ rows.cell.class }} {{ rows.cell.fourth.class }}">
+                                                                <div class="cell {{ rows.cell.fourth.price.class }} col-{{ rows.cell.class }} {{ rows.cell.fourth.class }}" {% if rows.height %} style="height: {{ rows.height }};" {% endif %}>
                                                                     <div class="title to-html {{ body.height }}">
                                                                         {% if rows.cell.fourth.title %}
                                                                             {{ rows.cell.fourth.title }}

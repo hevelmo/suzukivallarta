@@ -173,6 +173,16 @@ class __TwigTemplate_b0e08c55cddbf93862204c0b82b67629847bd6bd5949834f23589b8dcad
                         </fieldset>
                     </div>
                 </div>
+                <div class=\"contact_elements\">
+                    <div class=\"contact_element ab\">
+                        <fieldset>
+                            <a href=\"";
+        // line 147
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "bolsa-de-trabajo\" id=\"\" class=\"enviar button blue col-md-12\" style=\"text-align: center;\">Bolsa de Trabajo</a>
+                        </fieldset>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -191,7 +201,7 @@ class __TwigTemplate_b0e08c55cddbf93862204c0b82b67629847bd6bd5949834f23589b8dcad
 
     public function getDebugInfo()
     {
-        return array (  170 => 139,  139 => 111,  135 => 110,  129 => 107,  28 => 8,  21 => 2,  19 => 1,);
+        return array (  181 => 147,  170 => 139,  139 => 111,  135 => 110,  129 => 107,  28 => 8,  21 => 2,  19 => 1,);
     }
 }
 /* {% set model = mdopa %}*/
@@ -334,6 +344,13 @@ class __TwigTemplate_b0e08c55cddbf93862204c0b82b67629847bd6bd5949834f23589b8dcad
 /*                             <p>*/
 /*                                 Tus datos están a salvo.<br>Para mayor información revisa nuestro <a href="{{ _host }}aviso-de-privacidad" id="go-privacy-notice">Aviso de Privacidad</a>*/
 /*                             </p>*/
+/*                         </fieldset>*/
+/*                     </div>*/
+/*                 </div>*/
+/*                 <div class="contact_elements">*/
+/*                     <div class="contact_element ab">*/
+/*                         <fieldset>*/
+/*                             <a href="{{ _host }}bolsa-de-trabajo" id="" class="enviar button blue col-md-12" style="text-align: center;">Bolsa de Trabajo</a>*/
 /*                         </fieldset>*/
 /*                     </div>*/
 /*                 </div>*/

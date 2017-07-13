@@ -13,5 +13,6 @@ urlsApi = {
 	"snd_drv":"api/v1/send/testdrive",
 	"snd_drvn_news":"api/v1/send/newsletter/testdrive",
 	"snd_fin":"api/v1/send/financiamiento",
-	"snd_fin_news":"api/v1/send/newsletter/financiamiento"
+	"snd_fin_news":"api/v1/send/newsletter/financiamiento",
+	"snd_job":"api/v1/send/bolsa-de-trabajo"
 };

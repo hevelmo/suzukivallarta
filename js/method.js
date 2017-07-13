@@ -2539,8 +2539,11 @@
                 "campaign_max" : "campaign",
                 "news" : "news"
             });
+            date = SUK.getValue('#suk_date');
+            console.log(date);
             dataRenamed = dataRenamed[0];
-            dataRenamed["business_max"] = $('#suk_agn').find(":selected").data("max-id"); //Max Id;
+            dataRenamed["comment"] = "Fecha de prueba de Manejo: " + date;
+            dataRenamed["business_max"] = "54"; //Max Id;
             dataRenamed["origen_type"] = "2";
             dataRenamed["web_max"] = window.location.href;
             dataRenamed["exit_web"] = window.location.href;
@@ -2575,7 +2578,7 @@
                 setTimeout(function () {
                     setTimeout(function () {
                         setTimeout(function() {
-                            alertify.alert("¡ATENCIÓN!", "¡Muchas gracias!<br>" + 
+                            alertify.alert(suk_product, "¡Muchas gracias!<br>" + 
                                            "Tu prueba de manejo a sido agendaa, pronto recibirás confirmación en tu correo electrónico." +
                                            "Te hemos asignado un asesor de la concesionaria " + suk_agn + ", " +
                                            "quien se pondrá en contacto contigo para confirmar tus datos y resolver cualquier duda que puedas tener.", function(e) {
@@ -2661,7 +2664,7 @@
                 "news" : "news"
             });
             dataRenamed = dataRenamed[0];
-            dataRenamed["business_max"] = $('#suk_agn').find(":selected").data("max-id"); //Max Id;
+            dataRenamed["business_max"] = "54"; //Max Id;
             dataRenamed["origen_type"] = "2";
             dataRenamed["web_max"] = window.location.href;
             dataRenamed["exit_web"] = window.location.href;
@@ -2694,7 +2697,7 @@
                     setTimeout(function () {
                         setTimeout(function() {
                             financingForm.resetContact();
-                            alertify.alert("¡ATENCIÓN!", "¡Muchas gracias!<br>" + 
+                            alertify.alert(suk_product, "¡Muchas gracias!<br>" + 
                                            "Tu cotización ha sido enviada a tu correo electrónico: " + suk_email + ". " +
                                            "Te hemos asignado un asesor Suzuki de la concesionaria " + suk_agn + ", " +
                                            "quien se pondrá en contacto contigo para confirmar tus datos y resolver cualquier duda que puedas tener..", function(e) {
@@ -2779,7 +2782,7 @@
                 "news" : "news"
             });
             dataRenamed = dataRenamed[0];
-            dataRenamed["business_max"] = $('#suk_agn').find(":selected").data("max-id"); //Max Id;
+            dataRenamed["business_max"] = "54"; //Max Id;
             dataRenamed["origen_type"] = "2";
             dataRenamed["web_max"] = window.location.href;
             dataRenamed["exit_web"] = window.location.href;
@@ -2811,7 +2814,7 @@
                     setTimeout(function () {
                         setTimeout(function() {
                             contactForm.resetContact();
-                            alertify.alert("¡ATENCIÓN!", "¡Muchas gracias!<br>" + 
+                            alertify.alert(suk_product, "¡Muchas gracias!<br>" + 
                                            "En breve responderemos tu mensaje al siguiente correo: " + suk_email + ".", function(e) {
                                 //$(location).attr('href', url_location);
                                 alertify.success("Datos enviados.");
@@ -2887,6 +2890,367 @@
                 }
             });
             return (formErrors === 0);
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] formJobBoard
+\* ------------------------------------------------------ */
+    var formJobBoard = {
+        sendButtons: "",
+        contactForm: "",
+        loaderIcon: "",
+        sendLeads: function() {
+            var data, dataRenamed;
+            data = $(formJobBoard.contactForm).serializeFormJSON();
+            dataRenamed = SUK.renameArrayObjKeys([data], {
+                "name": "nombre",
+                "lastname": "apellidos",
+                "email": "correo",
+                "phone": "telefono",
+                "comment": "mensaje",
+                "agencie": "agencia",
+                "product": "producto",
+                "campaign_max": "campaign"
+            });
+            dataRenamed = dataRenamed[0];
+            dataRenamed["business_max"] = "54";
+            dataRenamed["news"] = "0";
+            dataRenamed["origen_type"] = "2";
+            dataRenamed["web_max"] = window.location.href;
+            dataRenamed["exit_web"] = window.location.href;
+            return SUK.postalService(GLOBALMasterMax, dataRenamed);
+        },
+        handlerPromiseLeads: function(data1) {
+            var sendPromise, cam_agn, rootApi, suk_agn;
+            rootApi = SUK.getValue("#master-host");
+
+            data = $(formJobBoard.contactForm).serializeFormJSON();
+            suk_agn = data["agencia"];
+            suk_producto = data["producto"];
+            sendPromise = formJobBoard.sendContacto();
+            sendPromise.success( function (data2) {
+                ga("send", "event", "button-send-form-job-board-contact", "Bolsa de Trabajo Camcar", "form-sen-job-board-contact");
+                setTimeout(function () {
+                    setTimeout(function () {
+                        setTimeout(function() {
+                            formJobBoard.resetContact();
+                            alertify.alert(suk_producto, "¡Muchas gracias!<br>" + 
+                                           "Hemos enviado su formulario exitosamente a un representante de la concesionaria " + suk_agn + ", " +
+                                           "En breve nos contactaremos con usted.", function(e) {
+                                                //$(location).attr("href", url_location); 
+                                           });
+                            alertify.success("Datos enviados.");
+                        }, 1800);
+                    }, 1800);
+                }, 1400);
+            });
+            sendPromise.error( function (data2) {
+                formJobBoard.resetContact();
+                alertify.error("No se ha podido enviar los datos <br /> Inténtelo más tarde.");
+            });
+        },
+        sendContacto: function () {
+            var rootApi, data;
+            data = $(formJobBoard.contactForm).serializeFormJSON();
+            rootApi = SUK.getValue('#master-host');
+            return SUK.postalService(rootApi + urlsApi.snd_job, data);
+        },
+        resetContact: function () {
+            var $btnSend;
+            $btnSend = $(".send_contact_form");
+            SUK.resetForm(formJobBoard.contactForm);
+            $(formJobBoard.loaderIcon).css("display", "none");
+            $btnSend.removeAttr("disabled");
+            $('input[type="text"]#suk_upload_file_input').attr('value','');
+            $('input[type="text"]#suk_upload_file_input').val('');
+            $('.file-upload-input').removeAttr('style');
+        },
+        clickSend: function(event) {
+            // Loader Icon
+            formJobBoard.loaderIcon = "#loader_send_icon";
+            // Get and save current button id
+            formJobBoard.sendButton = "#" + $(this).attr('id');
+            // Get the current form id, find the form with the same data-scope value
+            formJobBoard.contactForm = "form#" + $("body").find("form").attr("id");
+            //console.log(formJobBoard.contactForm);
+
+            formErrors = formValidation.required(formJobBoard.contactForm, '.validate-required', formJobBoard.sendButton);
+            if (formErrors) {
+                $(formJobBoard.contactForm).css("cursor", "auto").prop("disabled", true);
+                $(formJobBoard.loaderIcon).css("display", "block");
+                leadsPromise = formJobBoard.sendLeads();
+                leadsPromise.success(formJobBoard.handlerPromiseLeads);
+                leadsPromise.error(formJobBoard.handlerPromiseLeads);
+                /*
+                formJobBoard.sendLeads();
+                formJobBoard.sendContacto();
+                formJobBoard.addContacto();
+                */
+            }
+        }
+    }
+    var multipleSupport, isIE;
+    multipleSupport = typeof $("<input/>")[0].multiple !== "undefined",
+    isIE = /msie/i.test( navigator.userAgent );
+/* ------------------------------------------------------ *\
+    [functions] valid_extension_file
+\* ------------------------------------------------------ */
+    function valid_extension_file(formulario, archivo) {
+        extensiones_permitidas = new Array('.pdf');
+        mierror = "";
+        success = "";        
+        
+        if (!archivo) {
+            //Si no tengo archivo, es que no se ha seleccionado un archivo en el formulario
+            mierror = "No has seleccionado ningún archivo";
+            $('.file-upload-allowed-extensions').css('display', 'block');
+            $('.custom-file-upload .invalid-message').css('display', 'block');
+            $('.custom-file-upload .invalid-message').html(mierror);
+            $('input[type="text"]#job_opportunities_upload_file').attr('value','');
+            $('input[type="text"]#job_opportunities_upload_file').val('');
+            //alertify.error("No has seleccionado ningún archivo");
+        } else {
+            //recupero la extensión de este nombre de archivo
+            extension = (archivo.substring(archivo.lastIndexOf("."))).toLowerCase();
+            //console.log(extension);
+            //compruebo si la extensión está entre las permitidas
+            permitida = false;
+            for (var i = 0; i < extensiones_permitidas.length; i++) {
+                if (extensiones_permitidas[i] == extension) {
+                    permitida = true;
+                    break;
+                    //SUK.setHTML('div.message_type_file_ok', '');
+                }
+            }
+            if (!permitida) {
+                mierror = "Comprueba la extensión de los archivos a subir";
+                //mierror = "Comprueba la extensión de los archivos a subir. \nSólo se pueden subir archivos con extensiones: " + extensiones_permitidas.join();
+                $('.file-upload-allowed-extensions').css('display', 'block');
+                $('.custom-file-upload .invalid-message').css('display', 'block');
+                $('.custom-file-upload .invalid-message').html(mierror);
+                $('input[type="text"]#job_opportunities_upload_file').attr('value','');
+                $('input[type="text"]#job_opportunities_upload_file').val('');
+                $('.file-upload-input').css('background-color', 'rgba(178,17,23,0.8)');
+                //alertify.error("Comprueba la extensión de los archivos a subir");
+            }else{
+                //submit!
+                $('.file-upload-allowed-extensions').css('display', 'none');
+                $('.custom-file-upload .invalid-message').css('display', 'none');
+                $('.file-upload-input').css('background-color', '#388E3C');
+                //formulario.submit();
+                return 1;
+            }
+        }
+        //si estoy aqui es que no se ha podido submitir
+        return 0;
+    }
+/* ------------------------------------------------------ *\
+    [Methods] CUSTOM FILE
+\* ------------------------------------------------------ */
+    $.fn.customFile = function() {
+        return this.each(function() {
+            var $file, $wrap, $inputs, $button, $label, $icons;
+            $file = $(this).addClass('custom-file-upload-hidden'); // the original file input
+            $wrap = $('<div class="file-upload-wrapper">');
+            $input = $('<input type="text" class="cur-hover file-upload-input file-upload-input-resp validate-required" placeholder="Ningún archivo seleccionado..." id="suk_upload_file_input" name="archivo_input" data-validation-data="required|upload" />');
+            // Button that will be used in non-IE browsers
+            $button = $('<button type="button" class="file-upload-button" id="job_opportunities_upload_file_button" name="job_opportunities_upload_file_button"><i class="fa fa-cloud-upload fa-lg fa-fw" style="padding-right: 35px;"></i> Adjuntar</button>');
+            // Hack for IE
+            $label = $('<label class="file-upload-button" for="'+ $file[0].id +'" id="job_opportunities_upload_file_label" name="job_opportunities_upload_file_label"><i class="fa fa-cloud-upload fa-lg fa-fw" style="padding-right: 35px;"></i> Adjuntar</label>');
+            // Icons type-file
+            $icons = $('<span class="file-upload-allowed-extensions clearfix"><div class="file-upload-legend">Solo se pueden adjuntar archivos en pdf.</div><div class="file-upload-icons"><i class="tyf-ico-type-file-pdf fa-4x"></i></div></span>');
+
+            // Hide by shifting to the left so we can still trigger events
+            $file.css({
+                position: 'absolute',
+                left: '-9999px'
+            });
+
+            $wrap.insertAfter( $file )
+            .append( $file, $input, ( isIE ? $label : $button ), $icons );
+
+            // Prevent focus
+            $file.attr('tabIndex', -1);
+            $button.attr('tabIndex', -1);
+
+            $button.click(function () {
+                $file.focus().click(); // Open dialog
+            });
+
+            $file.change(function() {
+                var files = [], fileArr, filename;
+                // If multiple is supported then extract all filenames from the file array
+                if ( multipleSupport ) {
+                    fileArr = $file[0].files;
+                    for ( var i = 0, len = fileArr.length; i < len; i++ ) {
+                        files.push( fileArr[i].name );
+                    }
+                    filename = files.join(', ');
+                    // If not supported then just take the value and remove the path to just show the filename
+                } else {
+                    filename = $file.val().split('\\').pop();
+                }
+                $input.val( filename ) // Set the value
+                .attr('value', filename) // Show filename in title tootlip
+                .focus(); // Regain focus
+            });
+
+            $input.on({
+                blur: function() { $file.trigger('blur'); },
+                keydown: function( e ) {
+                    if ( e.which === 13 ) { // Enter
+                    if ( !isIE ) { $file.trigger('click'); }
+                    } else if ( e.which === 8 || e.which === 46 ) { // Backspace & Del
+                            // inputted file path is not an image of one of the above types
+                            alert("inputted file path is not an image!");
+                            // On some browsers the value is read-only with this trick we remove the old input and add a clean clone with all the original events attached
+                            $file.replaceWith( $file = $file.clone( true ) );
+                            $file.trigger('change');
+                            $input.val('');
+                    } else if ( e.which === 9 ){ // TAB
+                        return;
+                    } else { // All other keys
+                        return false;
+                    }
+                }
+            });            
+        });
+    };
+    var customFileMethods = {
+        customFile : function() {
+            // Old browser fallback
+            if ( !multipleSupport ) {
+                $( document ).on('change', 'input.customfile', function() {
+                    var $this, uniqId, $wrap, $inputs, $file;
+                    $this = $(this);
+                    // Create a unique ID so we can attach the label to the input
+                    uniqId = 'customfile_'+ (new Date()).getTime();
+                    $wrap = $this.parent();
+                    // Filter empty input
+                    $inputs = $wrap.siblings().find('.file-upload-input').filter(function(){ return !this.value });
+                    $file = $('<input type="file" id="'+ uniqId +'" name="'+ $this.attr('name') +'"/>');
+
+                    // 1ms timeout so it runs after all other events that modify the value have triggered
+                    setTimeout(function() {
+                        // Add a new input
+                        if ( $this.val() ) {
+                            // Check for empty fields to prevent creating new inputs when changing files
+                            if ( !$inputs.length ) {
+                                $wrap.after( $file );
+                                console.log($wrap);
+                                $file.customFile();
+                                console.log($file);
+                            }
+                        // Remove and reorganize inputs
+                        } else {
+                            $inputs.parent().remove();
+                            // Move the input so it's always last on the list
+                            $wrap.appendTo( $wrap.parent() );
+                            $wrap.find('input').focus();
+                            console.log($wrap);
+                        }
+                    }, 1);
+                });
+            }
+        },
+        init_customFile : function(evt) {
+            $('input[type=file]').customFile();
+            //customFileMethods.handleFileSelect();
+        },
+        handleFileSelect: function() {
+            var file, fileReader, fileList, blob, getFile, reader, name, conten, type, getName, getContent, getType, j, files, output, i, f,
+                day, date, month, hour;
+            file = window.File;
+            fileReader = window.FileReader;
+            fileList = window.FileList;
+            blob = window.Blob;
+            if (file && fileReader && fileList && blob) {
+                function handleFileSelect(evt) {
+                    files = evt.target.files;
+
+                    getFile = document.getElementById('suk_update_file');
+
+                    for( j=0;j<getFile.files.length;j++){
+                        reader = new FileReader();//instanciamos FileReader
+                        reader.onloadend = (function(f){//creamos la función que recogerá los datos
+                            return function(e){
+                                name = f.name;
+                                content = e.target.result.split(",",2)[1];//obtenemos el contenido del archivo, estará codificado en Base64
+                                type = f.type;
+
+                                getName = name;
+                                getContent = content;
+                                getType = type;
+                                day = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+                                f = new Date();
+                                month = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                                //hour = (new Date()).getTime();
+                                SUK.setValue('#suk_date', day[f.getDay()] + ", " + f.getDate() + " de " + month[f.getMonth()] + " de " + f.getFullYear()/* + ", " + hour*/);
+                                console.log(day[f.getDay()] + ", " + f.getDate() + " de " + month[f.getMonth()] + " de " + f.getFullYear());
+                                //$('#params .file').html(getName);
+                                SUK.setValue('#suk_filename', getName);
+                                console.log(getName);
+                                //$('#params .mime_type').html(getType);
+                                SUK.setValue('#suk_mime', getType);
+                                console.log(getType);
+                                //$('#params .file_content').html(getContent);
+                                SUK.setValue('#suk_filecontent', getContent);
+                                console.log(getContent);
+                            }
+                        })(getFile.files[j]);
+                        reader.readAsDataURL(getFile.files[j]);//
+                    }
+                    /*output = [];//Creamos un arreglo para guardar todos los archivos datos en diferentes posiciones.
+                    for (i = 0, f; f = files[i]; i++) {//Recorremos el objeto files para obtener los datos de cada archivo y guardarlos en el arreglo.
+                        output.push('<div id="params"><div class="file"></div><div class="file_content"></div><div class="mime_type"></div></div><li><strong>',
+                            f.name, '</strong> (', f.type || 'n/a', ') - ',
+                            f.size, ' bytes, ultima modificacion: ',
+                            f.lastModifiedDate.toLocaleDateString(), '</li>');
+                    }*/
+                    //document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';//Introducimos la lista de archivos entre las etiquetas <ul></ul>
+                }
+                document.getElementById('suk_upload_file_input').addEventListener('change', handleFileSelect, false);//Ponemos un listener para escuchar cuando el evento Change del input file se ejecute, quiere decir cuando se de click en "Abrir"
+            } else {
+              //alert();
+            }
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] uploadFileMethod
+\* ------------------------------------------------------ */
+    var uploadFileMethod = {
+        fileLoader: function() {
+            SUK.loadTemplate(tempsNames.recurrent_about_us_start_input_file_upload, domEl.div_recurrent_content_input_file);
+            'use strict';
+            $('input#job_board_upload_file').fileupload({
+                url: '../resources/public/cv/index.php',
+                dataType: 'json',
+                done: uploadFileMethod.done(),
+                progressall: uploadFileMethod.progressall()
+            });
+        },
+        done: function() {
+            return function (e, data) {
+                var file_promise, file;
+                resetAlert();
+                alertify.set({
+                    labels: {
+                        ok: 'Aceptar',
+                        cancel: 'Cancelar'
+                    }
+                });
+                files = data.result.files;
+                alertify.success('Archivo Cargado');
+            }
+        },
+        progressall: function() {
+            return function (e, data) {
+                var progress  = parseInt(data.loaded / data.total * 100, 10);
+                $('#progress .progress-bar').css(
+                    'width', progress + '%',
+                    'background-color', '#5cb85c'
+                );
+            }
         }
     }
 /* ------------------------------------------------------ *\

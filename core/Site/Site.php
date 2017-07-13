@@ -340,6 +340,7 @@
 									'row' => array(
 										array(
 											'class' => 'dark',
+											'height' => '86px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -347,7 +348,7 @@
 														'class' => 'price'
 													),
 													'class' => 'first',
-													'title' => '<p><span>TM 2017 $194,990.00</span></p>'
+													'title' => '<p><span>TM 2017 $199,990.00</span></p>'
 												),
 												'second' => array(
 													'price' => array(
@@ -356,10 +357,10 @@
 													'class' => 'second last',
 													'titles' => array(
 														array(
-															'span' => '<p><span>TM 2017 $269,990.00</span></p>'
+															'span' => '<p><span>TM 2017 $223,990.00</span></p>'
 														),
 														array(
-															'span' => '<p><span>TA CVT 2017 $233,990.00</span></p>'
+															'span' => '<p><span>TA CVT 2017 $238,990.00</span></p>'
 														)
 													)
 												)
@@ -367,6 +368,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -381,6 +383,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -395,6 +398,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -409,6 +413,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -423,6 +428,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -437,6 +443,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -451,6 +458,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -465,6 +473,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -479,6 +488,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -493,6 +503,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -507,6 +518,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -521,6 +533,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -535,6 +548,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -549,6 +563,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -563,6 +578,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -577,6 +593,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -591,6 +608,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -605,6 +623,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -619,6 +638,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -633,6 +653,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -647,6 +668,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -661,6 +683,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -675,6 +698,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -689,6 +713,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -703,6 +728,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -717,6 +743,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -731,6 +758,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -745,6 +773,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -759,6 +788,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -773,6 +803,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -787,6 +818,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -801,6 +833,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -815,6 +848,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -829,6 +863,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -843,6 +878,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -857,6 +893,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -871,6 +908,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -885,6 +923,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -899,6 +938,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -913,6 +953,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -927,6 +968,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -962,7 +1004,7 @@
 									'title' => 'PRECIOS DE MANTENIMIENTO'
 								),
 								'table' => array(
-									'columns' => '4',
+									'columns' => '3',
 									'body' => array(
 										'row' => array(
 											array(
@@ -985,14 +1027,14 @@
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => '',
-														'title' => 'TM'
-													),
+														'title' => 'GL / GLX'
+													)/*,
 													'fourth' => array(
 														'head_class' => 'maintenance-head title',
 														'col' => 'dark',
 														'class' => 'last',
 														'title' => 'TA CVT'
-													)
+													)*/
 												)
 											),
 											array(
@@ -1012,13 +1054,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,000.00'
-													),
+														'title' => '$1,160.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => 'last',
 														'title' => '$1,000.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -1038,13 +1080,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,330.00'
-													),
+														'title' => '$1,276.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => 'last',
 														'title' => '$1,330.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -1064,13 +1106,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,860.00'
-													),
+														'title' => '$1,682.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => 'last',
 														'title' => '$1,860.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -1090,13 +1132,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,290.00'
-													),
+														'title' => '$1,972.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => 'last',
 														'title' => '$3,290.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -1116,13 +1158,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$4,230.00'
-													),
+														'title' => '$2,204.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => 'last',
 														'title' => '$4,230.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -1142,13 +1184,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,294.00'
-													),
+														'title' => '$2,552.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => 'last',
 														'title' => '$3,294.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -1168,18 +1210,174 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,890.00'
-													),
+														'title' => '$3,712.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => 'last',
 														'title' => '$3,890.00'
-													)
+													)*/
+												)
+											),
+											array(
+												'id' => '9',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '70,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '40'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => '',
+														'title' => '$1,624.00'
+													)/*,
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => 'last',
+														'title' => '$3,890.00'
+													)*/
+												)
+											),
+											array(
+												'id' => '10',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '80,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '48'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => '',
+														'title' => '$3,579.00'
+													)/*,
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => 'last',
+														'title' => '$3,890.00'
+													)*/
+												)
+											),
+											array(
+												'id' => '11',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '90,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '54'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => '',
+														'title' => '$2,007.00'
+													)/*,
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => 'last',
+														'title' => '$3,890.00'
+													)*/
+												)
+											),
+											array(
+												'id' => '12',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '100,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '60'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => '',
+														'title' => '$3,683.00'
+													)/*,
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => 'last',
+														'title' => '$3,890.00'
+													)*/
+												)
+											),
+											array(
+												'id' => '13',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '110,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '66'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => '',
+														'title' => '$1,235.00'
+													)/*,
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => 'last',
+														'title' => '$3,890.00'
+													)*/
+												)
+											),
+											array(
+												'id' => '14',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '120,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '72'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => '',
+														'title' => '$4,391.00'
+													)/*,
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => 'last',
+														'title' => '$3,890.00'
+													)*/
 												)
 											)
 										),
 										'col' => array(
-											'class' => '4'
+											'class' => '3'
 										)
 									)
 								)
@@ -2506,6 +2704,7 @@
 									'row' => array(
 										array(
 											'class' => 'dark',
+											'height' => '86px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2533,6 +2732,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2551,6 +2751,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2569,6 +2770,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2587,6 +2789,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2605,6 +2808,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2623,6 +2827,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2641,6 +2846,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2659,6 +2865,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2677,6 +2884,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2695,6 +2903,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2713,6 +2922,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2731,6 +2941,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2749,6 +2960,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2767,6 +2979,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2785,6 +2998,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2803,6 +3017,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2821,6 +3036,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2839,6 +3055,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2857,6 +3074,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2875,6 +3093,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2893,6 +3112,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2911,6 +3131,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2929,6 +3150,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2947,6 +3169,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2965,6 +3188,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -2983,6 +3207,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -3001,6 +3226,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -4510,7 +4736,7 @@
 								'slogan' => 'Experimenta libertad.',
 								'medals' => array(
 								),
-								'price' => '$340,990.00',
+								'price' => '$359,990.00',
 								'asterisk' => 'Versión SPECIAL TA',
 								'car_box' => array(
 									'img' => '02e16d69329e7d5052662df069178ce250b71222.png',
@@ -4820,12 +5046,12 @@
 										'second' => array(
 											'class' => '',
 											'image' => 'grand-vitara-gls.png',
-											'title' => 'Grand Vitara Special'
+											'title' => 'Grand Vitara GLS'
 										),
 										'third' => array(
 											'class' => 'last',
 											'image' => 'grand-vitara-especial.png',
-											'title' => 'Grand Vitara Special'
+											'title' => 'Grand Vitara GLS 4X4'
 										)
 									)
 								),
@@ -4833,6 +5059,7 @@
 									'row' => array(
 										array(
 											'class' => 'dark',
+											'height' => '58px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -4840,40 +5067,27 @@
 														'class' => 'price'
 													),
 													'class' => 'first',
-													'titles' => array(
-														array(
-															'span' => '<p><span>TA 2017 $359,990.00</span></p>'
-														),
-														array(
-															'span' => '<p><span>TA 2016 $340,990.00</span></p>'
-														)
-													)
+													'title' => '<p><span>TA 2017 $359,990.00</span></p>'
 												),
 												'second' => array(
 													'price' => array(
 														'class' => 'price'
 													),
 													'class' => 'second',
-													'titles' => array(
-														array(
-															'span' => '<p><span>TA 2017 $369,990.00</span></p>'
-														),
-														array(
-															'span' => '<p><span>TA 2016 $355,000.00</span></p>'
-														)
-													)
+													'title' => '<p><span>TA 2017 $369,990.00</span></p>'
 												),
 												'third' => array(
 													'price' => array(
 														'class' => 'price'
 													),
 													'class' => 'third last',
-													'title' => '<p><span>TA 2016 $355,000.00</span></p>'
+													'title' => '<p><span>TA 2017 $394,000.00</span></p>'
 												)
 											)
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -4892,6 +5106,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -4910,6 +5125,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -4928,6 +5144,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -4946,6 +5163,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -4964,6 +5182,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -4982,6 +5201,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5000,6 +5220,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5018,11 +5239,12 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Rines: Aluminio de 18 pulgadas.</p>'
+													'title' => '<p>Rines: Aluminio en color gris obscuro de 18 pulgadas.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
@@ -5036,6 +5258,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5054,6 +5277,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5072,6 +5296,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5090,6 +5315,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5108,6 +5334,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5126,6 +5353,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5144,6 +5372,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5162,6 +5391,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5180,6 +5410,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5198,11 +5429,12 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p>Sistema de apertura y arranque sin llave Keyless Start.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
@@ -5216,47 +5448,12 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Sistema de navegación.</p>'
-												),
-												'third' => array(
-													'class' => 'third last',
-													'title' => '<p>Sistema de navegación.</p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Pantalla touch de 6.1" WVGA.</p>'
-												),
-												'third' => array(
-													'class' => 'third last',
-													'title' => '<p>Pantalla touch de 6.1" WVGA.</p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'dark',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p>Reconocimiento de voz.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
@@ -5270,11 +5467,12 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p>Quemacocos.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
@@ -5288,11 +5486,12 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p>Espejos laterales con calefacción y luces direccionales integradas.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
@@ -5306,15 +5505,16 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '74px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p>Spoiler trasero</p>'
 												),
 												'second' => array(
 													'class' => 'second',
-													'title' => '<p></p>'
+													'title' => '<p>Estéreo Pioneer AVH-X8850BT con pantalla touch a color de 7" (panel desmontable)</p>'
 												),
 												'third' => array(
 													'class' => 'third last',
@@ -5324,11 +5524,12 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '74px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p>Detalles en color Champagne: Biseles al volante , consola central, cuadro de instrumentos, puertas y palanca de velocidades.</p>'
 												),
 												'second' => array(
 													'class' => 'second',
@@ -5342,6 +5543,26 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '56px',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Estéreo Pioneer AVH-X8850BT con pantalla touch a color de 7" (panel desmontable)</p>'
+												),
+												'second' => array(
+													'class' => 'second',
+													'title' => '<p></p>'
+												),
+												'third' => array(
+													'class' => 'third last',
+													'title' => '<p>Indicador 4x4 en funcionamiento.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -5354,7 +5575,7 @@
 												),
 												'third' => array(
 													'class' => 'third last',
-													'title' => '<p>Indicador 4x4 en funcionamiento.</p>'
+													'title' => '<p>Estéreo Pioneer AVH-X8850BT con pantalla touch a color de 7" (panel desmontable)</p>'
 												)
 											)
 										)
@@ -5381,7 +5602,7 @@
 									'title' => 'PRECIOS DE MANTENIMIENTO'
 								),
 								'table' => array(
-									'columns' => '4',
+									'columns' => '3',
 									'body' => array(
 										'row' => array(
 											array(
@@ -5404,14 +5625,14 @@
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => '',
-														'title' => '4X2'
-													),
+														'title' => 'GLS / GLS 4X4 / Special'
+													)/*,
 													'fourth' => array(
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '4X4'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5431,13 +5652,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,150.00'
-													),
+														'title' => '$1,508.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,150.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5457,13 +5678,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,285.00'
-													),
+														'title' => '$1,624.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,285.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5483,13 +5704,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,935.00'
-													),
+														'title' => '$2,436.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,935.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5509,13 +5730,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,665.00'
-													),
+														'title' => '$4,350.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,665.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5535,13 +5756,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,070.00'
-													),
+														'title' => '$2,514.37'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,070.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5561,13 +5782,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,635.00'
-													),
+														'title' => '$2,500.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,635.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5587,13 +5808,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,045.00'
-													),
+														'title' => '$6,374.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,045.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5613,13 +5834,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,355.00'
-													),
+														'title' => '$1,740.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,355.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5639,13 +5860,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,160.00'
-													),
+														'title' => '$4,263.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,160.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5665,13 +5886,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,675.00'
-													),
+														'title' => '$4,365.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,675.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5691,13 +5912,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$4,285.00'
-													),
+														'title' => '$4,400.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$4,285.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5717,13 +5938,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,235.00'
-													),
+														'title' => '$1,720.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,235.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -5743,13 +5964,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,080.00'
-													),
+														'title' => '$6,400.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,080.00'
-													)
+													)*/
 												)
 											)
 										),
@@ -6158,6 +6379,7 @@
 									'row' => array(
 										array(
 											'class' => 'dark',
+											'height' => '86px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6167,10 +6389,10 @@
 													'class' => 'first',
 													'titles' => array(
 														array(
-															'span' => '<p><span>TM 2017 $279,990.00</span></p>'
+															'span' => '<p><span>TM 2017 $289,990.00</span></p>'
 														),
 														array(
-															'span' => '<p><span>TA 2017 $299,990.00</span></p>'
+															'span' => '<p><span>TA 2017 $309,990.00</span></p>'
 														)
 													)
 												),
@@ -6179,19 +6401,20 @@
 														'class' => 'price'
 													),
 													'class' => 'second',
-													'title' => '<p><span>TA 2017 $329,990.00</span></p>'
+													'title' => '<p><span>TA 2017 $339,990.00</span></p>'
 												),
 												'third' => array(
 													'price' => array(
 														'class' => 'price'
 													),
 													'class' => 'third last',
-													'title' => '<p><span>2016 $374,500.00</span></p>'
+													'title' => '<p><span>2016 $355,990.00</span></p>'
 												)
 											)
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6210,6 +6433,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6228,6 +6452,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '74px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6246,6 +6471,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6264,6 +6490,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6282,6 +6509,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6300,6 +6528,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6318,6 +6547,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6336,6 +6566,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6354,6 +6585,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6372,6 +6604,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6390,6 +6623,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6408,6 +6642,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6426,6 +6661,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -6465,7 +6701,7 @@
 									'title' => 'PRECIOS DE MANTENIMIENTO'
 								),
 								'table' => array(
-									'columns' => '5',
+									'columns' => '4',
 									'body' => array(
 										'row' => array(
 											array(
@@ -6482,26 +6718,26 @@
 														'head_class' => 'maintenance-head title',
 														'col' => 'dark',
 														'class' => '',
-														'title' => 'Meses Sedán'
+														'title' => 'Meses'
 													),
 													'third' => array(
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => '',
-														'title' => 'T'
+														'title' => 'GL / GLX'
 													),
 													'fourth' => array(
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => '',
-														'title' => 'CVT'
-													),
+														'title' => 'TURBO BOSTERJET'
+													)/*,
 													'fifth' => array(
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => 'last',
 														'title' => 'CVT/AG'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6521,18 +6757,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$995.00'
+														'title' => '$1,218.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$995.00'
-													),
+														'title' => '$1,160.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$995.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6552,18 +6788,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,060.00'
+														'title' => '$1,392.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,060.00'
-													),
+														'title' => '$1,392.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,060.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6583,18 +6819,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,590.00'
+														'title' => '$1,856.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,590.00'
-													),
+														'title' => '$1,740.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,590.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6614,18 +6850,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,370.00'
+														'title' => '$2,350.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,370.00'
-													),
+														'title' => '$2,420.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,370.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6645,18 +6881,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,810.00'
+														'title' => '$1,900.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,610.00'
-													),
+														'title' => '$1,700.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,610.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6676,18 +6912,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,765.00'
+														'title' => '$1,950.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,765.00'
-													),
+														'title' => '$1,850.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,765.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6707,18 +6943,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,640.00'
+														'title' => '$4,500.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,640.00'
-													),
+														'title' => '$5,500.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,840.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6738,18 +6974,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,110.00'
+														'title' => '$1,392.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,110.00'
-													),
+														'title' => '$1,392.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,110.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6769,18 +7005,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,860.00'
+														'title' => '$3,300.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,650.00'
-													),
+														'title' => '$2,400.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,650.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6800,18 +7036,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,480.00'
+														'title' => '$2,400.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,480.00'
-													),
+														'title' => '$2,550.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,480.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6831,18 +7067,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,315.00'
+														'title' => '$3,670.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,314.00'
-													),
+														'title' => '$3,600.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,315.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6862,18 +7098,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,125.00'
+														'title' => '$1,780.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,125.00'
-													),
+														'title' => '$1,235.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,125.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -6893,18 +7129,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,960.00'
+														'title' => '$4,470.00'
 													),
 													'fourth' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,760.00'
-													),
+														'title' => '$5,650.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,960.00'
-													)
+													)*/
 												)
 											)
 										),
@@ -7293,6 +7529,7 @@
 									'row' => array(
 										array(
 											'class' => 'dark',
+											'height' => '86px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7314,12 +7551,13 @@
 														'class' => 'price'
 													),
 													'class' => 'third last',
-													'title' => '<p><span>TM 2017 $254,990.00</span><span>TA 2017 $269,990.00</span></p>'
+													'title' => '<p><span>TM 2017 $259,990.00</span><span>TA 2017 $274,990.00</span></p>'
 												)
 											)
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7338,6 +7576,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7356,6 +7595,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7374,6 +7614,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7392,6 +7633,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7410,6 +7652,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7428,6 +7671,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7446,6 +7690,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7464,6 +7709,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7482,6 +7728,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7500,6 +7747,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7518,6 +7766,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7536,6 +7785,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7554,6 +7804,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '92px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7572,6 +7823,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7590,6 +7842,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7608,6 +7861,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7626,6 +7880,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7644,6 +7899,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7662,6 +7918,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7680,6 +7937,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7698,6 +7956,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7716,6 +7975,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7734,6 +7994,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -7773,7 +8034,7 @@
 									'title' => 'PRECIOS DE MANTENIMIENTO'
 								),
 								'table' => array(
-									'columns' => '4',
+									'columns' => '3',
 									'body' => array(
 										'row' => array(
 											array(
@@ -7796,14 +8057,14 @@
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => '',
-														'title' => 'T/M'
-													),
+														'title' => 'GLS / GLX / RS'
+													)/*,
 													'fourth' => array(
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => 'last',
 														'title' => 'T/A'
-													)
+													)*/
 												)
 											),
 											array(
@@ -7823,13 +8084,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,000.00'
-													),
+														'title' => '$1,160.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,000.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -7849,13 +8110,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,065.00'
-													),
+														'title' => '$$1,276.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,065.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -7875,13 +8136,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,485.00'
-													),
+														'title' => '$1,682.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,485.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -7901,13 +8162,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,630.00'
-													),
+														'title' => '$2,600.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,630.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -7927,13 +8188,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,385.00'
-													),
+														'title' => '$1,682.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,190.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -7953,13 +8214,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,635.00'
-													),
+														'title' => '$2,150.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,635.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -7979,13 +8240,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,110.00'
-													),
+														'title' => '$3,770.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,110.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -8005,13 +8266,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,415.00'
-													),
+														'title' => '$1,200.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,415.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -8031,13 +8292,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,485.00'
-													),
+														'title' => '$3,000.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,280.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -8057,13 +8318,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,670.00'
-													),
+														'title' => '$2,650.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,670.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -8083,13 +8344,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,085.00'
-													),
+														'title' => '$3,850.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,085.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -8109,13 +8370,13 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,065.00'
-													),
+														'title' => '$1,276.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,065.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -8135,18 +8396,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$4,985.00'
-													),
+														'title' => '$3,800.00'
+													)/*,
 													'fourth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,785.00'
-													)
+													)*/
 												)
 											)
 										),
 										'col' => array(
-											'class' => '4'
+											'class' => '3'
 										)
 									)
 								)
@@ -8280,7 +8541,7 @@
 							'new' => array(
 								'image' => 'nueva-vitara.png',
 								'title' => 'Nueva Vitara 2017',
-								'subtitle' => 'Diseño perfecto con el equipamiento ideal. La revolución sedán está aquí.',
+								'subtitle' => 'La más equipada, personalizable y divertida. Colores que inspiran a seguir tus propias reglas..',
 								'slogan' => 'Diseño deportivo, movilidad feroz',
 								'medals' => array(
 									array(
@@ -8292,8 +8553,8 @@
 										'alt' => 'Reconocimiento'
 									)
 								),
-								'price' => '$274,990.00',
-								'asterisk' => 'Versión GLS MT 2016',
+								'price' => '$289,990.00',
+								'asterisk' => 'Versión GLS MT 2017',
 								'car_box' => array(
 									'img' => '0d349a03aab4f9f3cc6d0eb95fe6188144ead067.png',
 									'description' => 'Blanco Iridio Perlado disponible en GLS',
@@ -8584,6 +8845,7 @@
 									'row' => array(
 										array(
 											'class' => 'dark',
+											'height' => '114px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8599,11 +8861,11 @@
 															'span' => '<p><span>AT 2017 $309,990.00</span></p>'
 														),
 														array(
-															'span' => '<p><span>MT 2016 2016 $274,990.00</span></p>'
-														),
+															'span' => '<p><span>AT 2016 $294,990.00</span></p>'
+														)/*,
 														array(
 															'span' => '<p><span>AT 2016 $294,990.00</span></p>'
-														)
+														)*/
 													)
 												),
 												'second' => array(
@@ -8630,7 +8892,7 @@
 													'class' => 'third last',
 													'titles' => array(
 														array(
-															'span' => '<p><span>MT 2017 $339,990.000</span></p>'
+															'span' => '<p><span>MT 2017 $339,990.00</span></p>'
 														),
 														array(
 															'span' => '<p><span>AT 2017 $359,990.00</span></p>'
@@ -8644,6 +8906,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8662,6 +8925,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8680,6 +8944,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8698,6 +8963,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8716,6 +8982,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8734,6 +9001,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8752,6 +9020,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8770,6 +9039,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8788,6 +9058,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8806,6 +9077,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8824,6 +9096,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '92px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8842,6 +9115,7 @@
 										),
 										array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8860,6 +9134,7 @@
 										),
 										array(
 											'class' => 'light',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8878,6 +9153,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8896,6 +9172,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8914,6 +9191,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8932,6 +9210,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8950,6 +9229,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8968,6 +9248,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -8986,6 +9267,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '74px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -9004,6 +9286,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -9022,6 +9305,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '56px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -9040,6 +9324,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -9058,6 +9343,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -9076,6 +9362,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -9094,6 +9381,7 @@
 										),
                                         array(
 											'class' => 'dark',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -9112,6 +9400,7 @@
 										),
                                         array(
 											'class' => 'light',
+											'height' => '38px',
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
@@ -9151,7 +9440,7 @@
 									'title' => 'PRECIOS DE MANTENIMIENTO'
 								),
 								'table' => array(
-									'columns' => '5',
+									'columns' => '4',
 									'body' => array(
 										'row' => array(
 											array(
@@ -9174,20 +9463,20 @@
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => '',
-														'title' => 'M / T'
+														'title' => 'GLS / GLX'
 													),
 													'fourth' => array(
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => '',
-														'title' => 'A / T'
-													),
+														'title' => 'TURBO BOOSTERJET'
+													)/*,
 													'fifth' => array(
 														'head_class' => 'maintenance-head title',
 														'col' => 'light',
 														'class' => 'last',
 														'title' => 'T / A-AG-TURBO'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9207,18 +9496,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$995.00'
+														'title' => '$1,218.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$995.00'
-													),
+														'title' => '$1,160.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$995.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9238,18 +9527,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,060.00'
+														'title' => '$1,392.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$1,060.00'
-													),
+														'title' => '$1,392.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,060.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9269,18 +9558,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,590.00'
+														'title' => '$1,856.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$1,590.00'
-													),
+														'title' => '$1,740.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,590.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9300,18 +9589,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,370.00'
+														'title' => '$2,350.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$3,370.00'
-													),
+														'title' => '$2,420.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,370.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9331,18 +9620,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,810.00'
+														'title' => '$1,900.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$1,610.00'
-													),
+														'title' => '$1,700.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,610.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9362,18 +9651,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,765.00'
+														'title' => '$1,950.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$2,765.00'
-													),
+														'title' => '$1,850.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,765.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9393,18 +9682,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,640.00'
+														'title' => '$4,500.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$1,640.00'
-													),
+														'title' => '$5,500.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,840.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9424,18 +9713,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,110.00'
+														'title' => '$1,392.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$3,110.00'
-													),
+														'title' => '$1,392.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,110.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9455,18 +9744,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,850.00'
+														'title' => '$3,300.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$1,650.00'
-													),
+														'title' => '$2,400.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,650.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9486,18 +9775,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,480.00'
+														'title' => '$2,400.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$3,480.00'
-													),
+														'title' => '$2,550.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,480.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9517,18 +9806,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$3,315.00'
+														'title' => '$3,670.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$3,315.00'
-													),
+														'title' => '$3,600.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$3,315.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9548,18 +9837,18 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$1,125.00'
+														'title' => '$1,780.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$1,125.00'
-													),
+														'title' => '$1,235.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$1,125.00'
-													)
+													)*/
 												)
 											),
 											array(
@@ -9579,23 +9868,23 @@
 													'third' => array(
 														'col' => 'light',
 														'class' => '',
-														'title' => '$2,960.00'
+														'title' => '$4,470.00'
 													),
 													'fourth' => array(
 														'col' => 'dark',
 														'class' => '',
-														'title' => '$1,760.00'
-													),
+														'title' => '$5,650.00'
+													)/*,
 													'fifth' => array(
 														'col' => 'light',
 														'class' => 'last',
 														'title' => '$2,960.00'
-													)
+													)*/
 												)
 											)
 										),
 										'col' => array(
-											'class' => '5'
+											'class' => '4'
 										)
 									)
 								)

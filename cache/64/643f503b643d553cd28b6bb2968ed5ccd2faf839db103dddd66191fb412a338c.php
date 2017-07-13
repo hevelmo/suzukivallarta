@@ -30,7 +30,7 @@ class __TwigTemplate_ca27ba86153e77b4ef804dfd7e883d9637576e5cf411c99ab3a14787613
                     <div id=\"content-section-form-contact\">
                         ";
         // line 13
-        $this->loadTemplate("contacto/container.twig", "contacto/container.twig", 13, "254845821")->display($context);
+        $this->loadTemplate("contacto/container.twig", "contacto/container.twig", 13, "39079466")->display($context);
         // line 14
         echo "                    </div>
                     <div class=\"contact_sidebar\">
@@ -49,8 +49,9 @@ class __TwigTemplate_ca27ba86153e77b4ef804dfd7e883d9637576e5cf411c99ab3a14787613
                         <br>
                             <p class=\"contact_social_title\">Redes sociales</p>
                             <p>Comparte tus experiencias con la comunidad Suzuki</p>
-                            <div class=\"social fb\"><a onclick=\"ga('send', 'event', 'Social', 'Liga_externa', 'Contacto_Facebook');\" href=\"http://facebook.com/SuzukiGuadalajaraLopezMateosYAvVallarta\" target=\"_blank\">Suzuki GDL</a></div>
-                            <div class=\"social tw\"><a onclick=\"ga('send', 'event', 'Social', 'Liga_externa', 'Contacto_Instagram');\" href=\"http://twitter.com/Suzuki_Gdl\" target=\"_blank\">Suzuki GDL</a></div>
+                            <div class=\"social fb\"><a onclick=\"ga('send', 'event', 'Social', 'Liga_externa', 'Contacto_Facebook');\" href=\"https://www.facebook.com/SuzukiGuadalajaraLopezMateosYAvVallarta/\" target=\"_blank\">Suzuki Facebook</a></div>
+                            <div class=\"social tw\"><a onclick=\"ga('send', 'event', 'Social', 'Liga_externa', 'Contacto_Twitter');\" href=\"https://twitter.com/Suzuki_Gdl\" target=\"_blank\">Suzuki Twitter</a></div>
+                            <div class=\"social in\"><a onclick=\"ga('send', 'event', 'Social', 'Liga_externa', 'Contacto_Instagram');\" href=\"https://www.instagram.com/suzukiguadalajara/\" target=\"_blank\">Suzuki Instagram</a></div>
                         </div>
                     </div>
                     <div class=\"clearfix\"></div>
@@ -80,7 +81,7 @@ class __TwigTemplate_ca27ba86153e77b4ef804dfd7e883d9637576e5cf411c99ab3a14787613
 
 
 /* contacto/container.twig */
-class __TwigTemplate_ca27ba86153e77b4ef804dfd7e883d9637576e5cf411c99ab3a14787613c9391_254845821 extends Twig_Template
+class __TwigTemplate_ca27ba86153e77b4ef804dfd7e883d9637576e5cf411c99ab3a14787613c9391_39079466 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -114,7 +115,7 @@ class __TwigTemplate_ca27ba86153e77b4ef804dfd7e883d9637576e5cf411c99ab3a14787613
 
     public function getDebugInfo()
     {
-        return array (  90 => 13,  35 => 14,  33 => 13,  19 => 1,);
+        return array (  91 => 13,  35 => 14,  33 => 13,  19 => 1,);
     }
 }
 /* <div id="content-content">*/
@@ -147,8 +148,9 @@ class __TwigTemplate_ca27ba86153e77b4ef804dfd7e883d9637576e5cf411c99ab3a14787613
 /*                         <br>*/
 /*                             <p class="contact_social_title">Redes sociales</p>*/
 /*                             <p>Comparte tus experiencias con la comunidad Suzuki</p>*/
-/*                             <div class="social fb"><a onclick="ga('send', 'event', 'Social', 'Liga_externa', 'Contacto_Facebook');" href="http://facebook.com/SuzukiGuadalajaraLopezMateosYAvVallarta" target="_blank">Suzuki GDL</a></div>*/
-/*                             <div class="social tw"><a onclick="ga('send', 'event', 'Social', 'Liga_externa', 'Contacto_Instagram');" href="http://twitter.com/Suzuki_Gdl" target="_blank">Suzuki GDL</a></div>*/
+/*                             <div class="social fb"><a onclick="ga('send', 'event', 'Social', 'Liga_externa', 'Contacto_Facebook');" href="https://www.facebook.com/SuzukiGuadalajaraLopezMateosYAvVallarta/" target="_blank">Suzuki Facebook</a></div>*/
+/*                             <div class="social tw"><a onclick="ga('send', 'event', 'Social', 'Liga_externa', 'Contacto_Twitter');" href="https://twitter.com/Suzuki_Gdl" target="_blank">Suzuki Twitter</a></div>*/
+/*                             <div class="social in"><a onclick="ga('send', 'event', 'Social', 'Liga_externa', 'Contacto_Instagram');" href="https://www.instagram.com/suzukiguadalajara/" target="_blank">Suzuki Instagram</a></div>*/
 /*                         </div>*/
 /*                     </div>*/
 /*                     <div class="clearfix"></div>*/

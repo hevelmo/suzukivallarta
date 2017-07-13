@@ -1,4 +1,4 @@
-q@charset "UTF-8";
+@charset "UTF-8";
 /* ################################################################################################### *\
 
     Project Name: SUZUKI AUTOS GUADALAJARA
@@ -8,6 +8,7 @@ q@charset "UTF-8";
 
     CONTENT
 
+    [style] type-file
     [style] Main
     [style] loader form
     [style] Alertify
@@ -26,6 +27,82 @@ q@charset "UTF-8";
 
 
 \* ################################################################################################### */
+    /* ------------------------------------------------------ *\
+        [style] type-file
+    \* ------------------------------------------------------ */
+        @font-face {
+            font-family: "type-file";
+            src:url("../fonts/type-file/type-file.eot");
+            src:url("../fonts/type-file/type-file.eot?#iefix") format("embedded-opentype"),
+                url("../fonts/type-file/type-file.woff") format("woff"),
+                url("../fonts/type-file/type-file.ttf") format("truetype"),
+                url("../fonts/type-file/type-file.svg#type-file") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+        [data-icon]:before {
+            font-family: "type-file" !important;
+            content: attr(data-icon);
+            font-style: normal !important;
+            font-weight: normal !important;
+            font-variant: normal !important;
+            text-transform: none !important;
+            speak: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        [class^="tyf-"]:before,
+        [class*=" tyf-"]:before {
+            font-family: "type-file" !important;
+            font-style: normal !important;
+            font-weight: normal !important;
+            font-variant: normal !important;
+            text-transform: none !important;
+            speak: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .tyf-ico-type-file-avi:before {
+          content: "\e000";
+        }
+        .tyf-ico-type-file-cdr:before {
+          content: "\e001";
+        }
+        .tyf-ico-type-file-csv:before {
+          content: "\e002";
+        }
+        .tyf-ico-type-file-doc:before {
+          content: "\e003";
+        }
+        .tyf-ico-type-file-jpg:before {
+          content: "\e004";
+        }
+        .tyf-ico-type-file-mp3:before {
+          content: "\e005";
+        }
+        .tyf-ico-type-file-pdf:before {
+          content: "\e006";
+        }
+        .tyf-ico-type-file-png:before {
+          content: "\e007";
+        }
+        .tyf-ico-type-file-ppt:before {
+          content: "\e008";
+        }
+        .tyf-ico-type-file-rar:before {
+          content: "\e009";
+        }
+        .tyf-ico-type-file-txt:before {
+          content: "\e00a";
+        }
+        .tyf-ico-type-file-xls:before {
+          content: "\e00b";
+        }
+        .tyf-ico-type-file-zip:before {
+          content: "\e00c";
+        }
     /* ------------------------------------------------------ *\
         [style] Main
     \* ------------------------------------------------------ */
@@ -17058,4 +17135,169 @@ div.list-catalog {
     opacity: 0;
     transform: translate(0%, 75%);
   }
+}
+.custom-file-upload-hidden {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+.custom-file-upload {
+  display: block;
+  width: auto;
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.custom-file-upload label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.file-upload-wrapper {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.file-upload-input {
+    max-width: 100%;
+    width: 55% !important;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 17px;
+    margin-top: 5px;
+    border: none;
+    background-color: #e1251b;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    float: left;
+    /* IE 9 Fix */
+}
+.file-upload-input:hover, .file-upload-input:focus, .file-upload-input:active {
+  /*
+  background-color: rgba(178,17,23,0.8);
+  */
+  outline: none;
+  outline-offset: 0;
+}
+input.file-upload-input::-webkit-input-placeholder { color: #fff; }
+input.file-upload-input:-moz-placeholder { color: #fff; }
+input.file-upload-input::-moz-placeholder { color: #fff; }
+input.file-upload-input:-ms-input-placeholder { color: #fff; }
+
+.file-upload-button {
+    height: auto;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px 35px;
+    margin-top: 5px;
+    border: none;
+    margin-left: -1px;
+    background-color: #e1251b;
+    float: none;
+    /* IE 9 Fix */
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.file-upload-button i {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.file-upload-button:hover {
+  background-color: rgba(225, 37, 27, 0.68);
+}
+.file-upload-allowed-extensions {
+    position: relative;
+    display: none;
+    padding: 15px 10px 27px;
+    text-align: center;
+    background-color: #e1251b;
+    width: 519px;
+    margin-bottom: -10px;
+}
+.file-upload-allowed-extensions:hover {
+    color: rgba(255,255,255,255, 0.5);
+}
+.file-upload-allowed-extensions .file-upload-legend,
+.file-upload-allowed-extensions .file-upload-icons {
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+}
+.file-upload-allowed-extensions .file-upload-legend {
+    margin-top: -15px;
+}
+.file-upload-allowed-extensions .file-upload-icons i {
+    font-size: 3.5em;
+    float: right;
+    position: relative;
+    top: 0px;
+}
+/* BUTTON TRANSPARENT */
+.button-transparent {
+  position: relative;
+  z-index: 2;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+  border: 1px solid transparent;
+}
+
+.button-transparent::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border: 1px solid transparent;
+  background-color: currentcolor;
+  opacity: 0;
+}
+
+.button-transparent:hover {
+  box-shadow: none;
+}
+
+.button-transparent:hover::before,
+.button-transparent:focus::before {
+  opacity: .09375;
+}
+
+.button-transparent:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px;
+}
+
+.button-transparent:active,
+.button-transparent.is-active {
+  box-shadow: none;
+}
+
+.button-transparent:active::before,
+.button-transparent.is-active::before {
+  opacity: .0625;
+}
+
+.button-transparent:disabled,
+.button-transparent.is-disabled {
+  opacity: .5;
 }

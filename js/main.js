@@ -98,4 +98,92 @@ $(document).ready(function() {
         $('#list-menu').removeClass('active');
     });
 
+    /* ------------------------------------------------------ *\
+     [Methods] BOLSA DE TRABAJO
+    \* ------------------------------------------------------ */
+
+    $(domEl.div_recurrent).on("click", ".job-board-form-send", formJobBoard.clickSend);
+
+    file = $("#suk_update_file");
+    file.on("change", handleFileSelect);
+    //console.log(file);
+    //selDiv = $("#selectedFiles");
+
+    //var selDiv = "";
+    // var selDivM="";
+    //var storedFiles = [];
+    function handleFileSelect(e) {
+        var files = e.target.files;
+        var filesArr = Array.prototype.slice.call(files);
+        var sizeByte = this.files[0].size;
+        var siezekiloByte = parseInt(sizeByte / 1024);
+        if(siezekiloByte > $(this).attr('size')){
+            //alert('El tamaño supera el limite permitido');
+            $(this).val('');
+            alertify.error("El tamaño supera el limite permitido, no mayor a 2MB");
+            $('input[type="text"]#suk_upload_file_input').attr('value','');
+            $('input[type="text"]#suk_upload_file_input').val('');
+            $('.file-upload-input').removeAttr('style');
+        } else {
+            //alert('El tamaño es permitido');            
+            alertify.success("El tamaño es permitido, " + siezekiloByte + " MB");
+        }
+        filesArr.forEach(function(f) {
+            var getName, name, getContent, content, getType, type;
+            /*if(!f.type.match("image.*")) {
+                return;
+            }
+            */
+            //storedFiles.push(f);            
+            var reader = new FileReader();
+            reader.onloadend = function (e) {
+                //var html = "<div><img src=\"" + e.target.result + "\" data-file='"+f.name+"' class='selFile' title='Click to remove'>" + f.name + "<br clear=\"left\"/></div>";
+                name = f.name;
+                content = e.target.result.split(",",2)[1];//obtenemos el contenido del archivo, estará codificado en Base64
+                type = f.type;
+                day = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+                f = new Date();
+                month = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                SUK.setValue('#suk_date', day[f.getDay()] + ", " + f.getDate() + " de " + month[f.getMonth()] + " de " + f.getFullYear()/* + ", " + hour*/);
+                //console.log(day[f.getDay()] + ", " + f.getDate() + " de " + month[f.getMonth()] + " de " + f.getFullYear());
+                getName = SUK.setValue('#suk_filename', name);
+                console.log(name);
+                getType = SUK.setValue('#suk_mime', type);
+                console.log(type);
+                getContent = SUK.setValue('#suk_filecontent', content);
+                console.log(content);
+                //selDivM.append(html);
+            }
+            reader.readAsDataURL(f);
+        });
+        //var button = "<button id=\"button\" name=\"button\">Submit</button>";
+        //sleDivM.append(button);
+    }
+    /*function handleForm(e) {
+        e.preventDefault();
+        var data = new FormData();
+        for(var i=0, len=storedFiles.length; i<len; i++) {
+            data.append('files', storedFiles[i]);
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'handler.cfm', true);
+        xhr.onload = function(e) {
+            if(this.status == 200) {
+                console.log(e.currentTarget.responseText);
+                alert(e.currentTarget.responseText + ' items uploaded.');
+            }
+        }
+        xhr.send(data);
+    }
+    function removeFile(e) {
+        var file = $(this).data("file");
+        for(var i=0;i<storedFiles.length;i++) {
+            if(storedFiles[i].name === file) {
+                storedFiles.splice(i,1);
+                break;
+            }
+        }
+        $(this).parent().remove();
+    }*/
+
 });

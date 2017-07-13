@@ -35,13 +35,14 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
         echo "                </ul>
                 <div class=\"clearfix\"></div>
             </div>
-            <div class=\"footer-column column-b\">
+            <div class=\"footer-column column-a\">
                 <div class=\"footer-title\">
                     Redes sociales <i class=\"fa fa-plus\" style=\"font-size: 15px; margin: 5px 20px;\" id=\"panel-social-networks\"></i>
                 </div>
                 <ul class=\"links social\"  id=\"links-social-networks\">
-                    <li><a target=\"_blank\" href=\"https://www.facebook.com/SuzukiVallartaLopezMateosYAvVallarta\"><span>Facebook</span></a></li>
-                    <li><a target=\"_blank\" href=\"https://twitter.com/Suzuki_Gdl\"><span>Twitter</span></a></li>
+                    <li><a target=\"_blank\" href=\"https://www.facebook.com/SuzukiGuadalajaraLopezMateosYAvVallarta/\"><span><i class=\"fa fa-facebook-square fa-fw fa-lg\"></i> Facebook</span></a></li>
+                    <li><a target=\"_blank\" href=\"https://twitter.com/Suzuki_Gdl\"><span><i class=\"fa fa-twitter-square fa-fw fa-lg\"></i> Twitter</span></a></li>
+                    <li><a target=\"_blank\" href=\"https://www.instagram.com/suzukiguadalajara/\"><span><i class=\"fa fa-instagram fa-fw fa-lg\"></i> Instagram</span></a></li>
                 </ul>
                 <div class=\"clearfix\"></div>
             </div>
@@ -52,7 +53,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                 <ul class=\"links links-s-1 links_catalog\" id=\"links-catalog\">
                     <li>
                         <a href=\"";
-        // line 40
+        // line 41
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "catalogos/swift-sport\" class=\"scroll-up\">
                             <span>Swift Sport</span>
@@ -60,7 +61,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                     </li>
                     <li>
                         <a href=\"";
-        // line 45
+        // line 46
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "catalogos/swift\" class=\"scroll-up\">
                             <span>Swift</span>
@@ -68,7 +69,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                     </li>
                     <li>
                         <a href=\"";
-        // line 50
+        // line 51
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "catalogos/kizashi\" class=\"scroll-up\">
                             <span>Kizashi</span>
@@ -76,7 +77,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                     </li>
                     <li>
                         <a href=\"";
-        // line 55
+        // line 56
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "catalogos/s-cross\" class=\"scroll-up\">
                             <span>S-Cross</span>
@@ -86,7 +87,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                 <ul class=\"links links-s-2 links_catalog\">
                     <li>
                         <a href=\"";
-        // line 62
+        // line 63
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "catalogos/grand-vitara\" class=\"scroll-up\">
                             <span>Grand Vitara</span>
@@ -94,7 +95,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                     </li>
                     <li>
                         <a href=\"";
-        // line 67
+        // line 68
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "catalogos/ciaz\" class=\"scroll-up\">
                             <span>Ciaz</span>
@@ -102,7 +103,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                     </li>
                     <li>
                         <a href=\"";
-        // line 72
+        // line 73
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "catalogos/nueva-vitara\" class=\"scroll-up\">
                             <span>Nueva Vitara</span>
@@ -110,7 +111,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                     </li>
                     <li>
                         <a href=\"";
-        // line 77
+        // line 78
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "catalogos/ignis\" class=\"scroll-up\">
                             <span>Ignis</span>
@@ -120,7 +121,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                 <div class=\"clearfix\"></div>
             </div>
             ";
-        // line 93
+        // line 94
         echo "            <div class=\"clearfix\"></div>
         </div>
         <div class=\"footer-row row-2\">
@@ -128,7 +129,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                 <div class=\"footer-title\">Noticias Suzuki</div>
                 <div class=\"footer-form\">
                     ";
-        // line 100
+        // line 101
         echo "                    <div id=\"mc_embed_signup\">
                         <p>Experimenta el estilo de vida Suzuki. Ingresa tus datos:</p>
                         <form action=\"//medigraf.us6.list-manage.com/subscribe/post?u=eb6adc86fe16ad4e6562f80c1&amp;id=0136300666\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>
@@ -149,20 +150,20 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                                     <div class=\"response\" id=\"mce-success-response\" style=\"display:none\">Se envió tu mensaje</div>
                                 </div>    
                                 ";
-        // line 120
+        // line 121
         echo "                                <div style=\"position: absolute; left: -5000px;\"><input type=\"text\" name=\"b_eb6adc86fe16ad4e6562f80c1_0136300666\" tabindex=\"-1\" value=\"\"></div>
                                 <div class=\"clear submit\"><input type=\"submit\" class=\"button red\" value=\"Registrarse\" name=\"subscribe\" id=\"mc-embedded-subscribe\"></div>
                             </div>
                         </form>
                     </div>
                     ";
-        // line 126
+        // line 127
         echo "                </div>
             </div>
             <div class=\"footer-column column-a\">
                 <a href=\"http://camcar.mx/\" target=\"_blank\" class=\"footer-logo footer-logo-resp\">
                     <img src=\"";
-        // line 130
+        // line 131
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "img/Logo-CAMCAR-2016.png\" alt=\"CAMCAR\">
                 </a>
@@ -172,9 +173,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
         <div class=\"footer-row first row-1\">
             <div class=\"footer-column column-a cubic\">
                 <div class=\"footer-title cubic-header\">
-                    <a ";
-        // line 138
-        echo " style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Av. Vallarta</a>
+                    <a href=\"http://www.suzukivallarta.com.mx\" target=\"_blank\" style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Av. Vallarta</a>
                 </div>
                 <div class=\"cubic-body\">
                     Av. Vallarta No. 5300.<br/>
@@ -185,9 +184,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
             </div>
             <div class=\"footer-column column-a cubic\">
                 <div class=\"footer-title cubic-header\">
-                    <a ";
-        // line 149
-        echo " style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Av. López Mateos</a>
+                    <a href=\"http://www.suzuki-lm.com.mx\" target=\"_blank\" style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Av. López Mateos</a>
                 </div>
                 <div class=\"cubic-body\">
                     Av. López Mateos No. 5654<br/>
@@ -198,9 +195,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
             </div>
             <div class=\"footer-column column-a cubic\">
                 <div class=\"footer-title cubic-header\">
-                    <a ";
-        // line 160
-        echo " style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Colima</a>
+                    <a href=\"http://www.suzukicolima.com.mx\" target=\"_blank\" style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Colima</a>
                 </div>
                 <div class=\"cubic-body\">
                     Av. Felipe Sevilla No. 536<br/>
@@ -211,9 +206,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
             </div>
             <div class=\"footer-column column-a cubic\">
                 <div class=\"footer-title cubic-header\">
-                    <a ";
-        // line 171
-        echo " style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Manzanillo</a>
+                    <a href=\"http://www.suzukicolima.com.mx\" target=\"_blank\" style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Manzanillo</a>
                 </div>
                 <div class=\"cubic-body\">
                     BLV. Miguel de la Madrid Hurtado 1058<br/>
@@ -224,9 +217,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
             </div>
             <div class=\"footer-column column-a cubic\">
                 <div class=\"footer-title cubic-header\">
-                    <a ";
-        // line 182
-        echo " style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Morelia</a>
+                    <a href=\"http://www.suzukimorelia.com.mx\" target=\"_blank\" style=\"color: #fff; font-weight: 900; font-size: 16px;\">Suzuki Morelia</a>
                 </div>
                 <div class=\"cubic-body\">
                     Periférico Paseo de la República 3169 Colonia Las Américas<br/>
@@ -239,7 +230,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
         <div class=\"footer-row last\">
             <div class=\"footer-copyright\">
                 <p>&copy; ";
-        // line 194
+        // line 195
         echo twig_escape_filter($this->env, (isset($context["_anio"]) ? $context["_anio"] : null), "html", null, true);
         echo " Suzuki Motor de México / ";
         echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
@@ -248,11 +239,11 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
             <div class=\"footer-legals\">
                 <ul class=\"links\">
                     <li><a href=\"";
-        // line 198
+        // line 199
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "terminos-legales\" id=\"go-legal-terms\" class=\"scroll-up\"><span>Términos legales</span></a></li>
                     <li><a href=\"";
-        // line 199
+        // line 200
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "aviso-de-privacidad\" id=\"go-privacy-notice\" class=\"scroll-up\"><span>Aviso de privacidad</span></a></li>
                     <li class=\"last\"><a target=\"_blank\" href=\"http://www.globalsuzuki.com/\"><span>Suzuki Global</span></a></li>
@@ -277,7 +268,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
 
     public function getDebugInfo()
     {
-        return array (  256 => 199,  252 => 198,  243 => 194,  229 => 182,  216 => 171,  203 => 160,  190 => 149,  177 => 138,  166 => 130,  160 => 126,  153 => 120,  132 => 100,  124 => 93,  114 => 77,  106 => 72,  98 => 67,  90 => 62,  80 => 55,  72 => 50,  64 => 45,  56 => 40,  35 => 21,  28 => 9,  19 => 2,);
+        return array (  247 => 200,  243 => 199,  234 => 195,  167 => 131,  161 => 127,  154 => 121,  133 => 101,  125 => 94,  115 => 78,  107 => 73,  99 => 68,  91 => 63,  81 => 56,  73 => 51,  65 => 46,  57 => 41,  35 => 21,  28 => 9,  19 => 2,);
     }
 }
 /* {# Begin: Footer #}*/
@@ -303,13 +294,14 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
 /*                 </ul>*/
 /*                 <div class="clearfix"></div>*/
 /*             </div>*/
-/*             <div class="footer-column column-b">*/
+/*             <div class="footer-column column-a">*/
 /*                 <div class="footer-title">*/
 /*                     Redes sociales <i class="fa fa-plus" style="font-size: 15px; margin: 5px 20px;" id="panel-social-networks"></i>*/
 /*                 </div>*/
 /*                 <ul class="links social"  id="links-social-networks">*/
-/*                     <li><a target="_blank" href="https://www.facebook.com/SuzukiVallartaLopezMateosYAvVallarta"><span>Facebook</span></a></li>*/
-/*                     <li><a target="_blank" href="https://twitter.com/Suzuki_Gdl"><span>Twitter</span></a></li>*/
+/*                     <li><a target="_blank" href="https://www.facebook.com/SuzukiGuadalajaraLopezMateosYAvVallarta/"><span><i class="fa fa-facebook-square fa-fw fa-lg"></i> Facebook</span></a></li>*/
+/*                     <li><a target="_blank" href="https://twitter.com/Suzuki_Gdl"><span><i class="fa fa-twitter-square fa-fw fa-lg"></i> Twitter</span></a></li>*/
+/*                     <li><a target="_blank" href="https://www.instagram.com/suzukiguadalajara/"><span><i class="fa fa-instagram fa-fw fa-lg"></i> Instagram</span></a></li>*/
 /*                 </ul>*/
 /*                 <div class="clearfix"></div>*/
 /*             </div>*/
@@ -417,7 +409,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
 /*         <div class="footer-row first row-1">*/
 /*             <div class="footer-column column-a cubic">*/
 /*                 <div class="footer-title cubic-header">*/
-/*                     <a {#href="http://www.suzukivallarta.com.mx" target="_blank"#} style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Av. Vallarta</a>*/
+/*                     <a href="http://www.suzukivallarta.com.mx" target="_blank" style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Av. Vallarta</a>*/
 /*                 </div>*/
 /*                 <div class="cubic-body">*/
 /*                     Av. Vallarta No. 5300.<br/>*/
@@ -428,7 +420,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
 /*             </div>*/
 /*             <div class="footer-column column-a cubic">*/
 /*                 <div class="footer-title cubic-header">*/
-/*                     <a {#href="http://www.suzuki-lm.com.mx" target="_blank"#} style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Av. López Mateos</a>*/
+/*                     <a href="http://www.suzuki-lm.com.mx" target="_blank" style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Av. López Mateos</a>*/
 /*                 </div>*/
 /*                 <div class="cubic-body">*/
 /*                     Av. López Mateos No. 5654<br/>*/
@@ -439,7 +431,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
 /*             </div>*/
 /*             <div class="footer-column column-a cubic">*/
 /*                 <div class="footer-title cubic-header">*/
-/*                     <a {#href="http://www.suzukicolima.com.mx" target="_blank"#} style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Colima</a>*/
+/*                     <a href="http://www.suzukicolima.com.mx" target="_blank" style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Colima</a>*/
 /*                 </div>*/
 /*                 <div class="cubic-body">*/
 /*                     Av. Felipe Sevilla No. 536<br/>*/
@@ -450,7 +442,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
 /*             </div>*/
 /*             <div class="footer-column column-a cubic">*/
 /*                 <div class="footer-title cubic-header">*/
-/*                     <a {#href="http://www.suzukicolima.com.mx" target="_blank"#} style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Manzanillo</a>*/
+/*                     <a href="http://www.suzukicolima.com.mx" target="_blank" style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Manzanillo</a>*/
 /*                 </div>*/
 /*                 <div class="cubic-body">*/
 /*                     BLV. Miguel de la Madrid Hurtado 1058<br/>*/
@@ -461,7 +453,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
 /*             </div>*/
 /*             <div class="footer-column column-a cubic">*/
 /*                 <div class="footer-title cubic-header">*/
-/*                     <a {#href="http://www.suzukimorelia.com.mx" target="_blank"#} style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Morelia</a>*/
+/*                     <a href="http://www.suzukimorelia.com.mx" target="_blank" style="color: #fff; font-weight: 900; font-size: 16px;">Suzuki Morelia</a>*/
 /*                 </div>*/
 /*                 <div class="cubic-body">*/
 /*                     Periférico Paseo de la República 3169 Colonia Las Américas<br/>*/

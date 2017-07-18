@@ -30,14 +30,14 @@
 					'title' => 'Swift',
 					'slogan' => 'Experimenta desafío.',
 					'info' => 'Rendimiento: 18.50 km/lt.'
-				),
+				),/*
 				array(
 					'id' => '4',
 					'key' => 'kizashi',
 					'title' => 'Kizashi',
 					'slogan' => 'Experimenta evolución.',
 					'info' => 'Rendimiento: 14.50 km/lt.'
-				),
+				),*/
 				array(
 					'id' => '5',
 					'key' => 'grand-vitara',
@@ -1992,7 +1992,7 @@
 								),
 								'event' => array(
 									'ga' => 'ficha-swift-sport',
-									'href' => 'catalogo-swift-2017.pdf'
+									'href' => 'catalogo-swift-sport-2017.pdf'
 								)
 							)
 						)
@@ -3261,7 +3261,7 @@
 							'image' => 'swift-sport.png',
 							'key' => 'swift-sport',
 							'name' => 'Swift Sport',
-							'maintenance_prices' => array(
+							'maintenance_pricess' => array(
 								'section_maintenance_prices' => array(
 									'title' => 'PRECIOS DE MANTENIMIENTO'
 								),
@@ -3736,7 +3736,7 @@
 							)
 						)
 					)
-				),
+				),/*
 				'kizashi' => array(
 					'key' => 'kizashi',
 					'name' => 'Kizashi',
@@ -4277,8 +4277,7 @@
 									),
 									'col' => array(
 										'class' => '1'
-									)/*,
-									'height' => ''*/
+									)
 								),
 								'event' => array(
 									'ga' => 'ficha_grand-vitara',
@@ -4722,7 +4721,7 @@
 							)
 						)
 					)
-				),
+				),*/
 				'grand-vitara' => array(
 					'key' => 'grand-vitara',
 					'name' => 'Grand Vitara',
@@ -10148,14 +10147,14 @@
 					'class' => 'white',
 					'description' => 'Aerodinámico y divertido para ti que buscas diseño y agilidad en un solo auto.',
 					'download' => 'catalogo-swift-2017.pdf'
-				),
+				),/*
 				'kizashi' => array(
 					'key' => 'kizashi',
 					'name' => 'Kizashi',
 					'class' => '',
 					'description' => '"Algo grande está por venir". Imponente diseño con finos acabados que roban miradas.',
 					'download' => 'catalogo-kizashi-2016.pdf'
-				),
+				),*/
 				'grand-vitara' => array(
 					'key' => 'grand-vitara',
 					'name' => 'Grand Vitara',
@@ -10168,7 +10167,7 @@
 					'name' => 'Swift Sport',
 					'class' => '',
 					'description' => 'Diseño deportivo, movilidad veloz. La combinación perfecta de un auto deportivo y uno urbano.',
-					'download' => 'catalogo-swift-2017.pdf'
+					'download' => 'catalogo-swift-sport-2017.pdf'
 				),
 				's-cross' => array(
 					'key' => 's-cross',

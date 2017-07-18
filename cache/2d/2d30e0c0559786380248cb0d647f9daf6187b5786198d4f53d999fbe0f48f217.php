@@ -67,15 +67,9 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
                             <span>Swift</span>
                         </a>
                     </li>
-                    <li>
-                        <a href=\"";
-        // line 51
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "catalogos/kizashi\" class=\"scroll-up\">
-                            <span>Kizashi</span>
-                        </a>
-                    </li>
-                    <li>
+                    ";
+        // line 55
+        echo "                    <li>
                         <a href=\"";
         // line 56
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
@@ -268,7 +262,7 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
 
     public function getDebugInfo()
     {
-        return array (  247 => 200,  243 => 199,  234 => 195,  167 => 131,  161 => 127,  154 => 121,  133 => 101,  125 => 94,  115 => 78,  107 => 73,  99 => 68,  91 => 63,  81 => 56,  73 => 51,  65 => 46,  57 => 41,  35 => 21,  28 => 9,  19 => 2,);
+        return array (  241 => 200,  237 => 199,  228 => 195,  161 => 131,  155 => 127,  148 => 121,  127 => 101,  119 => 94,  109 => 78,  101 => 73,  93 => 68,  85 => 63,  75 => 56,  72 => 55,  65 => 46,  57 => 41,  35 => 21,  28 => 9,  19 => 2,);
     }
 }
 /* {# Begin: Footer #}*/
@@ -320,11 +314,11 @@ class __TwigTemplate_1c43f5c7e76f7c092753a6a5e0193b579cbc1c4b8b177187019fffac00b
 /*                             <span>Swift</span>*/
 /*                         </a>*/
 /*                     </li>*/
-/*                     <li>*/
+/*                     {#<li>*/
 /*                         <a href="{{ _host }}catalogos/kizashi" class="scroll-up">*/
 /*                             <span>Kizashi</span>*/
 /*                         </a>*/
-/*                     </li>*/
+/*                     </li>#}*/
 /*                     <li>*/
 /*                         <a href="{{ _host }}catalogos/s-cross" class="scroll-up">*/
 /*                             <span>S-Cross</span>*/

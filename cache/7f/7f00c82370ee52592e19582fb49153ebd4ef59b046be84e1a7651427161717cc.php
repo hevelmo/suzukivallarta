@@ -42,13 +42,9 @@ class __TwigTemplate_3a183fbeff78821c8cb8964376647e650baece8a3963380e1993ad1a474
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "catalogos/swift\" class=\"ld-catalogs hvr-underline-from-center close-list-dropdown\">Swift</a>
 \t            </li>
-\t            <li>
-\t                <a href=\"";
-        // line 20
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "catalogos/kizashi\" class=\"ld-catalogs hvr-underline-from-center close-list-dropdown\">Kizashi</a>
-\t            </li>
-\t            <li>
+\t            ";
+        // line 22
+        echo "\t            <li>
 \t                <a href=\"";
         // line 23
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
@@ -131,7 +127,7 @@ class __TwigTemplate_3a183fbeff78821c8cb8964376647e650baece8a3963380e1993ad1a474
 
     public function getDebugInfo()
     {
-        return array (  115 => 62,  110 => 55,  101 => 49,  95 => 46,  89 => 43,  83 => 40,  72 => 32,  66 => 29,  60 => 26,  54 => 23,  48 => 20,  42 => 17,  36 => 14,  30 => 11,  24 => 7,  19 => 1,);
+        return array (  111 => 62,  106 => 55,  97 => 49,  91 => 46,  85 => 43,  79 => 40,  68 => 32,  62 => 29,  56 => 26,  50 => 23,  47 => 22,  42 => 17,  36 => 14,  30 => 11,  24 => 7,  19 => 1,);
     }
 }
 /* <div id="mobile-menu" class="panel" role="navigation" style="">*/
@@ -152,9 +148,9 @@ class __TwigTemplate_3a183fbeff78821c8cb8964376647e650baece8a3963380e1993ad1a474
 /* 	            <li>*/
 /* 	                <a href="{{ _host }}catalogos/swift" class="ld-catalogs hvr-underline-from-center close-list-dropdown">Swift</a>*/
 /* 	            </li>*/
-/* 	            <li>*/
+/* 	            {#<li>*/
 /* 	                <a href="{{ _host }}catalogos/kizashi" class="ld-catalogs hvr-underline-from-center close-list-dropdown">Kizashi</a>*/
-/* 	            </li>*/
+/* 	            </li>#}*/
 /* 	            <li>*/
 /* 	                <a href="{{ _host }}catalogos/grand-vitara" class="ld-catalogs hvr-underline-from-center close-list-dropdown">Grand Vitara</a>*/
 /* 	            </li>*/

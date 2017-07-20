@@ -64,7 +64,8 @@
         date    : new RegExp( /^(\d{4})-(\d{1,2})-(\d{1,2})$/ ),
         email   : new RegExp( /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ ),
         name    : new RegExp( /^[a-zá-úüñ. ]{2,}$/i ),
-        phone   : new RegExp( /^[0-9\s\-]{7,13}$/ )
+        phone   : new RegExp( /^[0-9\s\-]{7,13}$/ ),
+        upload  : new RegExp( /^[\w+\/]+\.\w{3}$/ )
     }
 /* ------------------------------------------------------ *\
     [Methods] validation_messages
@@ -78,7 +79,8 @@
         not_null        : 'No puede ser nulo',
         phone           : 'Verifica que tu número sea de 10 dígitos',
         required        : 'Campo requerido',
-        empty           : 'Campo vacío'
+        empty           : 'Campo vacío',
+        upload          : 'Comprueba la extensión del archivo a subir'
     }
 /* ------------------------------------------------------ *\
     [function] validate
@@ -95,10 +97,10 @@
      *  @retun  {Object}    Returns an object whit: "valid": boolean and "message": string
      *
     **/
-        function validate(value, rules, required, custom_message) {
+        function validate(value, rules, required, custom_message, formulario, archivo) {
             var r, null_value, ii, rule;
             r = { valid: false, message: '' };
-            null_value = value == undefined || value === '';
+            null_value = value == undefined || value === '' || value === $("#user_profile_pic").val(), ii, rule;
             required = required === true ? true : false;
 
             if ( required ) {
@@ -136,13 +138,10 @@
                             }
                             break;
                         case 'upload':
-                            if(!valid_extension_file( formulario, value)) {
+                            if(!valid_extension_file( formulario, value ) ){
                                 r.message = validation_messages.upload;
                             }
                             break;
-                        case 'free':
-                            r.message = '';
-                        break;
                         default:
                             r.message = validations_regexp.not_config;
                             break;

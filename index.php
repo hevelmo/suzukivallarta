@@ -46,6 +46,8 @@ $app = new \Slim\App($container);
     $app->get("/concesionarias", "ControlConcessionaires:__invoke");
     // CONTACTO
     $app->get("/contactanos", "ControlContact:__invoke");
+    // BOLSA DE TRABAJO
+    $app->get("/bolsa-de-trabajo", "ControlJobBoard:__invoke");
     // MODELOS
     $app->get("/modelos", "ControlModels:__invoke");
     $app->get("/modelos/{modelo}", "ControlByModel:__invoke");
@@ -359,6 +361,46 @@ $app = new \Slim\App($container);
                 "Suzuki Autos " . _LOC . ": Contactanos",
                 "Suzuki Autos " . _LOC,
                 "Suzuki Autos " . _LOC . ": Contactanos",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            parent::getTemplate()->addToMasterConfigArray(parent::getRouter()->getArgs());
+
+            $modelos = parent::getSite()->getGamma();
+            parent::getTemplate()->addToMasterConfigArray('mdopa', $modelos);
+
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
+    /**
+     * CONTROL BOLSA
+    **/
+    class ControlJobBoard extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos " . _LOC . ": Bolsa de Trabajo",
+                    "title_header" => "Suzuki Autos " . _LOC . ": Bolsa de Trabajo"
+                ),
+                array(),
+                "bolsa/_bolsa.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos " . _LOC . ": Bolsa de Trabajo",
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC . ": Bolsa de Trabajo",
                 _HOST . "img/template/common/header/horizontal_logo.png"
             );
         }

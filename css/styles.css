@@ -7,7 +7,7 @@
     Update: hevelmo
 
     CONTENT
-
+    
     [style] type-file
     [style] Main
     [style] loader form
@@ -333,12 +333,14 @@
                 -webkit-transition:all 0.25s ease-in-out;
                 -moz-transition:all 0.25s ease-in-out;
             }
-            fieldset input:focus, fieldset textarea:focus {
-                color:#0051ad;
+            fieldset input:focus, fieldset textarea:focus,
+            fieldset input:active, fieldset textarea:active {
+                /*color:#0051ad;
                 border:1px solid #3787df;
                 -moz-box-shadow:0 0 4px rgba(56, 135, 224, 0.4);
                 -webkit-box-shadow:0 0 4px rgba(56, 135, 224, 0.4);
-                box-shadow:0 0 4px rgba(56, 135, 224, 0.4);
+                box-shadow:0 0 4px rgba(56, 135, 224, 0.4);*/
+                outline: none;
             }
             fieldset .chzn-drop {
                 width:263px !important;

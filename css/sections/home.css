@@ -1026,8 +1026,6 @@
 			border-radius: 0;
 			font-family: 'Suzuki-BoldRegular';
 		    font-weight: 600;
-		    -webkit-text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
-		    text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
 			-webkit-transition: all 0.3s ease 0.2s;
 			-moz-transition: all 0.3s ease 0.2s;
 			-ms-transition: all 0.3s ease 0.2s;

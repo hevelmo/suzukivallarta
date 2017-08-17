@@ -100,13 +100,11 @@
 .specifications-wrapper .specifications .description p{font-size:16px !important;line-height:140%;margin:0 0 20px;width:400px}
 .specifications-wrapper .specifications .description.compact p{width:350px}.specifications-wrapper .specifications .description.extra-compact p{width:100%}
 .specifications-wrapper .specifications .description.extra-compact p a.button{
-	background: #fff;
-	border: 2px solid #fff;
+	background: #e1251b;
+	border: 2px solid #e1251b;
 	border-radius: 0;
 	font-family: 'Suzuki-BoldRegular';
     font-weight: 600;
-    -webkit-text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
-    text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
 	-webkit-transition: all 0.3s ease 0.2s;
 	-moz-transition: all 0.3s ease 0.2s;
 	-ms-transition: all 0.3s ease 0.2s;
@@ -116,8 +114,8 @@
 .specifications-wrapper .specifications .description.extra-compact p a.button:hover,
 .specifications-wrapper .specifications .description.extra-compact p a.button:active,
 .specifications-wrapper .specifications .description.extra-compact p a.button:focus{
-    background: #e1251b !important;
-    border-color: #e1251b;
+    background: #034b93 !important;
+    border-color: #034b93;
     color: #fff !important;
     -webkit-text-shadow: 0px 0px 0px rgba(0,0,0,0);
     text-shadow: 0px 0px 0px rgba(0,0,0,0);
@@ -128,10 +126,10 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0 0;
-    color: #000;
+    color: #fff;
 }
 .specifications-wrapper .specifications .description.extra-compact p a.button.button-default {
-	background: #fff;
+	background: #e1251b;
 	opacity: 1;
 }
 .specifications-wrapper .specifications .description.extended p{width:450px}

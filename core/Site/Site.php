@@ -6182,12 +6182,12 @@
 									array(
 										'image' => 's-cross-nuevo-diseño-frontal.jpg',
 										'title' => 'Nuevo diseño frontal',
-										'description' => 'Incluue una parrilla cromada para una línea más robusta.'
+										'description' => 'Incluye una parrilla cromada para una línea más robusta.'
 									),
 									array(
 										'image' => 's-cross-nuevo-diseño-frontal-de-led.jpg',
 										'title' => 'Nuevo diseño de faros de LED',
-										'description' => 'Gran cisibilidad a una mayor distancia.'
+										'description' => 'Gran visibilidad a una mayor distancia.'
 									),
 									array(
 										'image' => 's-cross-motor-booster-jet.jpg',
